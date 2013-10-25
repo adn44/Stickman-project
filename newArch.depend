@@ -1,0 +1,104 @@
+# depslib dependency file v1.0
+1381360286 source:/home/tux/newArch/GameManager.cpp
+	"GameManager.h"
+	<iostream>
+
+1381360333 /home/tux/newArch/GameManager.h
+	<SFML/Graphics.hpp>
+	<string>
+	"Hero.h"
+
+1381356203 source:/home/tux/newArch/main.cpp
+	"GameManager.h"
+
+1381360282 /home/tux/newArch/Hero.h
+	<string>
+	"Character.h"
+
+1381360283 /home/tux/newArch/Character.h
+	<SFML/Graphics.hpp>
+
+1381356812 source:/home/tux/newArch/Character.cpp
+	"Character.h"
+
+1381360280 source:/home/tux/newArch/Hero.cpp
+	"Hero.h"
+	<iostream>
+
+1382698743 source:/home/tux/Dropbox/partage/newArch/Character.cpp
+	"Character.h"
+
+1382698652 /home/tux/Dropbox/partage/newArch/Character.h
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1382364221 source:/home/tux/Dropbox/partage/newArch/GameManager.cpp
+	"GameManager.h"
+	<iostream>
+
+1382357299 /home/tux/Dropbox/partage/newArch/GameManager.h
+	<SFML/Graphics.hpp>
+	<string>
+	"Hero.h"
+
+1381411192 /home/tux/Dropbox/partage/newArch/Hero.h
+	<string>
+	"Character.h"
+
+1381408170 source:/home/tux/Dropbox/partage/newArch/main.cpp
+	"Menu.h"
+
+1382363963 source:/home/tux/Dropbox/partage/newArch/Hero.cpp
+	"Hero.h"
+	<iostream>
+
+1382438016 source:/home/tux/Dropbox/partage/newArch/Menu.cpp
+	"Menu.h"
+
+1382437205 /home/tux/Dropbox/partage/newArch/Menu.h
+	<SFML/Graphics.hpp>
+	<string>
+	"Hero.h"
+	"GameManager.h"
+	"Window.h"
+
+1382357591 source:/home/alexlusitania/Dropbox/partage/newArch/Character.cpp
+	"Character.h"
+
+1382357264 /home/alexlusitania/Dropbox/partage/newArch/Character.h
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1382358284 source:/home/alexlusitania/Dropbox/partage/newArch/GameManager.cpp
+	"GameManager.h"
+	<iostream>
+
+1382357299 /home/alexlusitania/Dropbox/partage/newArch/GameManager.h
+	<SFML/Graphics.hpp>
+	<string>
+	"Hero.h"
+
+1381411192 /home/alexlusitania/Dropbox/partage/newArch/Hero.h
+	<string>
+	"Character.h"
+
+1381482131 source:/home/alexlusitania/Dropbox/partage/newArch/Menu.cpp
+	"Menu.h"
+
+1381408164 /home/alexlusitania/Dropbox/partage/newArch/Menu.h
+	<SFML/Graphics.hpp>
+	<string>
+	"Hero.h"
+	"GameManager.h"
+
+1381408170 source:/home/alexlusitania/Dropbox/partage/newArch/main.cpp
+	"Menu.h"
+
+1382357500 source:/home/alexlusitania/Dropbox/partage/newArch/Hero.cpp
+	"Hero.h"
+	<iostream>
+
+1382437223 /home/tux/Dropbox/partage/newArch/Window.h
+	<SFML/Graphics.hpp>
+	<string>
+
