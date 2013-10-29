@@ -15,21 +15,21 @@ Menu::Menu(std::string const& title, int width, int height)
     m_newTexture = new sf::Texture;
     m_newSprite = new sf::Sprite;
     loadSprite(m_newTexture, m_newSprite, "menu_bouton2.png");
-    m_newSprite->move(30, m_continueSprite->getPosition().y + m_continueSprite->getSize().y + 15);
+    m_newSprite->move(30, m_continueSprite->getPosition().y + m_continueSprite->getLocalBounds().height + 15);
 
     m_optionTexture = new sf::Texture;
     m_optionSprite = new sf::Sprite;
     loadSprite(m_optionTexture, m_optionSprite, "menu_bouton3.png");
-    m_optionSprite->move(30, m_newSprite->getPosition().y + m_newSprite->getSize().y + 15);
+    m_optionSprite->move(30, m_newSprite->getPosition().y + m_newSprite->getLocalBounds().height + 15);
 
 
     // define the screen, 60Hz
     m_screen = new sf::RenderWindow(sf::VideoMode(width, height), title);
-    m_screen->useVerticalSync(true);
+    m_screen->setVerticalSyncEnabled(true);
     m_screen->setFramerateLimit(60);
 
     // game infinite loop
-    while (m_screen->isOpened())
+    while (m_screen->isOpen())
     {
         update();
         draw();
@@ -42,27 +42,30 @@ Menu::~Menu()
 
 void Menu::controls()
 {
-    /*if(m_screen->GetInput().IsMouseButtonDown(sf::Mouse::Left)){
-        if(m_screen->GetInput().GetMouseX() >= m_hero->skin().GetPosition().x && m_screen->GetInput().GetMouseX() <= m_hero->skin().GetPosition().x + m_hero->skin().GetSize().x
-           && m_screen->GetInput().GetMouseY() >= m_hero->skin().GetPosition().y && m_screen->GetInput().GetMouseY() <= m_hero->skin().GetPosition().y + m_hero->skin().GetSize().y)
+    if(sf::Mouse::isButtonPressed(sf::Mouse::Left)){
+        if(sf::Mouse::getPosition().x >= m_newSprite->getPosition().x && sf::Mouse::getPosition().x <= m_newSprite->getPosition().x + m_newSprite->getGlobalBounds().width
+           && sf::Mouse::getPosition().y >= m_newSprite->getPosition().y && sf::Mouse::getPosition().y <= m_newSprite->getPosition().y + m_newSprite->getGlobalBounds().height)
            {
-               m_screen->Close();
+                std::cout << "mouse: " << sf::Mouse::getPosition().x << " | " << sf::Mouse::getPosition().y << std::endl;
+               m_screen->close();
                GameManager gm("Jeu", 800, 600);
            }
-    }*/
+    }
 }
 
 void Menu::update()
 {
         // Process events
         sf::Event event;
-        while (m_screen->getEvent(event))
+        while (m_screen->pollEvent(event))
         {
             // Close window : exit
             switch(event.type)
             {
             case sf::Event::Closed:
                 m_screen->close();
+                break;
+            default:
                 break;
             }
         }

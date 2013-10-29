@@ -10,7 +10,7 @@ const int JUMP_HEIGHT= 50;
 class Hero : public Character {
     public:
         Hero();
-        Hero(std::string const& skin);
+        Hero(std::string const& skinPath);
         ~Hero();
         virtual void jump();
         virtual void goRight();
@@ -20,7 +20,9 @@ class Hero : public Character {
     private:
         bool m_right;
         bool m_jumping;
+        bool m_onGround;
         int m_jump;
+        double m_currentFrame;
 };
 
 #endif // HERO_H_INCLUDED

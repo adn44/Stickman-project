@@ -102,3 +102,44 @@
 	<SFML/Graphics.hpp>
 	<string>
 
+1382893144 source:/home/adrien/Documents/Stickman-project/Character.cpp
+	"Character.h"
+
+1382893144 /home/adrien/Documents/Stickman-project/Character.h
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1382981398 source:/home/adrien/Documents/Stickman-project/GameManager.cpp
+	"GameManager.h"
+	<iostream>
+
+1382981163 /home/adrien/Documents/Stickman-project/GameManager.h
+	<SFML/Graphics.hpp>
+	<string>
+	"Hero.h"
+
+1382981259 /home/adrien/Documents/Stickman-project/Hero.h
+	<string>
+	"Character.h"
+
+1382981983 source:/home/adrien/Documents/Stickman-project/Hero.cpp
+	"Hero.h"
+	<iostream>
+
+1382893144 source:/home/adrien/Documents/Stickman-project/main.cpp
+	"Menu.h"
+
+1382893144 /home/adrien/Documents/Stickman-project/Menu.h
+	<SFML/Graphics.hpp>
+	<string>
+	"Hero.h"
+	"GameManager.h"
+	"Window.h"
+
+1382893144 /home/adrien/Documents/Stickman-project/Window.h
+	<SFML/Graphics.hpp>
+	<string>
+
+1382982792 source:/home/adrien/Documents/Stickman-project/Menu.cpp
+	"Menu.h"
+

@@ -13,6 +13,7 @@ class GameManager {
         sf::Sprite* m_sprite; // destroy
         Hero* m_hero; // in Level
 
+
         void controls();
         std::string collision();
         void update();

@@ -1,9 +1,10 @@
 #include "GameManager.h"
 #include <iostream>
 // INIT
-GameManager::GameManager(std::string const& title, int width, int height) {
+GameManager::GameManager(std::string const& title, int width, int height)
+{
 
-    m_hero = new Hero("caisse.jpg");
+    m_hero = new Hero("fang.png");
 
     // blit a static texture
     m_texture = new sf::Texture;
@@ -25,43 +26,42 @@ GameManager::GameManager(std::string const& title, int width, int height) {
     m_hero->pSkin()->move(position2.x, position2.y);
 
     // define a View (2D camera)
-    sf::Vector2f center(m_hero->pSkin()->getPosition().x + m_hero->pSkin()->getSize().x/2, m_hero->pSkin()->getPosition().y + m_hero->pSkin()->getSize().y/2);
-    sf::Vector2f halfSize(m_screen->getWidth()/2, m_screen->getHeight()/2);
+    sf::Vector2f center(m_hero->pSkin()->getPosition().x + m_hero->pSkin()->getLocalBounds().width/2, m_hero->pSkin()->getPosition().y + m_hero->pSkin()->getLocalBounds().height/2);
+    sf::Vector2f halfSize(m_screen->getSize().x/2, m_screen->getSize().y/2);
     m_view = new sf::View(center, halfSize);
 
     // set the view in the screen
-    m_screen->SetView(*m_view);
+    m_screen->setView(*m_view);
 
     // game infinite loop
-    while (m_screen->IsOpened())
+    while (m_screen->isOpen())
     {
         update();
         draw();
     }
 }
 
-GameManager::~GameManager() {
+GameManager::~GameManager()
+{
 }
 
-void GameManager::controls() {
-    if ( m_screen->GetInput().IsKeyDown(sf::Key::Right) && m_screen->GetInput().IsKeyDown(sf::Key::Escape) )
+void GameManager::controls()
+{
+    if ( sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && sf::Keyboard::isKeyPressed(sf::Keyboard::Escape) )
     {
-        m_screen->Close();
+        m_screen->close();
     }
-    else if(m_screen->GetInput().IsKeyDown(sf::Key::Right) && m_screen->GetInput().IsKeyDown(sf::Key::Space)) {
-        std::cout << "droite2" << std::endl;
-        if(!(collision() == "R"))
+    else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
+    {
             m_hero->goRight();
-        std::cout << "sauter3" << std::endl;
-        if(!(collision() == "U"))
             m_hero->jump();
     }
-    else if(m_screen->GetInput().IsKeyDown(sf::Key::Right)) {
-        std::cout << "droite" << std::endl;
-        if(!(collision() == "R"))
+    else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
+    {
             m_hero->goRight();
     }
-    else if(m_screen->GetInput().IsKeyDown(sf::Key::Left) && m_screen->GetInput().IsKeyDown(sf::Key::Space)) {
+    else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left) && sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
+    {
         std::cout << "gauche2" << std::endl;
         if(!(collision() == "L"))
             m_hero->goLeft();
@@ -69,59 +69,68 @@ void GameManager::controls() {
         if(!(collision() == "U"))
             m_hero->jump();
     }
-    else if(m_screen->GetInput().IsKeyDown(sf::Key::Left)) {
+    else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+    {
         std::cout << "gauche" << std::endl;
         if(!(collision() == "L"))
             m_hero->goLeft();
     }
-    else if(m_screen->GetInput().IsKeyDown(sf::Key::Space)) {
+    else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
+    {
         std::cout << "sauter" << std::endl;
         if(!(collision() == "U"))
             m_hero->jump();
     }
 }
 
-std::string GameManager::collision() {
+std::string GameManager::collision()
+{
 
     /*// convert coords
-    sf::Vector2f heroPos = m_screen->ConvertCoords(m_hero->skin().GetPosition().x, m_hero->skin().GetPosition().y);
-    sf::Vector2f heroSize = m_screen->ConvertCoords(m_hero->skin().GetSize().x, m_hero->skin().GetSize().y);
+    sf::Vector2f heroPos = m_screen->ConvertCoords(m_hero->skin().getPosition().x, m_hero->skin().getPosition().y);
+    sf::Vector2f heroSize = m_screen->ConvertCoords(m_hero->skin().getLocalBounds().x, m_hero->skin().getLocalBounds().y);
 
-    sf::Vector2f spritePos = m_screen->ConvertCoords(m_sprite->GetPosition().x, m_sprite->GetPosition().y);
-    sf::Vector2f spriteSize = m_screen->ConvertCoords(m_sprite->GetPosition().x, m_sprite->GetPosition().y);*/
+    sf::Vector2f spritePos = m_screen->ConvertCoords(m_sprite->getPosition().x, m_sprite->getPosition().y);
+    sf::Vector2f spriteSize = m_screen->ConvertCoords(m_sprite->getPosition().x, m_sprite->getPosition().y);*/
 
     // test collisions
-    if(m_hero->skin().GetPosition().x + m_hero->skin().GetSize().x >= m_sprite->GetPosition().x // si on est avant la collision
-       && m_hero->skin().GetPosition().x + m_hero->skin().GetSize().x <= m_sprite->GetPosition().x + m_sprite->GetSize().x // et si on n'est pas après la collision
-       && m_hero->skin().GetPosition().y >= m_sprite->GetPosition().y // si l'objet est au même niveau que l'autre objet
-       && m_hero->skin().GetPosition().y <= m_sprite->GetPosition().y + m_sprite->GetSize().y
-       && m_hero->skin().GetPosition().y + m_hero->skin().GetSize().y >= m_sprite->GetPosition().y // pour le point bas
-       && m_hero->skin().GetPosition().y + m_hero->skin().GetSize().y <= m_sprite->GetPosition().y + m_sprite->GetSize().y) {
+    if( m_hero->skin().getPosition().x + m_hero->skin().getLocalBounds().width >= m_sprite->getPosition().x // si on est avant la collision
+            && m_hero->skin().getPosition().x + m_hero->skin().getLocalBounds().width <= m_sprite->getPosition().x + m_sprite->getLocalBounds().width // et si on n'est pas après la collision
+            && m_hero->skin().getPosition().y >= m_sprite->getPosition().y // si l'objet est au même niveau que l'autre objet
+            && m_hero->skin().getPosition().y <= m_sprite->getPosition().y + m_sprite->getLocalBounds().height
+            && m_hero->skin().getPosition().y + m_hero->skin().getLocalBounds().height >= m_sprite->getPosition().y // pour le point bas
+            && m_hero->skin().getPosition().y + m_hero->skin().getLocalBounds().height <= m_sprite->getPosition().y + m_sprite->getLocalBounds().height )
+    {
         return "R";
     }
-    else if (m_hero->skin().GetPosition().x <= m_sprite->GetPosition().x + m_sprite->GetSize().x
-              && !(m_hero->skin().GetPosition().x <= m_sprite->GetPosition().x + m_sprite->GetSize().x - 1)
-              && m_hero->skin().GetPosition().y >= m_sprite->GetPosition().y
-              && m_hero->skin().GetPosition().y <= m_sprite->GetPosition().y + m_sprite->GetSize().y
-              && m_hero->skin().GetPosition().y + m_hero->skin().GetSize().y >= m_sprite->GetPosition().y
-              && m_hero->skin().GetPosition().y + m_hero->skin().GetSize().y <= m_sprite->GetPosition().y + m_sprite->GetSize().y){
+    else if ( m_hero->skin().getPosition().x <= m_sprite->getPosition().x + m_sprite->getLocalBounds().width
+              && !(m_hero->skin().getPosition().x <= m_sprite->getPosition().x + m_sprite->getLocalBounds().width - 1)
+              && m_hero->skin().getPosition().y >= m_sprite->getPosition().y
+              && m_hero->skin().getPosition().y <= m_sprite->getPosition().y + m_sprite->getLocalBounds().height
+              && m_hero->skin().getPosition().y + m_hero->skin().getLocalBounds().height >= m_sprite->getPosition().y
+              && m_hero->skin().getPosition().y + m_hero->skin().getLocalBounds().height <= m_sprite->getPosition().y + m_sprite->getLocalBounds().height )
+    {
         return "L";
     }
-    else {
+    else
+    {
         return "N";
     }
 }
 
-void GameManager::update() {
+void GameManager::update()
+{
     // Process events
     sf::Event event;
-    while (m_screen->GetEvent(event))
+    while (m_screen->pollEvent(event))
     {
         // Close window : exit
-        switch(event.Type)
+        switch(event.type)
         {
         case sf::Event::Closed:
-            m_screen->Close();
+            m_screen->close();
+            break;
+        default:
             break;
         }
     }
@@ -131,13 +140,14 @@ void GameManager::update() {
     m_hero->jumpAnimation();
 
     // replace the center of the view to the hero position
-    m_view->Move((m_hero->skin().GetPosition().x - m_view->GetCenter().x) + m_hero->skin().GetSize().x/2,
-                 (m_hero->skin().GetPosition().y - m_view->GetCenter().y) + m_hero->skin().GetSize().y/2);
+    m_view->move((m_hero->skin().getPosition().x - m_view->getCenter().x) + m_hero->skin().getLocalBounds().width/2,
+                 (m_hero->skin().getPosition().y - m_view->getCenter().y) + m_hero->skin().getLocalBounds().height/2);
 }
 
-void GameManager::draw() {
-    m_screen->Clear();
-    m_screen->Draw(*m_sprite);
+void GameManager::draw()
+{
+    m_screen->clear();
+    m_screen->draw(*m_sprite);
     m_hero->draw(m_screen);
-    m_screen->Display();
+    m_screen->display();
 }
