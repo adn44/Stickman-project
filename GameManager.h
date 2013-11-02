@@ -1,27 +1,32 @@
-#ifndef GAMEMANAGER_H_INCLUDED
-#define GAMEMANAGER_H_INCLUDED
+#ifndef GAMEMANAGER_H
+#define GAMEMANAGER_H
 
 #include <SFML/Graphics.hpp>
-#include <string>
-#include "Hero.h"
+#include <iostream>
+#include "Player.h"
 
-class GameManager {
-    private:
-        sf::RenderWindow* m_screen;
-        sf::View* m_view; // in Level
-        sf::Texture* m_texture; // destroy
-        sf::Sprite* m_sprite; // destroy
-        Hero* m_hero; // in Level
+const int H = 5;
+const int W = 5;
 
-
-        void controls();
-        std::string collision();
+class GameManager
+{
+    public:
+        GameManager(int width, int height, std::string const& title);
+        virtual ~GameManager();
+        void action();
         void update();
         void draw();
-
-    public:
-        GameManager(std::string const& title, int width, int height);
-        ~GameManager();
+        //char collision();
+        char collisionR();
+        char collisionL();
+        char collisionT();
+        char collisionG();
+    protected:
+    private:
+        Player* m_player;
+        std::string m_tileMap[H];
+        sf::RenderWindow* m_screen;
+        sf::View* m_view;
 };
 
-#endif // GAMEMANAGER_H_INCLUDED
+#endif // GAMEMANAGER_H

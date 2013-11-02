@@ -1,153 +1,209 @@
 #include "GameManager.h"
-#include <iostream>
-// INIT
-GameManager::GameManager(std::string const& title, int width, int height)
+
+GameManager::GameManager(int width, int height, std::string const& title)
 {
-
-    m_hero = new Hero("fang.png");
-
-    // blit a static texture
-    m_texture = new sf::Texture;
-    if(!m_texture->loadFromFile("caisse_ok.jpg"))
-    {
-        exit(EXIT_FAILURE);
-    }
-    m_sprite = new sf::Sprite(*m_texture);
-
-    // define the screen, 60Hz
-    m_screen = new sf::RenderWindow(sf::VideoMode(width, height), title);
-    //m_screen->useVerticalSync(true);
+    // set up the screen
+    m_screen = new sf::RenderWindow(sf::VideoMode(width,height), title);
+    m_screen->setVerticalSyncEnabled(true);
     m_screen->setFramerateLimit(60);
 
-    sf::Vector2f position(80, 0);
-    m_sprite->move(position.x, position.y);
-
-    sf::Vector2f position2(50, 0);
-    m_hero->pSkin()->move(position2.x, position2.y);
+    // create the player
+    m_player = new Player;
 
     // define a View (2D camera)
-    sf::Vector2f center(m_hero->pSkin()->getPosition().x + m_hero->pSkin()->getLocalBounds().width/2, m_hero->pSkin()->getPosition().y + m_hero->pSkin()->getLocalBounds().height/2);
-    sf::Vector2f halfSize(m_screen->getSize().x/2, m_screen->getSize().y/2);
-    m_view = new sf::View(center, halfSize);
-
-    // set the view in the screen
+    m_view = new sf::View(sf::FloatRect(0, 0, m_screen->getSize().x, m_screen->getSize().y));
     m_screen->setView(*m_view);
 
-    // game infinite loop
-    while (m_screen->isOpen())
-    {
-        update();
-        draw();
-    }
+    // load the map
+    m_tileMap[0] = "  P  ";
+    m_tileMap[1] = "  B  ";
+    m_tileMap[2] = "     ";
+    m_tileMap[3] = "    B";
+    m_tileMap[4] = "B B B";
 }
 
 GameManager::~GameManager()
 {
 }
 
-void GameManager::controls()
+void GameManager::action()
 {
-    if ( sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && sf::Keyboard::isKeyPressed(sf::Keyboard::Escape) )
+    sf::RectangleShape r(sf::Vector2f(40,32));
+    r.setFillColor(sf::Color::Black);
+
+    for (int i = 0; i < H; i++)
     {
-        m_screen->close();
+        for (int j = 0; j < W; j++)
+        {
+            switch(m_tileMap[i][j])
+            {
+            case 'B':
+                r.setPosition(j*40,i*32);
+                m_screen->draw( r );
+                break;
+            case 'P':
+                m_player->getSprite()->setPosition(j*40, i*32);
+                break;
+            }
+        }
     }
-    else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
+
+    sf::Event event;
+    while(m_screen->isOpen())
     {
-            m_hero->goRight();
-            m_hero->jump();
-    }
-    else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
-    {
-            m_hero->goRight();
-    }
-    else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left) && sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
-    {
-        std::cout << "gauche2" << std::endl;
-        if(!(collision() == "L"))
-            m_hero->goLeft();
-        std::cout << "sauter2" << std::endl;
-        if(!(collision() == "U"))
-            m_hero->jump();
-    }
-    else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
-    {
-        std::cout << "gauche" << std::endl;
-        if(!(collision() == "L"))
-            m_hero->goLeft();
-    }
-    else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
-    {
-        std::cout << "sauter" << std::endl;
-        if(!(collision() == "U"))
-            m_hero->jump();
+        while(m_screen->pollEvent(event))
+        {
+            if(event.type == sf::Event::Closed)
+            {
+                m_screen->close();
+            }
+        }
+
+        update();
+        draw();
     }
 }
 
-std::string GameManager::collision()
+char GameManager::collisionR()
 {
+    sf::RectangleShape r(sf::Vector2f(40,32));
+    r.setFillColor(sf::Color::Black);
 
-    /*// convert coords
-    sf::Vector2f heroPos = m_screen->ConvertCoords(m_hero->skin().getPosition().x, m_hero->skin().getPosition().y);
-    sf::Vector2f heroSize = m_screen->ConvertCoords(m_hero->skin().getLocalBounds().x, m_hero->skin().getLocalBounds().y);
+    for (int i = 0; i < H; i++)
+    {
+        for (int j = 0; j < W; j++)
+        {
+            r.setPosition(j*40,i*32);
+            switch(m_tileMap[i][j])
+            {
+                case 'B':
+                    if(m_player->getSprite()->getPosition().x + m_player->getSprite()->getGlobalBounds().width == r.getPosition().x
+                            && ((m_player->getSprite()->getPosition().y <= r.getPosition().y && r.getPosition().y < m_player->getSprite()->getPosition().y + m_player->getSprite()->getGlobalBounds().height)
+                                || (r.getPosition().y <= m_player->getSprite()->getPosition().y && m_player->getSprite()->getPosition().y < r.getPosition().y + r.getGlobalBounds().height)))
+                    {
+                        return 'R';
+                    }
+                    break;
+            }
+        }
+    }
+    return 'n';
+}
 
-    sf::Vector2f spritePos = m_screen->ConvertCoords(m_sprite->getPosition().x, m_sprite->getPosition().y);
-    sf::Vector2f spriteSize = m_screen->ConvertCoords(m_sprite->getPosition().x, m_sprite->getPosition().y);*/
+char GameManager::collisionL(){
+    sf::RectangleShape r(sf::Vector2f(40,32));
+    r.setFillColor(sf::Color::Black);
 
-    // test collisions
-    if( m_hero->skin().getPosition().x + m_hero->skin().getLocalBounds().width >= m_sprite->getPosition().x // si on est avant la collision
-            && m_hero->skin().getPosition().x + m_hero->skin().getLocalBounds().width <= m_sprite->getPosition().x + m_sprite->getLocalBounds().width // et si on n'est pas après la collision
-            && m_hero->skin().getPosition().y >= m_sprite->getPosition().y // si l'objet est au même niveau que l'autre objet
-            && m_hero->skin().getPosition().y <= m_sprite->getPosition().y + m_sprite->getLocalBounds().height
-            && m_hero->skin().getPosition().y + m_hero->skin().getLocalBounds().height >= m_sprite->getPosition().y // pour le point bas
-            && m_hero->skin().getPosition().y + m_hero->skin().getLocalBounds().height <= m_sprite->getPosition().y + m_sprite->getLocalBounds().height )
+    for (int i = 0; i < H; i++)
     {
-        return "R";
+        for (int j = 0; j < W; j++)
+        {
+            r.setPosition(j*40,i*32);
+            switch(m_tileMap[i][j])
+            {
+                case 'B':
+                    if(m_player->getSprite()->getPosition().x == r.getPosition().x + r.getGlobalBounds().width
+                            && ((m_player->getSprite()->getPosition().y <= r.getPosition().y && r.getPosition().y < m_player->getSprite()->getPosition().y + m_player->getSprite()->getGlobalBounds().height)
+                                || (r.getPosition().y <= m_player->getSprite()->getPosition().y && m_player->getSprite()->getPosition().y < r.getPosition().y + r.getGlobalBounds().height)))
+                    {
+                        return 'L';
+                    }
+                    break;
+            }
+        }
     }
-    else if ( m_hero->skin().getPosition().x <= m_sprite->getPosition().x + m_sprite->getLocalBounds().width
-              && !(m_hero->skin().getPosition().x <= m_sprite->getPosition().x + m_sprite->getLocalBounds().width - 1)
-              && m_hero->skin().getPosition().y >= m_sprite->getPosition().y
-              && m_hero->skin().getPosition().y <= m_sprite->getPosition().y + m_sprite->getLocalBounds().height
-              && m_hero->skin().getPosition().y + m_hero->skin().getLocalBounds().height >= m_sprite->getPosition().y
-              && m_hero->skin().getPosition().y + m_hero->skin().getLocalBounds().height <= m_sprite->getPosition().y + m_sprite->getLocalBounds().height )
+    return 'n';
+}
+
+char GameManager::collisionT(){
+    sf::RectangleShape r(sf::Vector2f(40,32));
+    r.setFillColor(sf::Color::Black);
+
+    for (int i = 0; i < H; i++)
     {
-        return "L";
+        for (int j = 0; j < W; j++)
+        {
+            r.setPosition(j*40,i*32);
+            switch(m_tileMap[i][j])
+            {
+                case 'B':
+                    if(m_player->getSprite()->getPosition().y == r.getPosition().y + r.getGlobalBounds().height
+                    && ((m_player->getSprite()->getPosition().x >= r.getPosition().x && m_player->getSprite()->getPosition().x < r.getPosition().x + r.getGlobalBounds().width)
+                        || (m_player->getSprite()->getPosition().x + m_player->getSprite()->getGlobalBounds().width > r.getPosition().x && m_player->getSprite()->getPosition().x + m_player->getSprite()->getGlobalBounds().width <= r.getPosition().x + r.getGlobalBounds().width)))
+                    {
+                        m_player->setJumping(false);
+                        return 'T';
+                    }
+                    break;
+            }
+        }
     }
-    else
+    return 'n';
+}
+
+char GameManager::collisionG(){
+    sf::RectangleShape r(sf::Vector2f(40,32));
+    r.setFillColor(sf::Color::Black);
+
+    for (int i = 0; i < H; i++)
     {
-        return "N";
+        for (int j = 0; j < W; j++)
+        {
+            switch(m_tileMap[i][j])
+            {
+                case 'B':
+                    r.setPosition(j*40,i*32);
+                    if(r.getGlobalBounds().intersects(m_player->getSprite()->getGlobalBounds()))
+                    {
+                        m_player->getSprite()->move(0,-SPEED);
+                        m_player->setOnGround(true);
+                        return 'G';
+                    }
+                    break;
+            }
+        }
     }
+    return 'n';
 }
 
 void GameManager::update()
 {
-    // Process events
-    sf::Event event;
-    while (m_screen->pollEvent(event))
+    m_player->controls(collisionR(), collisionL(), collisionT(), collisionG());
+
+    m_player->jumpAnimation(collisionR(), collisionL(), collisionT(), collisionG());
+
+    if (collisionG() != 'G' && !(m_player->getJumping()))
     {
-        // Close window : exit
-        switch(event.type)
-        {
-        case sf::Event::Closed:
-            m_screen->close();
-            break;
-        default:
-            break;
-        }
+        m_player->fall();
     }
 
-    // check input
-    controls();
-    m_hero->jumpAnimation();
-
-    // replace the center of the view to the hero position
-    m_view->move((m_hero->skin().getPosition().x - m_view->getCenter().x) + m_hero->skin().getLocalBounds().width/2,
-                 (m_hero->skin().getPosition().y - m_view->getCenter().y) + m_hero->skin().getLocalBounds().height/2);
+    if(true){
+        m_view->setCenter(m_player->getSprite()->getPosition().x + m_player->getSprite()->getGlobalBounds().width/2, m_player->getSprite()->getPosition().y + m_player->getSprite()->getGlobalBounds().height/2);
+        m_screen->setView(*m_view);
+    }
 }
 
 void GameManager::draw()
 {
-    m_screen->clear();
-    m_screen->draw(*m_sprite);
-    m_hero->draw(m_screen);
+    m_screen->clear(sf::Color::White);
+
+    sf::RectangleShape r(sf::Vector2f(40,32));
+    r.setFillColor(sf::Color::Black);
+
+    for (int i = 0; i < H; i++)
+    {
+        for (int j = 0; j < W; j++)
+        {
+            switch(m_tileMap[i][j])
+            {
+            case 'B':
+                r.setPosition(j*40,i*32);
+                m_screen->draw( r );
+                break;
+            }
+        }
+    }
+
+    m_screen->draw(*(m_player->getSprite()));
     m_screen->display();
 }
