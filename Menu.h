@@ -1,30 +1,26 @@
-#ifndef MENU_H_INCLUDED
-#define MENU_H_INCLUDED
+#ifndef MENU_H
+#define MENU_H
 
 #include <SFML/Graphics.hpp>
-#include <string>
-#include "Hero.h"
 #include "GameManager.h"
-#include "Window.h"
 
-class Menu : public Window {
+class Menu
+{
+    public:
+        Menu();
+        virtual ~Menu();
+        void action();
+    protected:
     private:
         sf::RenderWindow* m_screen;
-        sf::Texture* m_backgroundTexture;
-        sf::Sprite* m_backgroundSprite;
-        sf::Texture* m_continueTexture;
-        sf::Sprite* m_continueSprite;
-        sf::Texture* m_newTexture;
-        sf::Sprite* m_newSprite;
+        sf::Texture* m_bgTexture;
+        sf::Sprite* m_bgSprite;
+        sf::Texture* m_playTexture;
+        sf::Sprite* m_playSprite;
+        sf::Texture* m_activePlayTexture;
         sf::Texture* m_optionTexture;
         sf::Sprite* m_optionSprite;
-        void controls();
-        void update();
-        void draw();
-
-    public:
-        Menu(std::string const& title, int width, int height);
-        ~Menu();
+        sf::Texture* m_activeOptionTexture;
 };
 
-#endif // MENU_H_INCLUDED
+#endif // MENU_H

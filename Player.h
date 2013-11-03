@@ -5,6 +5,7 @@
 #include <iostream>
 
 const int SPEED = 1;
+const int JUMP_SPEED = 2;
 const int JUMP_HEIGHT = 80;
 
 class Player

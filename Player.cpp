@@ -72,7 +72,7 @@ void Player::goLeft()
 
 void Player::fall()
 {
-    m_sprite->move(0, SPEED);
+    m_sprite->move(0, JUMP_SPEED);
     m_dy = 1;
 }
 
@@ -111,10 +111,10 @@ void Player::jumpAnimation(char collisionR, char collisionL, char collisionT, ch
             m_sprite->setTextureRect(*m_rect);
         }
         else if (m_jump <= JUMP_HEIGHT/2 && collisionG != 'G') {
-            m_sprite->move(0, SPEED);
+            m_sprite->move(0, JUMP_SPEED);
         }
         else if (m_jump > JUMP_HEIGHT/2 && collisionT != 'T'){
-            m_sprite->move(0, -SPEED);
+            m_sprite->move(0, -JUMP_SPEED);
         }
 
         m_jump--;
