@@ -101,7 +101,7 @@ void Player::jump() {
 void Player::jumpAnimation(char collisionR, char collisionL, char collisionT, char collisionG) {
     if (m_jumping)
     {
-        /*if(m_jump == 0 || ( collisionG == 'G' && m_jump <= JUMP_HEIGHT/2 ) ) {
+        if(m_jump == 0 || ( collisionG == 'G' && m_jump <= JUMP_HEIGHT/2 ) ) {
             m_jumping = false;
             //m_rect = new sf::IntRect(0, 189, 40, 50);
             //m_sprite->setTextureRect(*m_rect);
@@ -113,14 +113,14 @@ void Player::jumpAnimation(char collisionR, char collisionL, char collisionT, ch
             m_sprite->move(0, -JUMP_SPEED);
         }
 
-        m_jump--;*/
-        m_V->y = 50;
+        m_jump--;
+        /*m_V->y = 50;
         for ( int i = 0; i < 3 ; i++ ) {
             m_V->y = m_V->y + m_A->y * ( 1 / 60 );
             m_sprite->setPosition ( getPositionX ( 50 ), getPositionY( -m_V->y ) );
             std::cout << getPositionX ( SPEED ) << std::endl;
         }
-        m_jumping = false;
+        m_jumping = false;*/
     }
 }
 

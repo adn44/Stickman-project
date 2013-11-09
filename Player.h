@@ -4,7 +4,7 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 
-const int SPEED = 2;
+const int SPEED = 1;
 const int JUMP_SPEED = 1;
 const int JUMP_HEIGHT = 200;
 
