@@ -1,17 +1,19 @@
 #include "Player.h"
 
-Player::Player() : m_onGround(false), m_jumping(false), m_currentFrame(0), m_dx(0), m_dy(0)
+Player::Player() : m_onGround(false), m_jumping(false), m_currentFrame(0)
 {
     m_texture = new sf::Texture;
-    if (!m_texture->loadFromFile("fang.png"))
+    if (!m_texture->loadFromFile("normal_gauche.png"))
     {
         exit(EXIT_FAILURE);
     }
 
-    m_rect = new sf::IntRect(0, 189, 40, 50);
+    //m_rect = new sf::IntRect(0, 189, 40, 50);
 
     m_sprite = new sf::Sprite(*m_texture);
-    m_sprite->setTextureRect(*m_rect);
+    m_A = new sf::Vector2i(0,10000);
+    m_V = new sf::Vector2i(0,0);
+   // m_sprite->setTextureRect(*m_rect);
 }
 
 Player::~Player()
@@ -43,37 +45,32 @@ void Player::goRight()
     // move the player
     m_sprite->move(SPEED, 0);
 
-    // set delta x
-    m_dx = 1;
-
     // animation
-    m_currentFrame += 0.08;
+    /*m_currentFrame += 0.08;
 
     if (m_currentFrame > 6)
         m_currentFrame -= 6;
 
     m_rect = new sf::IntRect(40*int(m_currentFrame), 244, 40, 50);
-    m_sprite->setTextureRect(*m_rect);
+    m_sprite->setTextureRect(*m_rect);*/
 }
 
 void Player::goLeft()
 {
     m_sprite->move(-SPEED, 0);
-    m_dx = -1;
-
+/*
     m_currentFrame += 0.08;
 
     if (m_currentFrame > 6)
         m_currentFrame -= 6;
 
     m_rect = new sf::IntRect(40*int(m_currentFrame)+40, 244, -40, 50);
-    m_sprite->setTextureRect(*m_rect);
+    m_sprite->setTextureRect(*m_rect);*/
 }
 
 void Player::fall()
 {
     m_sprite->move(0, JUMP_SPEED);
-    m_dy = 1;
 }
 
 void Player::controls(char collisionR, char collisionL, char collisionT, char collisionG)
@@ -98,17 +95,16 @@ void Player::jump() {
     if(!m_jumping && m_onGround) {
         m_jump = JUMP_HEIGHT;
         m_jumping = true;
-        m_dy = -1;
     }
 }
 
 void Player::jumpAnimation(char collisionR, char collisionL, char collisionT, char collisionG) {
     if (m_jumping)
     {
-        if(m_jump == 0) {
+        /*if(m_jump == 0 || ( collisionG == 'G' && m_jump <= JUMP_HEIGHT/2 ) ) {
             m_jumping = false;
-            m_rect = new sf::IntRect(0, 189, 40, 50);
-            m_sprite->setTextureRect(*m_rect);
+            //m_rect = new sf::IntRect(0, 189, 40, 50);
+            //m_sprite->setTextureRect(*m_rect);
         }
         else if (m_jump <= JUMP_HEIGHT/2 && collisionG != 'G') {
             m_sprite->move(0, JUMP_SPEED);
@@ -117,25 +113,31 @@ void Player::jumpAnimation(char collisionR, char collisionL, char collisionT, ch
             m_sprite->move(0, -JUMP_SPEED);
         }
 
-        m_jump--;
+        m_jump--;*/
+        m_V->y = 50;
+        for ( int i = 0; i < 3 ; i++ ) {
+            m_V->y = m_V->y + m_A->y * ( 1 / 60 );
+            m_sprite->setPosition ( getPositionX ( 50 ), getPositionY( -m_V->y ) );
+            std::cout << getPositionX ( SPEED ) << std::endl;
+        }
+        m_jumping = false;
     }
 }
 
-int Player::getDx()
-{
-    return m_dx;
+int Player::getPositionX( int inc ) {
+    return m_sprite->getPosition().x + inc;
 }
 
-int Player::getDy(){
-    return m_dy;
+int Player::getPositionY( int inc ) {
+    return m_sprite->getPosition().y + inc;
 }
 
-void Player::setDx( int value){
-    m_dx = value;
+int Player::getWidth( int inc ) {
+    return m_sprite->getGlobalBounds().width + inc;
 }
 
-void Player::setDy(int value){
-    m_dy = value;
+int Player::getHeight( int inc ) {
+    return m_sprite->getGlobalBounds().height + inc;
 }
 
 bool Player::getJumping() {

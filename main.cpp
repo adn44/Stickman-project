@@ -1,9 +1,9 @@
 #include "Menu.h"
 
-int main()
+int main ( void )
 {
     Menu menu;
-    menu.action();
+    menu.action ( );
 
     return EXIT_SUCCESS;
 }

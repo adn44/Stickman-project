@@ -7,9 +7,9 @@
 class Menu
 {
     public:
-        Menu();
-        virtual ~Menu();
-        void action();
+        Menu ( void );
+        virtual ~Menu ( void );
+        void action ( void );
     protected:
     private:
         sf::RenderWindow* m_screen;

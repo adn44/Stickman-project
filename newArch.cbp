@@ -29,6 +29,7 @@
 			</Target>
 		</Build>
 		<Compiler>
+			<Add option="-std=c++11" />
 			<Add option="-Wall" />
 		</Compiler>
 		<Linker>
@@ -38,25 +39,32 @@
 			<Add library="sfml-system" />
 			<Add library="sfml-window" />
 		</Linker>
-		<Unit filename="Character.cpp" />
-		<Unit filename="Character.h" />
 		<Unit filename="GameManager.cpp" />
 		<Unit filename="GameManager.h" />
-		<Unit filename="Hero.cpp" />
-		<Unit filename="Hero.h" />
-		<Unit filename="Level.h" />
+		<Unit filename="ILevel.h" />
+		<Unit filename="LevelOne.cpp" />
+		<Unit filename="LevelOne.h" />
 		<Unit filename="Menu.cpp" />
 		<Unit filename="Menu.h" />
-		<Unit filename="Window.h" />
-		<Unit filename="caisse.jpg" />
-		<Unit filename="caisse_ok.jpg" />
-		<Unit filename="cb.bmp" />
+		<Unit filename="Player.cpp" />
+		<Unit filename="Player.h" />
+		<Unit filename="arbre1.png" />
+		<Unit filename="arbre2.png" />
+		<Unit filename="atterisage_droite.png" />
+		<Unit filename="caisse.png" />
+		<Unit filename="courir_droite.png" />
+		<Unit filename="fang.png" />
+		<Unit filename="lancer_partie.png" />
+		<Unit filename="lancer_partie_actif.png" />
 		<Unit filename="main.cpp" />
-		<Unit filename="menu.png" />
 		<Unit filename="menu_background.png" />
-		<Unit filename="menu_bouton1.png" />
-		<Unit filename="menu_bouton2.png" />
-		<Unit filename="menu_bouton3.png" />
+		<Unit filename="normal_gauche.png" />
+		<Unit filename="options.png" />
+		<Unit filename="options_actif.png" />
+		<Unit filename="saut_droite.png" />
+		<Unit filename="sol1.png" />
+		<Unit filename="sol2.png" />
+		<Unit filename="sol3.png" />
 		<Extensions>
 			<code_completion />
 			<debugger />

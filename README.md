@@ -1,7 +1,7 @@
 Stickman-project
 ================
 
-platformer games with stickman
+platformer games with a f***ing epic stickman
 ================
 
 Now this project work with the SFML-2.1 library in order to install it see those step:

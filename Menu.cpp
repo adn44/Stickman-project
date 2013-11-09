@@ -1,8 +1,8 @@
 #include "Menu.h"
 
-Menu::Menu()
+Menu::Menu ( void )
 {
-    m_screen = new sf::RenderWindow(sf::VideoMode(640,480), "Menu");
+    m_screen = new sf::RenderWindow ( sf::VideoMode ( 640, 480 ), "Menu" );
 
     m_bgTexture = new sf::Texture;
     m_playTexture = new sf::Texture;
@@ -10,25 +10,25 @@ Menu::Menu()
     m_activePlayTexture = new sf::Texture;
     m_activeOptionTexture = new sf::Texture;
 
-    if (!m_bgTexture->loadFromFile("menu_background.png")
-        || !m_playTexture->loadFromFile("lancer_partie.png")
-        || !m_optionTexture->loadFromFile("options.png")
-        || !m_activePlayTexture->loadFromFile("lancer_partie_actif.png")
-        || !m_activeOptionTexture->loadFromFile("options_actif.png"))
+    if ( !m_bgTexture->loadFromFile ( "menu_background.png" )
+        || !m_playTexture->loadFromFile ( "lancer_partie.png" )
+        || !m_optionTexture->loadFromFile ( "options.png" )
+        || !m_activePlayTexture->loadFromFile ( "lancer_partie_actif.png" )
+        || !m_activeOptionTexture->loadFromFile ( "options_actif.png" ) )
     {
-        exit(EXIT_FAILURE);
+        exit ( EXIT_FAILURE );
     }
 
-    m_bgSprite = new sf::Sprite(*m_bgTexture);
+    m_bgSprite = new sf::Sprite ( *m_bgTexture );
 
-    m_playSprite = new sf::Sprite(*m_playTexture);
-    m_playSprite->move(30, 180);
+    m_playSprite = new sf::Sprite ( *m_playTexture );
+    m_playSprite->move ( 30, 180 );
 
-    m_optionSprite = new sf::Sprite(*m_optionTexture);
-    m_optionSprite->move(37, m_playSprite->getPosition().y + m_playSprite->getLocalBounds().height + 30);
+    m_optionSprite = new sf::Sprite ( *m_optionTexture );
+    m_optionSprite->move ( 37, m_playSprite->getPosition().y + m_playSprite->getLocalBounds().height + 30 );
 }
 
-Menu::~Menu()
+Menu::~Menu ( void )
 {
 }
 

@@ -1,9 +1,8 @@
 #include "GameManager.h"
-
-GameManager::GameManager(int width, int height, std::string const& title)
+GameManager::GameManager ( int width, int height, std::string const& title )
 {
     // set up the screen
-    m_screen = new sf::RenderWindow(sf::VideoMode(width,height), title);
+    m_screen = new sf::RenderWindow ( sf::VideoMode ( width, height ), title );
     m_screen->setVerticalSyncEnabled(true);
     m_screen->setFramerateLimit(60);
 
@@ -11,199 +10,118 @@ GameManager::GameManager(int width, int height, std::string const& title)
     m_player = new Player;
 
     // define a View (2D camera)
-    m_view = new sf::View(sf::FloatRect(0, 0, m_screen->getSize().x, m_screen->getSize().y));
-    m_screen->setView(*m_view);
+    m_view = new sf::View ( sf::FloatRect ( 0, 0, m_screen->getSize().x, m_screen->getSize().y ) );
+    m_screen->setView ( *m_view );
 
-    // load the map
-    m_tileMap[0] = "  P  ";
-    m_tileMap[1] = "  B  ";
-    m_tileMap[2] = "     ";
-    m_tileMap[3] = "    B";
-    m_tileMap[4] = "B B B";
+    m_level = new LevelOne ( );
+
+    m_colG = new char ( 'n' );
+    m_colL = new char ( 'n' );
+    m_colT = new char ( 'n' );
+    m_colR = new char ( 'n' );
 }
 
-GameManager::~GameManager()
+GameManager::~GameManager ( void )
 {
 }
 
-void GameManager::action()
+void GameManager::action ( void )
 {
-    sf::RectangleShape r(sf::Vector2f(40,32));
-    r.setFillColor(sf::Color::Black);
+    m_level->loadLevel ( m_player );
 
-    for (int i = 0; i < H; i++)
-    {
-        for (int j = 0; j < W; j++)
-        {
-            switch(m_tileMap[i][j])
-            {
-            case 'B':
-                r.setPosition(j*40,i*32);
-                m_screen->draw( r );
-                break;
-            case 'P':
-                m_player->getSprite()->setPosition(j*40, i*32);
-                break;
-            }
-        }
-    }
-
+    // properly close the window on quit
     sf::Event event;
-    while(m_screen->isOpen())
+    while ( m_screen->isOpen ( ) )
     {
-        while(m_screen->pollEvent(event))
+        while ( m_screen->pollEvent ( event ) )
         {
-            if(event.type == sf::Event::Closed)
+            if ( event.type == sf::Event::Closed )
             {
-                m_screen->close();
+                m_screen->close ( );
             }
         }
-
-        update();
-        draw();
+        update ( );
+        draw ( );
     }
 }
 
-char GameManager::collisionR()
+void GameManager::collisionR ( void )
 {
-    sf::RectangleShape r(sf::Vector2f(40,32));
-    r.setFillColor(sf::Color::Black);
-
-    for (int i = 0; i < H; i++)
+for ( sf::Sprite* r : *( m_level->getBlocks ( ) ) )
     {
-        for (int j = 0; j < W; j++)
+        if ( m_player->getPositionX ( ) + m_player->getWidth ( ) == r->getPosition().x
+                && ( ( m_player->getPositionY ( ) <= r->getPosition().y && r->getPosition().y < m_player->getPositionY ( ) + m_player->getHeight ( ) )
+                    || ( r->getPosition().y <= m_player->getPositionY() && m_player->getPositionY() < r->getPosition().y + r->getGlobalBounds().height ) ) )
         {
-            r.setPosition(j*40,i*32);
-            switch(m_tileMap[i][j])
-            {
-                case 'B':
-                    if(m_player->getSprite()->getPosition().x + m_player->getSprite()->getGlobalBounds().width == r.getPosition().x
-                            && ((m_player->getSprite()->getPosition().y <= r.getPosition().y && r.getPosition().y < m_player->getSprite()->getPosition().y + m_player->getSprite()->getGlobalBounds().height)
-                                || (r.getPosition().y <= m_player->getSprite()->getPosition().y && m_player->getSprite()->getPosition().y < r.getPosition().y + r.getGlobalBounds().height)))
-                    {
-                        return 'R';
-                    }
-                    break;
-            }
+            *m_colR = 'R';
         }
     }
-    return 'n';
 }
 
-char GameManager::collisionL(){
-    sf::RectangleShape r(sf::Vector2f(40,32));
-    r.setFillColor(sf::Color::Black);
-
-    for (int i = 0; i < H; i++)
-    {
-        for (int j = 0; j < W; j++)
-        {
-            r.setPosition(j*40,i*32);
-            switch(m_tileMap[i][j])
-            {
-                case 'B':
-                    if(m_player->getSprite()->getPosition().x == r.getPosition().x + r.getGlobalBounds().width
-                            && ((m_player->getSprite()->getPosition().y <= r.getPosition().y && r.getPosition().y < m_player->getSprite()->getPosition().y + m_player->getSprite()->getGlobalBounds().height)
-                                || (r.getPosition().y <= m_player->getSprite()->getPosition().y && m_player->getSprite()->getPosition().y < r.getPosition().y + r.getGlobalBounds().height)))
-                    {
-                        return 'L';
-                    }
-                    break;
-            }
-        }
-    }
-    return 'n';
-}
-
-char GameManager::collisionT(){
-    sf::RectangleShape r(sf::Vector2f(40,32));
-    r.setFillColor(sf::Color::Black);
-
-    for (int i = 0; i < H; i++)
-    {
-        for (int j = 0; j < W; j++)
-        {
-            r.setPosition(j*40,i*32);
-            switch(m_tileMap[i][j])
-            {
-                case 'B':
-                    if(m_player->getSprite()->getPosition().y == r.getPosition().y + r.getGlobalBounds().height
-                    && ((m_player->getSprite()->getPosition().x >= r.getPosition().x && m_player->getSprite()->getPosition().x < r.getPosition().x + r.getGlobalBounds().width)
-                        || (m_player->getSprite()->getPosition().x + m_player->getSprite()->getGlobalBounds().width > r.getPosition().x && m_player->getSprite()->getPosition().x + m_player->getSprite()->getGlobalBounds().width <= r.getPosition().x + r.getGlobalBounds().width)))
-                    {
-                        m_player->setJumping(false);
-                        return 'T';
-                    }
-                    break;
-            }
-        }
-    }
-    return 'n';
-}
-
-char GameManager::collisionG(){
-    sf::RectangleShape r(sf::Vector2f(40,32));
-    r.setFillColor(sf::Color::Black);
-
-    for (int i = 0; i < H; i++)
-    {
-        for (int j = 0; j < W; j++)
-        {
-            switch(m_tileMap[i][j])
-            {
-                case 'B':
-                    r.setPosition(j*40,i*32);
-                    if(r.getGlobalBounds().intersects(m_player->getSprite()->getGlobalBounds()))
-                    {
-                        m_player->getSprite()->move(0,-SPEED);
-                        m_player->setOnGround(true);
-                        return 'G';
-                    }
-                    break;
-            }
-        }
-    }
-    return 'n';
-}
-
-void GameManager::update()
+void GameManager::collisionL ( void )
 {
-    m_player->controls(collisionR(), collisionL(), collisionT(), collisionG());
-
-    m_player->jumpAnimation(collisionR(), collisionL(), collisionT(), collisionG());
-
-    if (collisionG() != 'G' && !(m_player->getJumping()))
+    for ( sf::Sprite* r : *( m_level->getBlocks ( ) ) )
     {
-        m_player->fall();
-    }
-
-    if(true){
-        m_view->setCenter(m_player->getSprite()->getPosition().x + m_player->getSprite()->getGlobalBounds().width/2, m_player->getSprite()->getPosition().y + m_player->getSprite()->getGlobalBounds().height/2);
-        m_screen->setView(*m_view);
+        if ( m_player->getPositionX ( ) == r->getPosition().x + r->getGlobalBounds().width
+                && ( ( m_player->getPositionY ( ) <= r->getPosition().y && r->getPosition().y < m_player->getPositionY ( ) + m_player->getHeight ( ) )
+                    || ( r->getPosition().y <= m_player->getPositionY ( ) && m_player->getPositionY ( ) < r->getPosition().y + r->getGlobalBounds().height ) ) )
+        {
+            *m_colL = 'L';
+        }
     }
 }
 
-void GameManager::draw()
+void GameManager::collisionT ( void )
 {
-    m_screen->clear(sf::Color::White);
-
-    sf::RectangleShape r(sf::Vector2f(40,32));
-    r.setFillColor(sf::Color::Black);
-
-    for (int i = 0; i < H; i++)
+    for(sf::Sprite* r : *( m_level->getBlocks ( ) ) )
     {
-        for (int j = 0; j < W; j++)
+        if ( m_player->getPositionY ( ) == r->getPosition().y + r->getGlobalBounds().height
+                && ( ( m_player->getPositionX() >= r->getPosition().x && m_player->getPositionX() < r->getPosition().x + r->getGlobalBounds().width )
+                    || ( m_player->getPositionX ( ) + m_player->getWidth ( ) > r->getPosition().x && m_player->getPositionX ( ) + m_player->getWidth ( ) <= r->getPosition().x + r->getGlobalBounds().width ) ) )
         {
-            switch(m_tileMap[i][j])
-            {
-            case 'B':
-                r.setPosition(j*40,i*32);
-                m_screen->draw( r );
-                break;
-            }
+            m_player->setJumping ( false );
+            *m_colT = 'T';
         }
     }
+}
 
-    m_screen->draw(*(m_player->getSprite()));
-    m_screen->display();
+void GameManager::collisionG ( void )
+{
+    for(sf::Sprite* r : *( m_level->getBlocks ( ) ) )
+    {
+        if ( m_player->getPositionY ( ) + m_player->getHeight ( ) == r->getPosition().y
+            && ( ( m_player->getPositionX ( ) >= r->getPosition().x && m_player->getPositionX ( ) < r->getPosition().x + r->getGlobalBounds().width )
+            || ( m_player->getPositionX() + m_player->getWidth ( ) > r->getPosition().x && m_player->getPositionX ( ) + m_player->getWidth ( ) <= r->getPosition().x + r->getGlobalBounds().width ) ) )
+        {
+            m_player->setOnGround ( true );
+            *m_colG = 'G';
+        }
+    }
+}
+
+void GameManager::update ( void )
+{
+    *m_colR = 'n', *m_colL = 'n', *m_colT = 'n', *m_colG = 'n';
+    collisionR ( ); collisionL ( ); collisionT ( ); collisionG ( );
+
+    m_player->controls ( *m_colR, *m_colL, *m_colT, *m_colG );
+    m_player->jumpAnimation ( *m_colR, *m_colL, *m_colT, *m_colG );
+    if ( *m_colG != 'G' && !( m_player->getJumping ( ) ) )
+    {
+        m_player->fall ( );
+    }
+
+    if ( true )
+    {
+        m_view->setCenter ( m_player->getPositionX ( ) + m_player->getWidth ( ) / 2, m_player->getPositionY ( ) + m_player->getWidth ( ) / 2 );
+        m_screen->setView ( *m_view );
+    }
+}
+
+void GameManager::draw ( void )
+{
+    m_screen->clear ( sf::Color::White );
+    m_level->drawLevel ( m_screen );
+    m_screen->draw ( *( m_player->getSprite ( ) ) );
+    m_screen->display ( );
 }
