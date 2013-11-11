@@ -4,7 +4,7 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 
-const int SPEED = 1;
+const int SPEED = 10;
 const int JUMP_SPEED = 1;
 const int JUMP_HEIGHT = 200;
 
@@ -34,8 +34,6 @@ class Player
         sf::Texture* m_texture;
         sf::Sprite* m_sprite;
         sf::IntRect* m_rect;
-        sf::Vector2i* m_A;
-        sf::Vector2i* m_V;
         bool m_onGround;
         bool m_jumping;
         int m_jump;

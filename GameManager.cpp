@@ -6,8 +6,8 @@ GameManager::GameManager ( int width, int height, std::string const& title )
 {
     // set up the screen
     m_screen = new sf::RenderWindow ( sf::VideoMode ( width, height ), title );
-    m_screen->setVerticalSyncEnabled(true);
-    m_screen->setFramerateLimit(60);
+    //m_screen->setVerticalSyncEnabled(true);
+    //m_screen->setFramerateLimit(60);
 
     // create the player
     m_player = new Player;
@@ -50,12 +50,16 @@ void GameManager::action ( void )
 
 void GameManager::collisionR ( void )
 {
-for ( sf::Sprite* r : *( m_level->getBlocks ( ) ) )
+    int tmp = m_player->getPositionX() + m_player->getWidth();
+    for ( sf::Sprite* r : *( m_level->getBlocks ( ) ) )
     {
-        if ( m_player->getPositionX ( ) + m_player->getWidth ( ) == r->getPosition().x
+        if ( m_player->getPositionX ( ) + m_player->getWidth ( )  >= r->getPosition().x
+                //&& ((int)(tmp + r->getPosition().x)) % (80*2) <= 10
+                && !(r->getPosition().x + 10 < m_player->getPositionX())
                 && ( ( m_player->getPositionY ( ) <= r->getPosition().y && r->getPosition().y < m_player->getPositionY ( ) + m_player->getHeight ( ) )
                     || ( r->getPosition().y <= m_player->getPositionY() && m_player->getPositionY() < r->getPosition().y + r->getGlobalBounds().height ) ) )
         {
+            m_player->getSprite()->setPosition(m_player->getPositionX(-(tmp - r->getPosition().x)), m_player->getPositionY());
             *m_colR = 'R';
         }
     }
@@ -63,12 +67,17 @@ for ( sf::Sprite* r : *( m_level->getBlocks ( ) ) )
 
 void GameManager::collisionL ( void )
 {
+    int tmp = m_player->getPositionX();
     for ( sf::Sprite* r : *( m_level->getBlocks ( ) ) )
     {
-        if ( m_player->getPositionX ( ) == r->getPosition().x + r->getGlobalBounds().width
+        if ( m_player->getPositionX ( ) <= r->getPosition().x + r->getGlobalBounds().width
+                //&& ((int)(tmp + r->getPosition().x + r->getLocalBounds().width)) % (80*2+80) <= 80
+                && !(r->getPosition().x + r->getLocalBounds().width - 10 > m_player->getPositionX())
                 && ( ( m_player->getPositionY ( ) <= r->getPosition().y && r->getPosition().y < m_player->getPositionY ( ) + m_player->getHeight ( ) )
                     || ( r->getPosition().y <= m_player->getPositionY ( ) && m_player->getPositionY ( ) < r->getPosition().y + r->getGlobalBounds().height ) ) )
         {
+            //std::cout << tmp << " | " << r->getPosition().x + r->getLocalBounds().width << " | " << ((int)(tmp + r->getPosition().x + r->getLocalBounds().width)) % (80*2+80) << std::endl;
+            m_player->getSprite()->setPosition(m_player->getPositionX(r->getPosition().x + r->getLocalBounds().width - tmp), m_player->getPositionY());
             *m_colL = 'L';
         }
     }
@@ -119,6 +128,8 @@ void GameManager::update ( void )
         m_view->setCenter ( m_player->getPositionX ( ) + m_player->getWidth ( ) / 2, m_player->getPositionY ( ) + m_player->getWidth ( ) / 2 );
         m_screen->setView ( *m_view );
     }
+
+    //std::cout << *m_colG << *m_colL << *m_colR << *m_colT << std::endl;
 }
 
 void GameManager::draw ( void )

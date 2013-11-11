@@ -4,11 +4,11 @@
 LevelOne::LevelOne ( void )
 {
     m_tileMap = new std::vector<std::string>;
-    m_tileMap->push_back ( "               " );
-    m_tileMap->push_back ( "               " );
-    m_tileMap->push_back ( "  P       QQQQ " );
-    m_tileMap->push_back ( "         Q     " );
-    m_tileMap->push_back ( "QQQQQ Q QQQQQQQ" );
+    m_tileMap->push_back ( "                        QQQQQQQ SSS " );
+    m_tileMap->push_back ( "                     D              " );
+    m_tileMap->push_back ( "     P    QQQQ     S                " );
+    m_tileMap->push_back ( " Q       Q      S                   " );
+    m_tileMap->push_back ( "QQDQQQQQQQQQQQQQ   SDDDDQDQQ        " );
 
     m_blocks = new std::vector<sf::Sprite*>;
     m_texture = new sf::Texture;
@@ -39,11 +39,30 @@ void LevelOne::loadLevel ( Player* player )
             switch ( ( m_tileMap->at ( i ) )[j] )
             {
             case 'Q':
+                m_texture = new sf::Texture;
                 if ( !m_texture->loadFromFile ( "sol1.png" ) ) {
                     exit ( EXIT_FAILURE );
                 }
                 m_blocks->push_back ( new sf::Sprite ( *m_texture ) );
-                m_blocks->at(n)->setPosition ( j*78, i*80 );
+                m_blocks->at(n)->setPosition ( j*80, i*80 );
+                n++;
+                break;
+            case 'S':
+                m_texture = new sf::Texture;
+                if ( !m_texture->loadFromFile("sol2.png")) {
+                    exit ( EXIT_FAILURE );
+                }
+                m_blocks->push_back ( new sf::Sprite ( *m_texture ) );
+                m_blocks->at(n)->setPosition ( j*80, i*80 );
+                n++;
+                break;
+            case 'D':
+                m_texture = new sf::Texture;
+                if ( !m_texture->loadFromFile ( "sol3.png" ) ) {
+                    exit ( EXIT_FAILURE );
+                }
+                m_blocks->push_back ( new sf::Sprite ( *m_texture ) );
+                m_blocks->at(n)->setPosition ( j*80, i*80 );
                 n++;
                 break;
             case 'P':

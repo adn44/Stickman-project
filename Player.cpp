@@ -11,8 +11,6 @@ Player::Player() : m_onGround(false), m_jumping(false), m_currentFrame(0)
     //m_rect = new sf::IntRect(0, 189, 40, 50);
 
     m_sprite = new sf::Sprite(*m_texture);
-    m_A = new sf::Vector2i(0,10000);
-    m_V = new sf::Vector2i(0,0);
    // m_sprite->setTextureRect(*m_rect);
 }
 
@@ -114,13 +112,6 @@ void Player::jumpAnimation(char collisionR, char collisionL, char collisionT, ch
         }
 
         m_jump--;
-        /*m_V->y = 50;
-        for ( int i = 0; i < 3 ; i++ ) {
-            m_V->y = m_V->y + m_A->y * ( 1 / 60 );
-            m_sprite->setPosition ( getPositionX ( 50 ), getPositionY( -m_V->y ) );
-            std::cout << getPositionX ( SPEED ) << std::endl;
-        }
-        m_jumping = false;*/
     }
 }
 
