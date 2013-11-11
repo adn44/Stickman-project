@@ -1,5 +1,7 @@
 #include "Menu.h"
 
+Menu* Menu::m_menu = nullptr;
+
 Menu::Menu ( void )
 {
     m_screen = new sf::RenderWindow ( sf::VideoMode ( 640, 480 ), "Menu" );
@@ -72,8 +74,8 @@ void Menu::action() {
             && sf::Mouse::getPosition(*m_screen).y <= m_playSprite->getPosition().y + m_playSprite->getGlobalBounds().height)
             {
                 m_screen->close();
-                GameManager gameManager(640, 480, "Stickman Project");
-                gameManager.action();
+                GameManager* gameManager = GameManager::getInstance();
+                gameManager->action();
             }
         }
 

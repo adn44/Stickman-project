@@ -13,8 +13,12 @@ const int W = 15;
 class GameManager
 {
     public:
-        GameManager ( int width, int height, std::string const& title );
         virtual ~GameManager ( void );
+        static GameManager* getInstance(void) {
+            if(!m_gameManager)
+                m_gameManager = new GameManager(640,480, "Stickman-project");
+            return m_gameManager;
+        }
         void action ( void );
         void update ( void );
         void draw ( void );
@@ -24,6 +28,7 @@ class GameManager
         void collisionG ( void );
     protected:
     private:
+        static GameManager* m_gameManager;
         Player* m_player;
         sf::RenderWindow* m_screen;
         sf::View* m_view;
@@ -32,6 +37,7 @@ class GameManager
         char* m_colL;
         char* m_colT;
         char* m_colR;
+        GameManager ( int width, int height, std::string const& title );
 };
 
 #endif // GAMEMANAGER_H

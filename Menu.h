@@ -7,11 +7,16 @@
 class Menu
 {
     public:
-        Menu ( void );
         virtual ~Menu ( void );
+        static Menu* getInstance(void) {
+            if(!m_menu)
+                m_menu = new Menu();
+            return m_menu;
+        }
         void action ( void );
     protected:
     private:
+        static Menu* m_menu;
         sf::RenderWindow* m_screen;
         sf::Texture* m_bgTexture;
         sf::Sprite* m_bgSprite;
@@ -21,6 +26,7 @@ class Menu
         sf::Texture* m_optionTexture;
         sf::Sprite* m_optionSprite;
         sf::Texture* m_activeOptionTexture;
+        Menu ( void );
 };
 
 #endif // MENU_H

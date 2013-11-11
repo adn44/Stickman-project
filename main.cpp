@@ -2,8 +2,8 @@
 
 int main ( void )
 {
-    Menu menu;
-    menu.action ( );
+    Menu* menu = Menu::getInstance();
+    menu->action ( );
 
     return EXIT_SUCCESS;
 }

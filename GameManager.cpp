@@ -1,4 +1,7 @@
 #include "GameManager.h"
+
+GameManager* GameManager::m_gameManager = nullptr;
+
 GameManager::GameManager ( int width, int height, std::string const& title )
 {
     // set up the screen
