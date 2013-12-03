@@ -1,0 +1,94 @@
+.TH "BlockGround3" 3 "Wed Nov 27 2013" "Version 1.0" "Stickman Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BlockGround3 \- 
+.PP
+Another concrete block that implements \fBIBlock\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBIBlock\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBlockGround3\fP ()"
+.br
+.RI "\fIDefault constructor\&. \fP"
+.ti -1c
+.RI "virtual \fB~BlockGround3\fP ()"
+.br
+.RI "\fIDefault destructor\&. \fP"
+.ti -1c
+.RI "sf::Texture * \fBgetTexture\fP ()"
+.br
+.RI "\fIReturn the texture of the block\&. \fP"
+.ti -1c
+.RI "sf::Sprite * \fBgetSprite\fP ()"
+.br
+.RI "\fIReturn the sprite of the block\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "sf::Texture * \fBm_texture\fP"
+.br
+.RI "\fIThe texture of the block\&. \fP"
+.ti -1c
+.RI "sf::Sprite * \fBm_sprite\fP"
+.br
+.RI "\fIThe sprite of the block\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Another concrete block that implements \fBIBlock\fP\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Adrien Bodineau and Alexandre Gomes 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+1\&.0 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "sf::Sprite * BlockGround3::getSprite (void)\fC [virtual]\fP"
+
+.PP
+Return the sprite of the block\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+The sprite of the block 
+.RE
+.PP
+
+.PP
+Implements \fBIBlock\fP\&.
+.SS "sf::Texture * BlockGround3::getTexture ()\fC [virtual]\fP"
+
+.PP
+Return the texture of the block\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+The texture of the block 
+.RE
+.PP
+
+.PP
+Implements \fBIBlock\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Stickman Project from the source code\&.

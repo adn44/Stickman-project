@@ -1,0 +1,194 @@
+.TH "GameManager" 3 "Wed Nov 27 2013" "Version 1.0" "Stickman Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GameManager \- 
+.PP
+Provide an instance to manage the game\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual \fB~GameManager\fP (void)"
+.br
+.RI "\fIThe default destructor\&. \fP"
+.ti -1c
+.RI "void \fBaction\fP (void)"
+.br
+.RI "\fISet up the parameters and run the game loop\&. \fP"
+.ti -1c
+.RI "void \fBupdate\fP (void)"
+.br
+.RI "\fIUpdate the data of the game\&. \fP"
+.ti -1c
+.RI "void \fBdraw\fP (void)"
+.br
+.RI "\fIDraw the elements of the game on the screen\&. \fP"
+.ti -1c
+.RI "void \fBcollisionR\fP (void)"
+.br
+.RI "\fICheck if the player is colliding with an object on his right\&. \fP"
+.ti -1c
+.RI "void \fBcollisionL\fP (void)"
+.br
+.RI "\fICheck if the player is colliding with an object on his left\&. \fP"
+.ti -1c
+.RI "void \fBcollisionT\fP (void)"
+.br
+.RI "\fICheck if the player is colliding with an object on his top\&. \fP"
+.ti -1c
+.RI "void \fBcollisionG\fP (void)"
+.br
+.RI "\fICheck if the player is on the ground\&. \fP"
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBGameManager\fP * \fBgetInstance\fP (void)"
+.br
+.RI "\fIGive the instance of the class, and create it if it's required\&. \fP"
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGameManager\fP (int width, int height, std::string const &title)"
+.br
+.RI "\fIPrivate constructor of the class\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBPlayer\fP * \fBm_player\fP"
+.br
+.RI "\fIPointer on the player\&. \fP"
+.ti -1c
+.RI "sf::RenderWindow * \fBm_screen\fP"
+.br
+.RI "\fIPointer on the screen\&. \fP"
+.ti -1c
+.RI "sf::View * \fBm_view\fP"
+.br
+.RI "\fIPointer on the view (2D camera) \fP"
+.ti -1c
+.RI "\fBILevel\fP * \fBm_level\fP"
+.br
+.RI "\fIPointer on the level\&. \fP"
+.ti -1c
+.RI "char * \fBm_colG\fP"
+.br
+.RI "\fIPointer to check the ground collision\&. \fP"
+.ti -1c
+.RI "char * \fBm_colL\fP"
+.br
+.RI "\fIPointer to check the left collision\&. \fP"
+.ti -1c
+.RI "char * \fBm_colT\fP"
+.br
+.RI "\fIPointer to check the top collision\&. \fP"
+.ti -1c
+.RI "char * \fBm_colR\fP"
+.br
+.RI "\fIPointer to check the right collision\&. \fP"
+.ti -1c
+.RI "bool \fBm_win\fP"
+.br
+.RI "\fIBoolean to check if the player has won, true if he has, false otherwise\&. \fP"
+.ti -1c
+.RI "bool \fBm_lost\fP"
+.br
+.RI "\fIBoolean to check if the player has lost, true if he has, false otherwise\&. \fP"
+.ti -1c
+.RI "sf::Music * \fBm_music\fP"
+.br
+.RI "\fIPointer to the music of the current level\&. \fP"
+.ti -1c
+.RI "sf::Sound * \fBm_upgradeSound\fP"
+.br
+.RI "\fIPointer to the upgrade sound\&. \fP"
+.ti -1c
+.RI "sf::SoundBuffer * \fBm_upgradeSoundBuffer\fP"
+.br
+.RI "\fIPointer to the buffer of the upgrade sound\&. \fP"
+.ti -1c
+.RI "sf::Sound * \fBm_lostSound\fP"
+.br
+.RI "\fIPointer to the lost sound\&. \fP"
+.ti -1c
+.RI "sf::SoundBuffer * \fBm_lostSoundBuffer\fP"
+.br
+.RI "\fIPointer to the buffer of the lost sound\&. \fP"
+.ti -1c
+.RI "sf::Sound * \fBm_winSound\fP"
+.br
+.RI "\fIPointer to the win sound\&. \fP"
+.ti -1c
+.RI "sf::SoundBuffer * \fBm_winSoundBuffer\fP"
+.br
+.RI "\fIPointer to the buffer of the win sound\&. \fP"
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static \fBGameManager\fP * \fBm_gameManager\fP"
+.br
+.RI "\fIStatic pointer on the unique instance of the class\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Provide an instance to manage the game\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Adrien Bodineau and Alexandre Gomes 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+1\&.0 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GameManager::GameManager (intwidth, intheight, std::string const &title)\fC [private]\fP"
+
+.PP
+Private constructor of the class\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwidth\fP An integer representing the width of the screen 
+.br
+\fIheight\fP An integer representing the height of the screen 
+.br
+\fItitle\fP A string representing the title of the screen 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "static \fBGameManager\fP * GameManager::getInstance (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Give the instance of the class, and create it if it's required\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A pointer on the instance of the class 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Stickman Project from the source code\&.

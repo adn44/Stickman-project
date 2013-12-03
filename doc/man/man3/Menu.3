@@ -1,0 +1,153 @@
+.TH "Menu" 3 "Wed Nov 27 2013" "Version 1.0" "Stickman Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Menu \- 
+.PP
+Game menu\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual \fB~Menu\fP (void)"
+.br
+.RI "\fIDefault destructor\&. \fP"
+.ti -1c
+.RI "void \fBaction\fP (void)"
+.br
+.RI "\fIMethod that implements the behavior of the menu\&. \fP"
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBMenu\fP * \fBgetInstance\fP (void)"
+.br
+.RI "\fIGet menu instance\&. \fP"
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMenu\fP (void)"
+.br
+.RI "\fIPrivate constructor\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "sf::RenderWindow * \fBm_screen\fP"
+.br
+.RI "\fIScreen\&. \fP"
+.ti -1c
+.RI "sf::Texture * \fBm_bgTexture\fP"
+.br
+.RI "\fIBackground texture\&. \fP"
+.ti -1c
+.RI "sf::Sprite * \fBm_bgSprite\fP"
+.br
+.RI "\fIBackground sprite\&. \fP"
+.ti -1c
+.RI "sf::Texture * \fBm_saxTexture\fP"
+.br
+.RI "\fIEpic sax guy texture\&. \fP"
+.ti -1c
+.RI "sf::Texture * \fBm_saxDanceTexture\fP"
+.br
+.RI "\fIEpic sax guy dance texture\&. \fP"
+.ti -1c
+.RI "sf::Texture * \fBm_playTexture\fP"
+.br
+.RI "\fIPlay button texture\&. \fP"
+.ti -1c
+.RI "sf::Sprite * \fBm_playSprite\fP"
+.br
+.RI "\fIPlay button sprite\&. \fP"
+.ti -1c
+.RI "sf::Texture * \fBm_activePlayTexture\fP"
+.br
+.RI "\fIActive play button texture\&. \fP"
+.ti -1c
+.RI "sf::Texture * \fBm_optionTexture\fP"
+.br
+.RI "\fIOption button texture\&. \fP"
+.ti -1c
+.RI "sf::Sprite * \fBm_optionSprite\fP"
+.br
+.RI "\fIOption button sprite\&. \fP"
+.ti -1c
+.RI "sf::Texture * \fBm_activeOptionTexture\fP"
+.br
+.RI "\fIActive option button sprite\&. \fP"
+.ti -1c
+.RI "sf::Music * \fBm_music\fP"
+.br
+.RI "\fIMusic of the game\&. \fP"
+.ti -1c
+.RI "sf::Sound * \fBm_sound\fP"
+.br
+.RI "\fISound of the buttons\&. \fP"
+.ti -1c
+.RI "sf::SoundBuffer * \fBm_soundBuffer\fP"
+.br
+.RI "\fISound buffer of the buttons\&. \fP"
+.ti -1c
+.RI "bool \fBm_played\fP"
+.br
+.RI "\fIBoolean to know when the buttons sound has to be played or not\&. \fP"
+.ti -1c
+.RI "bool \fBm_onButton\fP"
+.br
+.RI "\fIBoolean to know when the mouse is currently on the button\&. \fP"
+.ti -1c
+.RI "bool \fBm_saxguy\fP"
+.br
+.RI "\fIBoolean to know when the EPIC SAX GUY mode is ON or OFF\&. \fP"
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static \fBMenu\fP * \fBm_menu\fP"
+.br
+.RI "\fIInstance\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Game menu\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Adrien Bodineau and Alexandre Gomes 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+1\&.0 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "static \fBMenu\fP * Menu::getInstance (void)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Get menu instance\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBMenu\fP instance 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Stickman Project from the source code\&.

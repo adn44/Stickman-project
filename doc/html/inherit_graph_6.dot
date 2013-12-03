@@ -1,0 +1,13 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Player",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_player.html",tooltip="Player class."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AUpgrade",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_a_upgrade.html",tooltip="Abstract class for the upgrades."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Cape",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_cape.html",tooltip="Cape upgrade."];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Shoes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_shoes.html",tooltip="Shoes class."];
+}

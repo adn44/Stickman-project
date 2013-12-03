@@ -1,0 +1,156 @@
+\contentsline {chapter}{\numberline {1}Hierarchical Index}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Class Hierarchy}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}File Index}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}File List}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}Class Documentation}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}A\discretionary {-}{}{}Factory Class Reference}{7}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{7}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Member Function Documentation}{8}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}build}{8}{subsubsection.4.1.2.1}
+\contentsline {subsubsection}{\numberline {4.1.2.2}create\discretionary {-}{}{}Block}{8}{subsubsection.4.1.2.2}
+\contentsline {section}{\numberline {4.2}A\discretionary {-}{}{}Upgrade Class Reference}{8}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{9}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Constructor \& Destructor Documentation}{9}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}A\discretionary {-}{}{}Upgrade}{9}{subsubsection.4.2.2.1}
+\contentsline {section}{\numberline {4.3}Block\discretionary {-}{}{}Ground1 Class Reference}{10}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{10}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Member Function Documentation}{11}{subsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.2.1}get\discretionary {-}{}{}Sprite}{11}{subsubsection.4.3.2.1}
+\contentsline {subsubsection}{\numberline {4.3.2.2}get\discretionary {-}{}{}Texture}{11}{subsubsection.4.3.2.2}
+\contentsline {section}{\numberline {4.4}Block\discretionary {-}{}{}Ground2 Class Reference}{11}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Detailed Description}{12}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Member Function Documentation}{12}{subsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.2.1}get\discretionary {-}{}{}Sprite}{12}{subsubsection.4.4.2.1}
+\contentsline {subsubsection}{\numberline {4.4.2.2}get\discretionary {-}{}{}Texture}{12}{subsubsection.4.4.2.2}
+\contentsline {section}{\numberline {4.5}Block\discretionary {-}{}{}Ground3 Class Reference}{12}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{13}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Member Function Documentation}{13}{subsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.2.1}get\discretionary {-}{}{}Sprite}{13}{subsubsection.4.5.2.1}
+\contentsline {subsubsection}{\numberline {4.5.2.2}get\discretionary {-}{}{}Texture}{14}{subsubsection.4.5.2.2}
+\contentsline {section}{\numberline {4.6}Cape Class Reference}{14}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Detailed Description}{15}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Constructor \& Destructor Documentation}{15}{subsection.4.6.2}
+\contentsline {subsubsection}{\numberline {4.6.2.1}Cape}{15}{subsubsection.4.6.2.1}
+\contentsline {subsection}{\numberline {4.6.3}Member Function Documentation}{15}{subsection.4.6.3}
+\contentsline {subsubsection}{\numberline {4.6.3.1}get\discretionary {-}{}{}Jump\discretionary {-}{}{}Height}{15}{subsubsection.4.6.3.1}
+\contentsline {subsubsection}{\numberline {4.6.3.2}get\discretionary {-}{}{}Jump\discretionary {-}{}{}Speed}{15}{subsubsection.4.6.3.2}
+\contentsline {subsubsection}{\numberline {4.6.3.3}get\discretionary {-}{}{}Speed}{15}{subsubsection.4.6.3.3}
+\contentsline {section}{\numberline {4.7}Concrete\discretionary {-}{}{}Factory Class Reference}{16}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{16}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Member Function Documentation}{16}{subsection.4.7.2}
+\contentsline {subsubsection}{\numberline {4.7.2.1}build}{16}{subsubsection.4.7.2.1}
+\contentsline {section}{\numberline {4.8}Game\discretionary {-}{}{}Manager Class Reference}{17}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}Detailed Description}{18}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.2}Constructor \& Destructor Documentation}{18}{subsection.4.8.2}
+\contentsline {subsubsection}{\numberline {4.8.2.1}Game\discretionary {-}{}{}Manager}{18}{subsubsection.4.8.2.1}
+\contentsline {subsection}{\numberline {4.8.3}Member Function Documentation}{19}{subsection.4.8.3}
+\contentsline {subsubsection}{\numberline {4.8.3.1}get\discretionary {-}{}{}Instance}{19}{subsubsection.4.8.3.1}
+\contentsline {section}{\numberline {4.9}I\discretionary {-}{}{}Block Class Reference}{19}{section.4.9}
+\contentsline {subsection}{\numberline {4.9.1}Detailed Description}{19}{subsection.4.9.1}
+\contentsline {subsection}{\numberline {4.9.2}Member Function Documentation}{20}{subsection.4.9.2}
+\contentsline {subsubsection}{\numberline {4.9.2.1}get\discretionary {-}{}{}Sprite}{20}{subsubsection.4.9.2.1}
+\contentsline {subsubsection}{\numberline {4.9.2.2}get\discretionary {-}{}{}Texture}{20}{subsubsection.4.9.2.2}
+\contentsline {section}{\numberline {4.10}I\discretionary {-}{}{}Level Class Reference}{20}{section.4.10}
+\contentsline {subsection}{\numberline {4.10.1}Detailed Description}{21}{subsection.4.10.1}
+\contentsline {subsection}{\numberline {4.10.2}Member Function Documentation}{21}{subsection.4.10.2}
+\contentsline {subsubsection}{\numberline {4.10.2.1}draw\discretionary {-}{}{}Level}{21}{subsubsection.4.10.2.1}
+\contentsline {subsubsection}{\numberline {4.10.2.2}get\discretionary {-}{}{}Blocks}{21}{subsubsection.4.10.2.2}
+\contentsline {subsubsection}{\numberline {4.10.2.3}get\discretionary {-}{}{}Cape\discretionary {-}{}{}Sprite}{21}{subsubsection.4.10.2.3}
+\contentsline {subsubsection}{\numberline {4.10.2.4}get\discretionary {-}{}{}End\discretionary {-}{}{}Sprite}{22}{subsubsection.4.10.2.4}
+\contentsline {subsubsection}{\numberline {4.10.2.5}get\discretionary {-}{}{}Height}{22}{subsubsection.4.10.2.5}
+\contentsline {subsubsection}{\numberline {4.10.2.6}get\discretionary {-}{}{}Next}{22}{subsubsection.4.10.2.6}
+\contentsline {subsubsection}{\numberline {4.10.2.7}get\discretionary {-}{}{}Shoes\discretionary {-}{}{}Sprite}{22}{subsubsection.4.10.2.7}
+\contentsline {subsubsection}{\numberline {4.10.2.8}get\discretionary {-}{}{}Width}{22}{subsubsection.4.10.2.8}
+\contentsline {subsubsection}{\numberline {4.10.2.9}load\discretionary {-}{}{}Level}{22}{subsubsection.4.10.2.9}
+\contentsline {subsubsection}{\numberline {4.10.2.10}remove\discretionary {-}{}{}Element}{23}{subsubsection.4.10.2.10}
+\contentsline {section}{\numberline {4.11}Level\discretionary {-}{}{}One Class Reference}{23}{section.4.11}
+\contentsline {subsection}{\numberline {4.11.1}Detailed Description}{24}{subsection.4.11.1}
+\contentsline {subsection}{\numberline {4.11.2}Member Function Documentation}{25}{subsection.4.11.2}
+\contentsline {subsubsection}{\numberline {4.11.2.1}draw\discretionary {-}{}{}Level}{25}{subsubsection.4.11.2.1}
+\contentsline {subsubsection}{\numberline {4.11.2.2}get\discretionary {-}{}{}Blocks}{26}{subsubsection.4.11.2.2}
+\contentsline {subsubsection}{\numberline {4.11.2.3}get\discretionary {-}{}{}Cape\discretionary {-}{}{}Sprite}{26}{subsubsection.4.11.2.3}
+\contentsline {subsubsection}{\numberline {4.11.2.4}get\discretionary {-}{}{}End\discretionary {-}{}{}Sprite}{26}{subsubsection.4.11.2.4}
+\contentsline {subsubsection}{\numberline {4.11.2.5}get\discretionary {-}{}{}Height}{26}{subsubsection.4.11.2.5}
+\contentsline {subsubsection}{\numberline {4.11.2.6}get\discretionary {-}{}{}Next}{26}{subsubsection.4.11.2.6}
+\contentsline {subsubsection}{\numberline {4.11.2.7}get\discretionary {-}{}{}Shoes\discretionary {-}{}{}Sprite}{27}{subsubsection.4.11.2.7}
+\contentsline {subsubsection}{\numberline {4.11.2.8}get\discretionary {-}{}{}Width}{27}{subsubsection.4.11.2.8}
+\contentsline {subsubsection}{\numberline {4.11.2.9}load\discretionary {-}{}{}Level}{27}{subsubsection.4.11.2.9}
+\contentsline {subsubsection}{\numberline {4.11.2.10}remove\discretionary {-}{}{}Element}{27}{subsubsection.4.11.2.10}
+\contentsline {section}{\numberline {4.12}Level\discretionary {-}{}{}Two Class Reference}{27}{section.4.12}
+\contentsline {subsection}{\numberline {4.12.1}Detailed Description}{29}{subsection.4.12.1}
+\contentsline {subsection}{\numberline {4.12.2}Member Function Documentation}{29}{subsection.4.12.2}
+\contentsline {subsubsection}{\numberline {4.12.2.1}draw\discretionary {-}{}{}Level}{29}{subsubsection.4.12.2.1}
+\contentsline {subsubsection}{\numberline {4.12.2.2}get\discretionary {-}{}{}Blocks}{29}{subsubsection.4.12.2.2}
+\contentsline {subsubsection}{\numberline {4.12.2.3}get\discretionary {-}{}{}Cape\discretionary {-}{}{}Sprite}{30}{subsubsection.4.12.2.3}
+\contentsline {subsubsection}{\numberline {4.12.2.4}get\discretionary {-}{}{}End\discretionary {-}{}{}Sprite}{30}{subsubsection.4.12.2.4}
+\contentsline {subsubsection}{\numberline {4.12.2.5}get\discretionary {-}{}{}Height}{30}{subsubsection.4.12.2.5}
+\contentsline {subsubsection}{\numberline {4.12.2.6}get\discretionary {-}{}{}Next}{30}{subsubsection.4.12.2.6}
+\contentsline {subsubsection}{\numberline {4.12.2.7}get\discretionary {-}{}{}Shoes\discretionary {-}{}{}Sprite}{30}{subsubsection.4.12.2.7}
+\contentsline {subsubsection}{\numberline {4.12.2.8}get\discretionary {-}{}{}Width}{30}{subsubsection.4.12.2.8}
+\contentsline {subsubsection}{\numberline {4.12.2.9}load\discretionary {-}{}{}Level}{31}{subsubsection.4.12.2.9}
+\contentsline {subsubsection}{\numberline {4.12.2.10}remove\discretionary {-}{}{}Element}{32}{subsubsection.4.12.2.10}
+\contentsline {section}{\numberline {4.13}Menu Class Reference}{32}{section.4.13}
+\contentsline {subsection}{\numberline {4.13.1}Detailed Description}{33}{subsection.4.13.1}
+\contentsline {subsection}{\numberline {4.13.2}Member Function Documentation}{33}{subsection.4.13.2}
+\contentsline {subsubsection}{\numberline {4.13.2.1}get\discretionary {-}{}{}Instance}{33}{subsubsection.4.13.2.1}
+\contentsline {section}{\numberline {4.14}Player Class Reference}{34}{section.4.14}
+\contentsline {subsection}{\numberline {4.14.1}Detailed Description}{37}{subsection.4.14.1}
+\contentsline {subsection}{\numberline {4.14.2}Constructor \& Destructor Documentation}{37}{subsection.4.14.2}
+\contentsline {subsubsection}{\numberline {4.14.2.1}Player}{37}{subsubsection.4.14.2.1}
+\contentsline {subsection}{\numberline {4.14.3}Member Function Documentation}{37}{subsection.4.14.3}
+\contentsline {subsubsection}{\numberline {4.14.3.1}controls}{37}{subsubsection.4.14.3.1}
+\contentsline {subsubsection}{\numberline {4.14.3.2}get\discretionary {-}{}{}Current\discretionary {-}{}{}Frame}{37}{subsubsection.4.14.3.2}
+\contentsline {subsubsection}{\numberline {4.14.3.3}get\discretionary {-}{}{}Height}{37}{subsubsection.4.14.3.3}
+\contentsline {subsubsection}{\numberline {4.14.3.4}get\discretionary {-}{}{}Jump}{38}{subsubsection.4.14.3.4}
+\contentsline {subsubsection}{\numberline {4.14.3.5}get\discretionary {-}{}{}Jump\discretionary {-}{}{}Height}{38}{subsubsection.4.14.3.5}
+\contentsline {subsubsection}{\numberline {4.14.3.6}get\discretionary {-}{}{}Jumping}{38}{subsubsection.4.14.3.6}
+\contentsline {subsubsection}{\numberline {4.14.3.7}get\discretionary {-}{}{}Jump\discretionary {-}{}{}Sound}{38}{subsubsection.4.14.3.7}
+\contentsline {subsubsection}{\numberline {4.14.3.8}get\discretionary {-}{}{}Jump\discretionary {-}{}{}Sound\discretionary {-}{}{}Buffer}{38}{subsubsection.4.14.3.8}
+\contentsline {subsubsection}{\numberline {4.14.3.9}get\discretionary {-}{}{}Jump\discretionary {-}{}{}Speed}{38}{subsubsection.4.14.3.9}
+\contentsline {subsubsection}{\numberline {4.14.3.10}get\discretionary {-}{}{}On\discretionary {-}{}{}Ground}{39}{subsubsection.4.14.3.10}
+\contentsline {subsubsection}{\numberline {4.14.3.11}get\discretionary {-}{}{}Position\discretionary {-}{}{}X}{39}{subsubsection.4.14.3.11}
+\contentsline {subsubsection}{\numberline {4.14.3.12}get\discretionary {-}{}{}Position\discretionary {-}{}{}Y}{39}{subsubsection.4.14.3.12}
+\contentsline {subsubsection}{\numberline {4.14.3.13}get\discretionary {-}{}{}Rect}{39}{subsubsection.4.14.3.13}
+\contentsline {subsubsection}{\numberline {4.14.3.14}get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture1}{39}{subsubsection.4.14.3.14}
+\contentsline {subsubsection}{\numberline {4.14.3.15}get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture2}{39}{subsubsection.4.14.3.15}
+\contentsline {subsubsection}{\numberline {4.14.3.16}get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture3}{40}{subsubsection.4.14.3.16}
+\contentsline {subsubsection}{\numberline {4.14.3.17}get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture4}{40}{subsubsection.4.14.3.17}
+\contentsline {subsubsection}{\numberline {4.14.3.18}get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture5}{40}{subsubsection.4.14.3.18}
+\contentsline {subsubsection}{\numberline {4.14.3.19}get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture6}{40}{subsubsection.4.14.3.19}
+\contentsline {subsubsection}{\numberline {4.14.3.20}get\discretionary {-}{}{}Speed}{40}{subsubsection.4.14.3.20}
+\contentsline {subsubsection}{\numberline {4.14.3.21}get\discretionary {-}{}{}Sprite}{40}{subsubsection.4.14.3.21}
+\contentsline {subsubsection}{\numberline {4.14.3.22}get\discretionary {-}{}{}Texture}{41}{subsubsection.4.14.3.22}
+\contentsline {subsubsection}{\numberline {4.14.3.23}get\discretionary {-}{}{}Width}{41}{subsubsection.4.14.3.23}
+\contentsline {subsubsection}{\numberline {4.14.3.24}jump\discretionary {-}{}{}Animation}{41}{subsubsection.4.14.3.24}
+\contentsline {subsubsection}{\numberline {4.14.3.25}set\discretionary {-}{}{}Jump\discretionary {-}{}{}Height}{41}{subsubsection.4.14.3.25}
+\contentsline {subsubsection}{\numberline {4.14.3.26}set\discretionary {-}{}{}Jumping}{41}{subsubsection.4.14.3.26}
+\contentsline {subsubsection}{\numberline {4.14.3.27}set\discretionary {-}{}{}Jump\discretionary {-}{}{}Speed}{41}{subsubsection.4.14.3.27}
+\contentsline {subsubsection}{\numberline {4.14.3.28}set\discretionary {-}{}{}On\discretionary {-}{}{}Ground}{41}{subsubsection.4.14.3.28}
+\contentsline {subsubsection}{\numberline {4.14.3.29}set\discretionary {-}{}{}Speed}{42}{subsubsection.4.14.3.29}
+\contentsline {section}{\numberline {4.15}Shoes Class Reference}{42}{section.4.15}
+\contentsline {subsection}{\numberline {4.15.1}Detailed Description}{43}{subsection.4.15.1}
+\contentsline {subsection}{\numberline {4.15.2}Constructor \& Destructor Documentation}{43}{subsection.4.15.2}
+\contentsline {subsubsection}{\numberline {4.15.2.1}Shoes}{43}{subsubsection.4.15.2.1}
+\contentsline {subsection}{\numberline {4.15.3}Member Function Documentation}{43}{subsection.4.15.3}
+\contentsline {subsubsection}{\numberline {4.15.3.1}get\discretionary {-}{}{}Jump\discretionary {-}{}{}Height}{43}{subsubsection.4.15.3.1}
+\contentsline {subsubsection}{\numberline {4.15.3.2}get\discretionary {-}{}{}Jump\discretionary {-}{}{}Speed}{43}{subsubsection.4.15.3.2}
+\contentsline {subsubsection}{\numberline {4.15.3.3}get\discretionary {-}{}{}Speed}{43}{subsubsection.4.15.3.3}
+\contentsline {chapter}{\numberline {5}File Documentation}{45}{chapter.5}
+\contentsline {section}{\numberline {5.1}include/\discretionary {-}{}{}Decorator/\discretionary {-}{}{}A\discretionary {-}{}{}Upgrade.h File Reference}{45}{section.5.1}
+\contentsline {section}{\numberline {5.2}include/\discretionary {-}{}{}Decorator/\discretionary {-}{}{}Cape.h File Reference}{45}{section.5.2}
+\contentsline {section}{\numberline {5.3}include/\discretionary {-}{}{}Decorator/\discretionary {-}{}{}Player.h File Reference}{45}{section.5.3}
+\contentsline {section}{\numberline {5.4}include/\discretionary {-}{}{}Decorator/\discretionary {-}{}{}Shoes.h File Reference}{45}{section.5.4}
+\contentsline {section}{\numberline {5.5}include/\discretionary {-}{}{}Factory/\discretionary {-}{}{}A\discretionary {-}{}{}Factory.h File Reference}{45}{section.5.5}
+\contentsline {section}{\numberline {5.6}include/\discretionary {-}{}{}Factory/\discretionary {-}{}{}Block\discretionary {-}{}{}Ground1.h File Reference}{46}{section.5.6}
+\contentsline {section}{\numberline {5.7}include/\discretionary {-}{}{}Factory/\discretionary {-}{}{}Block\discretionary {-}{}{}Ground2.h File Reference}{46}{section.5.7}
+\contentsline {section}{\numberline {5.8}include/\discretionary {-}{}{}Factory/\discretionary {-}{}{}Block\discretionary {-}{}{}Ground3.h File Reference}{46}{section.5.8}
+\contentsline {section}{\numberline {5.9}include/\discretionary {-}{}{}Factory/\discretionary {-}{}{}Concrete\discretionary {-}{}{}Factory.h File Reference}{46}{section.5.9}
+\contentsline {section}{\numberline {5.10}include/\discretionary {-}{}{}Factory/\discretionary {-}{}{}I\discretionary {-}{}{}Block.h File Reference}{46}{section.5.10}
+\contentsline {section}{\numberline {5.11}include/\discretionary {-}{}{}Singleton/\discretionary {-}{}{}Game\discretionary {-}{}{}Manager.h File Reference}{46}{section.5.11}
+\contentsline {section}{\numberline {5.12}include/\discretionary {-}{}{}Singleton/\discretionary {-}{}{}Menu.h File Reference}{47}{section.5.12}
+\contentsline {section}{\numberline {5.13}include/\discretionary {-}{}{}Strategy/\discretionary {-}{}{}I\discretionary {-}{}{}Level.h File Reference}{47}{section.5.13}
+\contentsline {section}{\numberline {5.14}include/\discretionary {-}{}{}Strategy/\discretionary {-}{}{}Level\discretionary {-}{}{}One.h File Reference}{47}{section.5.14}
+\contentsline {section}{\numberline {5.15}include/\discretionary {-}{}{}Strategy/\discretionary {-}{}{}Level\discretionary {-}{}{}Two.h File Reference}{47}{section.5.15}
+\contentsline {part}{Index}{48}{section*.51}

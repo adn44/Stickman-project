@@ -1,0 +1,158 @@
+\hypertarget{class_game_manager}{\section{Game\-Manager Class Reference}
+\label{class_game_manager}\index{Game\-Manager@{Game\-Manager}}
+}
+
+
+Provide an instance to manage the game.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_game_manager_acdc9d0af34329c0a5bf6f0949727a413}{virtual \hyperlink{class_game_manager_acdc9d0af34329c0a5bf6f0949727a413}{$\sim$\-Game\-Manager} (void)}\label{class_game_manager_acdc9d0af34329c0a5bf6f0949727a413}
+
+\begin{DoxyCompactList}\small\item\em The default destructor. \end{DoxyCompactList}\item 
+\hypertarget{class_game_manager_a30c2267cebe64ca70ec49c8560ceaf70}{void \hyperlink{class_game_manager_a30c2267cebe64ca70ec49c8560ceaf70}{action} (void)}\label{class_game_manager_a30c2267cebe64ca70ec49c8560ceaf70}
+
+\begin{DoxyCompactList}\small\item\em Set up the parameters and run the game loop. \end{DoxyCompactList}\item 
+\hypertarget{class_game_manager_a503f08e6803a70c65c324a88078da558}{void \hyperlink{class_game_manager_a503f08e6803a70c65c324a88078da558}{update} (void)}\label{class_game_manager_a503f08e6803a70c65c324a88078da558}
+
+\begin{DoxyCompactList}\small\item\em Update the data of the game. \end{DoxyCompactList}\item 
+\hypertarget{class_game_manager_acaf23b5999e093f95350b377930709f2}{void \hyperlink{class_game_manager_acaf23b5999e093f95350b377930709f2}{draw} (void)}\label{class_game_manager_acaf23b5999e093f95350b377930709f2}
+
+\begin{DoxyCompactList}\small\item\em Draw the elements of the game on the screen. \end{DoxyCompactList}\item 
+\hypertarget{class_game_manager_afc42f60e3bc2b27d2c1c97db4f0d0f5d}{void \hyperlink{class_game_manager_afc42f60e3bc2b27d2c1c97db4f0d0f5d}{collision\-R} (void)}\label{class_game_manager_afc42f60e3bc2b27d2c1c97db4f0d0f5d}
+
+\begin{DoxyCompactList}\small\item\em Check if the player is colliding with an object on his right. \end{DoxyCompactList}\item 
+\hypertarget{class_game_manager_abafc8b11a6ea10a83b1e0f218fd5133d}{void \hyperlink{class_game_manager_abafc8b11a6ea10a83b1e0f218fd5133d}{collision\-L} (void)}\label{class_game_manager_abafc8b11a6ea10a83b1e0f218fd5133d}
+
+\begin{DoxyCompactList}\small\item\em Check if the player is colliding with an object on his left. \end{DoxyCompactList}\item 
+\hypertarget{class_game_manager_a7aaec061aabf7f4e5ba8fed7b7415b84}{void \hyperlink{class_game_manager_a7aaec061aabf7f4e5ba8fed7b7415b84}{collision\-T} (void)}\label{class_game_manager_a7aaec061aabf7f4e5ba8fed7b7415b84}
+
+\begin{DoxyCompactList}\small\item\em Check if the player is colliding with an object on his top. \end{DoxyCompactList}\item 
+\hypertarget{class_game_manager_a6848d5f06fd715a809179df02139bd3a}{void \hyperlink{class_game_manager_a6848d5f06fd715a809179df02139bd3a}{collision\-G} (void)}\label{class_game_manager_a6848d5f06fd715a809179df02139bd3a}
+
+\begin{DoxyCompactList}\small\item\em Check if the player is on the ground. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_game_manager}{Game\-Manager} $\ast$ \hyperlink{class_game_manager_aee0b0f084c86ece89f9f49353ef75e6e}{get\-Instance} (void)
+\begin{DoxyCompactList}\small\item\em Give the instance of the class, and create it if it's required. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_game_manager_ad7179b31cffea9c6f7d2ea02ce4f7f86}{Game\-Manager} (int width, int height, std\-::string const \&title)
+\begin{DoxyCompactList}\small\item\em Private constructor of the class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_game_manager_a1b279dfcddfd51a081714cb7d638a47d}{\hyperlink{class_player}{Player} $\ast$ \hyperlink{class_game_manager_a1b279dfcddfd51a081714cb7d638a47d}{m\-\_\-player}}\label{class_game_manager_a1b279dfcddfd51a081714cb7d638a47d}
+
+\begin{DoxyCompactList}\small\item\em Pointer on the player. \end{DoxyCompactList}\item 
+\hypertarget{class_game_manager_aad6835720aa63bec36cf93a13f7ff9ec}{sf\-::\-Render\-Window $\ast$ \hyperlink{class_game_manager_aad6835720aa63bec36cf93a13f7ff9ec}{m\-\_\-screen}}\label{class_game_manager_aad6835720aa63bec36cf93a13f7ff9ec}
+
+\begin{DoxyCompactList}\small\item\em Pointer on the screen. \end{DoxyCompactList}\item 
+\hypertarget{class_game_manager_a655c1cad03fda61336ed812bdf641a82}{sf\-::\-View $\ast$ \hyperlink{class_game_manager_a655c1cad03fda61336ed812bdf641a82}{m\-\_\-view}}\label{class_game_manager_a655c1cad03fda61336ed812bdf641a82}
+
+\begin{DoxyCompactList}\small\item\em Pointer on the view (2\-D camera) \end{DoxyCompactList}\item 
+\hypertarget{class_game_manager_ab7cdbdc9d701e4e2c57319946b18f75c}{\hyperlink{class_i_level}{I\-Level} $\ast$ \hyperlink{class_game_manager_ab7cdbdc9d701e4e2c57319946b18f75c}{m\-\_\-level}}\label{class_game_manager_ab7cdbdc9d701e4e2c57319946b18f75c}
+
+\begin{DoxyCompactList}\small\item\em Pointer on the level. \end{DoxyCompactList}\item 
+\hypertarget{class_game_manager_a47f464b9a9dfbb6b29425d067652e06e}{char $\ast$ \hyperlink{class_game_manager_a47f464b9a9dfbb6b29425d067652e06e}{m\-\_\-col\-G}}\label{class_game_manager_a47f464b9a9dfbb6b29425d067652e06e}
+
+\begin{DoxyCompactList}\small\item\em Pointer to check the ground collision. \end{DoxyCompactList}\item 
+\hypertarget{class_game_manager_a585bc82f812508cf7e1fcaa61d16b4b5}{char $\ast$ \hyperlink{class_game_manager_a585bc82f812508cf7e1fcaa61d16b4b5}{m\-\_\-col\-L}}\label{class_game_manager_a585bc82f812508cf7e1fcaa61d16b4b5}
+
+\begin{DoxyCompactList}\small\item\em Pointer to check the left collision. \end{DoxyCompactList}\item 
+\hypertarget{class_game_manager_a453919435a19f51aac53370ab1761dd5}{char $\ast$ \hyperlink{class_game_manager_a453919435a19f51aac53370ab1761dd5}{m\-\_\-col\-T}}\label{class_game_manager_a453919435a19f51aac53370ab1761dd5}
+
+\begin{DoxyCompactList}\small\item\em Pointer to check the top collision. \end{DoxyCompactList}\item 
+\hypertarget{class_game_manager_a0a9aa8ed8be6c9f8ff3c61ab72948bd9}{char $\ast$ \hyperlink{class_game_manager_a0a9aa8ed8be6c9f8ff3c61ab72948bd9}{m\-\_\-col\-R}}\label{class_game_manager_a0a9aa8ed8be6c9f8ff3c61ab72948bd9}
+
+\begin{DoxyCompactList}\small\item\em Pointer to check the right collision. \end{DoxyCompactList}\item 
+\hypertarget{class_game_manager_aef88fa7485663c973fe47350894441ee}{bool \hyperlink{class_game_manager_aef88fa7485663c973fe47350894441ee}{m\-\_\-win}}\label{class_game_manager_aef88fa7485663c973fe47350894441ee}
+
+\begin{DoxyCompactList}\small\item\em Boolean to check if the player has won, true if he has, false otherwise. \end{DoxyCompactList}\item 
+\hypertarget{class_game_manager_abd261afcb9a4f75c1a0fa1cd707a7c8f}{bool \hyperlink{class_game_manager_abd261afcb9a4f75c1a0fa1cd707a7c8f}{m\-\_\-lost}}\label{class_game_manager_abd261afcb9a4f75c1a0fa1cd707a7c8f}
+
+\begin{DoxyCompactList}\small\item\em Boolean to check if the player has lost, true if he has, false otherwise. \end{DoxyCompactList}\item 
+\hypertarget{class_game_manager_aa9ea92449084ccab8f3a7467b3a56524}{sf\-::\-Music $\ast$ \hyperlink{class_game_manager_aa9ea92449084ccab8f3a7467b3a56524}{m\-\_\-music}}\label{class_game_manager_aa9ea92449084ccab8f3a7467b3a56524}
+
+\begin{DoxyCompactList}\small\item\em Pointer to the music of the current level. \end{DoxyCompactList}\item 
+\hypertarget{class_game_manager_ad91a331f6af536db50fe1794c194871d}{sf\-::\-Sound $\ast$ \hyperlink{class_game_manager_ad91a331f6af536db50fe1794c194871d}{m\-\_\-upgrade\-Sound}}\label{class_game_manager_ad91a331f6af536db50fe1794c194871d}
+
+\begin{DoxyCompactList}\small\item\em Pointer to the upgrade sound. \end{DoxyCompactList}\item 
+\hypertarget{class_game_manager_a22fb2acccebe7dc6bd893a39ba747a38}{sf\-::\-Sound\-Buffer $\ast$ \hyperlink{class_game_manager_a22fb2acccebe7dc6bd893a39ba747a38}{m\-\_\-upgrade\-Sound\-Buffer}}\label{class_game_manager_a22fb2acccebe7dc6bd893a39ba747a38}
+
+\begin{DoxyCompactList}\small\item\em Pointer to the buffer of the upgrade sound. \end{DoxyCompactList}\item 
+\hypertarget{class_game_manager_a56334ff5fbd86615dfb9e03f2edc5248}{sf\-::\-Sound $\ast$ \hyperlink{class_game_manager_a56334ff5fbd86615dfb9e03f2edc5248}{m\-\_\-lost\-Sound}}\label{class_game_manager_a56334ff5fbd86615dfb9e03f2edc5248}
+
+\begin{DoxyCompactList}\small\item\em Pointer to the lost sound. \end{DoxyCompactList}\item 
+\hypertarget{class_game_manager_aad51c87666d9a388634cc3cd046114cc}{sf\-::\-Sound\-Buffer $\ast$ \hyperlink{class_game_manager_aad51c87666d9a388634cc3cd046114cc}{m\-\_\-lost\-Sound\-Buffer}}\label{class_game_manager_aad51c87666d9a388634cc3cd046114cc}
+
+\begin{DoxyCompactList}\small\item\em Pointer to the buffer of the lost sound. \end{DoxyCompactList}\item 
+\hypertarget{class_game_manager_a587e2e15b42ba0334bfaf344ad9429c7}{sf\-::\-Sound $\ast$ \hyperlink{class_game_manager_a587e2e15b42ba0334bfaf344ad9429c7}{m\-\_\-win\-Sound}}\label{class_game_manager_a587e2e15b42ba0334bfaf344ad9429c7}
+
+\begin{DoxyCompactList}\small\item\em Pointer to the win sound. \end{DoxyCompactList}\item 
+\hypertarget{class_game_manager_ab7e281ae47b37721117c0ddf7f9f36e0}{sf\-::\-Sound\-Buffer $\ast$ \hyperlink{class_game_manager_ab7e281ae47b37721117c0ddf7f9f36e0}{m\-\_\-win\-Sound\-Buffer}}\label{class_game_manager_ab7e281ae47b37721117c0ddf7f9f36e0}
+
+\begin{DoxyCompactList}\small\item\em Pointer to the buffer of the win sound. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_game_manager_a2bf6eac738e0ba23fa7a1d4273954c79}{static \hyperlink{class_game_manager}{Game\-Manager} $\ast$ \hyperlink{class_game_manager_a2bf6eac738e0ba23fa7a1d4273954c79}{m\-\_\-game\-Manager}}\label{class_game_manager_a2bf6eac738e0ba23fa7a1d4273954c79}
+
+\begin{DoxyCompactList}\small\item\em Static pointer on the unique instance of the class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provide an instance to manage the game. 
+
+\begin{DoxyAuthor}{Author}
+Adrien Bodineau and Alexandre Gomes 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_game_manager_ad7179b31cffea9c6f7d2ea02ce4f7f86}{\index{Game\-Manager@{Game\-Manager}!Game\-Manager@{Game\-Manager}}
+\index{Game\-Manager@{Game\-Manager}!GameManager@{Game\-Manager}}
+\subsubsection[{Game\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Manager\-::\-Game\-Manager (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{std\-::string const \&}]{title}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_game_manager_ad7179b31cffea9c6f7d2ea02ce4f7f86}
+
+
+Private constructor of the class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & An integer representing the width of the screen \\
+\hline
+{\em height} & An integer representing the height of the screen \\
+\hline
+{\em title} & A string representing the title of the screen \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_game_manager_aee0b0f084c86ece89f9f49353ef75e6e}{\index{Game\-Manager@{Game\-Manager}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!GameManager@{Game\-Manager}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Game\-Manager} $\ast$ Game\-Manager\-::get\-Instance (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_game_manager_aee0b0f084c86ece89f9f49353ef75e6e}
+
+
+Give the instance of the class, and create it if it's required. 
+
+\begin{DoxyReturn}{Returns}
+A pointer on the instance of the class 
+\end{DoxyReturn}

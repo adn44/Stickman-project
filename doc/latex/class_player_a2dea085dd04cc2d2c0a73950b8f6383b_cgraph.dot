@@ -1,0 +1,18 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Player::controls",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Player::goRight",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_player.html#ade1f198046c99aa0a9a7b84b25e43621",tooltip="Function to make the player go to the right."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Player::getSpeed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_player.html#a5755be9818f6f911d9494e4948d8c483",tooltip="Get the speed value."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Player::goLeft",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_player.html#ad5ec9b977afe277362f917883d18c2d2",tooltip="Function to make the player go to the left."];
+  Node4 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Player::jump",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_player.html#a0ccf6995405ca7f8efd159117eb332c6",tooltip="Set up the jump."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Player::getJumpHeight",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_player.html#a4df8845cc35f7ef2d8aefbeffb141aed",tooltip="Get the jumping height value."];
+}

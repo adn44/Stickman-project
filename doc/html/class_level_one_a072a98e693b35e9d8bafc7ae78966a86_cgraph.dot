@@ -1,0 +1,19 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="LevelOne::loadLevel",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="LevelOne::getHeight",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_level_one.html#ad42ac4352d8559121504d6ff19a76cde",tooltip="Get the height of the level."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="LevelOne::getWidth",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_level_one.html#acc6a1535bc43ee0cd38e9ae688d71f41",tooltip="Get the width of the level."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Player::getSprite",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_player.html#adbce087693a5623afac017735d67a39d",tooltip="Get the sprite of the player."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AFactory::createBlock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_a_factory.html#ac0e9f907f902b54796047020683b81e9",tooltip="Create a block using the build() method."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AFactory::build",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_a_factory.html#adec2bf9f81dbf37ef727bcfb43403867",tooltip="Create a block according to the given character."];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="IBlock::getSprite",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_i_block.html#a76ae337b47bb084b2c143a24fdc47093",tooltip="Return the sprite of the block."];
+}

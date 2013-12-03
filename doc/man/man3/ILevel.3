@@ -1,0 +1,216 @@
+.TH "ILevel" 3 "Wed Nov 27 2013" "Version 1.0" "Stickman Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ILevel \- 
+.PP
+Interface that will be implemented by the levels\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBLevelOne\fP, and \fBLevelTwo\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual \fB~ILevel\fP ()"
+.br
+.RI "\fIDefault destructor\&. \fP"
+.ti -1c
+.RI "virtual int \fBgetHeight\fP (void)=0"
+.br
+.RI "\fIGet the height of the level\&. \fP"
+.ti -1c
+.RI "virtual int \fBgetWidth\fP (void)=0"
+.br
+.RI "\fIGet the width of the level\&. \fP"
+.ti -1c
+.RI "virtual void \fBloadLevel\fP (\fBPlayer\fP *player)=0"
+.br
+.RI "\fILoad the level and the player according the tile map\&. \fP"
+.ti -1c
+.RI "virtual void \fBdrawLevel\fP (sf::RenderWindow *screen)=0"
+.br
+.RI "\fIDraw all the elements of the level on the given screen\&. \fP"
+.ti -1c
+.RI "virtual std::vector
+.br
+< sf::Sprite * > * \fBgetBlocks\fP ()=0"
+.br
+.RI "\fIGet the blocks of the level\&. \fP"
+.ti -1c
+.RI "virtual sf::Sprite * \fBgetEndSprite\fP (void)=0"
+.br
+.RI "\fIGet the sprite of the end\&. \fP"
+.ti -1c
+.RI "virtual \fBILevel\fP * \fBgetNext\fP (void)=0"
+.br
+.RI "\fIGet the next level\&. \fP"
+.ti -1c
+.RI "virtual sf::Sprite * \fBgetCapeSprite\fP ()=0"
+.br
+.RI "\fIGet the sprite of the cape\&. \fP"
+.ti -1c
+.RI "virtual sf::Sprite * \fBgetShoesSprite\fP ()=0"
+.br
+.RI "\fIGet the sprite of the shoes\&. \fP"
+.ti -1c
+.RI "virtual void \fBremoveElement\fP (char target)=0"
+.br
+.RI "\fIRemove an element from the map\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Interface that will be implemented by the levels\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Adrien Bodineau and Alexandre Gomes 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+1\&.0 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void ILevel::drawLevel (sf::RenderWindow *screen)\fC [pure virtual]\fP"
+
+.PP
+Draw all the elements of the level on the given screen\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIscreen\fP The screen where the elements will be displayed 
+.RE
+.PP
+
+.PP
+Implemented in \fBLevelOne\fP, and \fBLevelTwo\fP\&.
+.SS "std::vector< sf::Sprite * > * ILevel::getBlocks (void)\fC [pure virtual]\fP"
+
+.PP
+Get the blocks of the level\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A vector with all the elements 
+.RE
+.PP
+
+.PP
+Implemented in \fBLevelOne\fP, and \fBLevelTwo\fP\&.
+.SS "sf::Sprite * ILevel::getCapeSprite (void)\fC [pure virtual]\fP"
+
+.PP
+Get the sprite of the cape\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Sprite of the cape 
+.RE
+.PP
+
+.PP
+Implemented in \fBLevelOne\fP, and \fBLevelTwo\fP\&.
+.SS "sf::Sprite * ILevel::getEndSprite (void)\fC [pure virtual]\fP"
+
+.PP
+Get the sprite of the end\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+The sprite of the end 
+.RE
+.PP
+
+.PP
+Implemented in \fBLevelOne\fP, and \fBLevelTwo\fP\&.
+.SS "int ILevel::getHeight (void)\fC [pure virtual]\fP"
+
+.PP
+Get the height of the level\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+The height of the level 
+.RE
+.PP
+
+.PP
+Implemented in \fBLevelOne\fP, and \fBLevelTwo\fP\&.
+.SS "\fBILevel\fP * ILevel::getNext (void)\fC [pure virtual]\fP"
+
+.PP
+Get the next level\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Next level, NULL if this is the last level 
+.RE
+.PP
+
+.PP
+Implemented in \fBLevelOne\fP, and \fBLevelTwo\fP\&.
+.SS "sf::Sprite * ILevel::getShoesSprite (void)\fC [pure virtual]\fP"
+
+.PP
+Get the sprite of the shoes\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Sprite of the shoes 
+.RE
+.PP
+
+.PP
+Implemented in \fBLevelOne\fP, and \fBLevelTwo\fP\&.
+.SS "int ILevel::getWidth (void)\fC [pure virtual]\fP"
+
+.PP
+Get the width of the level\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+The width of the level 
+.RE
+.PP
+
+.PP
+Implemented in \fBLevelOne\fP, and \fBLevelTwo\fP\&.
+.SS "void ILevel::loadLevel (\fBPlayer\fP *player)\fC [pure virtual]\fP"
+
+.PP
+Load the level and the player according the tile map\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIplayer\fP The pointer to the player, so the method can set his position 
+.RE
+.PP
+
+.PP
+Implemented in \fBLevelOne\fP, and \fBLevelTwo\fP\&.
+.SS "void ILevel::removeElement (chartarget)\fC [pure virtual]\fP"
+
+.PP
+Remove an element from the map\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItarget\fP Character representing the element to remove 
+.RE
+.PP
+
+.PP
+Implemented in \fBLevelOne\fP, and \fBLevelTwo\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Stickman Project from the source code\&.

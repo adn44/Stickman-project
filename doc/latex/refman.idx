@@ -1,0 +1,196 @@
+\indexentry{A\discretionary {-}{}{}Factory@{A\discretionary {-}{}{}Factory}|hyperpage}{7}
+\indexentry{A\discretionary {-}{}{}Factory@{A\discretionary {-}{}{}Factory}!build@{build}|hyperpage}{8}
+\indexentry{build@{build}!AFactory@{A\discretionary {-}{}{}Factory}|hyperpage}{8}
+\indexentry{A\discretionary {-}{}{}Factory@{A\discretionary {-}{}{}Factory}!create\discretionary {-}{}{}Block@{create\discretionary {-}{}{}Block}|hyperpage}{8}
+\indexentry{create\discretionary {-}{}{}Block@{create\discretionary {-}{}{}Block}!AFactory@{A\discretionary {-}{}{}Factory}|hyperpage}{8}
+\indexentry{A\discretionary {-}{}{}Upgrade@{A\discretionary {-}{}{}Upgrade}|hyperpage}{8}
+\indexentry{A\discretionary {-}{}{}Upgrade@{A\discretionary {-}{}{}Upgrade}!A\discretionary {-}{}{}Upgrade@{A\discretionary {-}{}{}Upgrade}|hyperpage}{9}
+\indexentry{A\discretionary {-}{}{}Upgrade@{A\discretionary {-}{}{}Upgrade}!AUpgrade@{A\discretionary {-}{}{}Upgrade}|hyperpage}{9}
+\indexentry{Block\discretionary {-}{}{}Ground1@{Block\discretionary {-}{}{}Ground1}|hyperpage}{10}
+\indexentry{Block\discretionary {-}{}{}Ground1@{Block\discretionary {-}{}{}Ground1}!get\discretionary {-}{}{}Sprite@{get\discretionary {-}{}{}Sprite}|hyperpage}{11}
+\indexentry{get\discretionary {-}{}{}Sprite@{get\discretionary {-}{}{}Sprite}!BlockGround1@{Block\discretionary {-}{}{}Ground1}|hyperpage}{11}
+\indexentry{Block\discretionary {-}{}{}Ground1@{Block\discretionary {-}{}{}Ground1}!get\discretionary {-}{}{}Texture@{get\discretionary {-}{}{}Texture}|hyperpage}{11}
+\indexentry{get\discretionary {-}{}{}Texture@{get\discretionary {-}{}{}Texture}!BlockGround1@{Block\discretionary {-}{}{}Ground1}|hyperpage}{11}
+\indexentry{Block\discretionary {-}{}{}Ground2@{Block\discretionary {-}{}{}Ground2}|hyperpage}{11}
+\indexentry{Block\discretionary {-}{}{}Ground2@{Block\discretionary {-}{}{}Ground2}!get\discretionary {-}{}{}Sprite@{get\discretionary {-}{}{}Sprite}|hyperpage}{12}
+\indexentry{get\discretionary {-}{}{}Sprite@{get\discretionary {-}{}{}Sprite}!BlockGround2@{Block\discretionary {-}{}{}Ground2}|hyperpage}{12}
+\indexentry{Block\discretionary {-}{}{}Ground2@{Block\discretionary {-}{}{}Ground2}!get\discretionary {-}{}{}Texture@{get\discretionary {-}{}{}Texture}|hyperpage}{12}
+\indexentry{get\discretionary {-}{}{}Texture@{get\discretionary {-}{}{}Texture}!BlockGround2@{Block\discretionary {-}{}{}Ground2}|hyperpage}{12}
+\indexentry{Block\discretionary {-}{}{}Ground3@{Block\discretionary {-}{}{}Ground3}|hyperpage}{12}
+\indexentry{Block\discretionary {-}{}{}Ground3@{Block\discretionary {-}{}{}Ground3}!get\discretionary {-}{}{}Sprite@{get\discretionary {-}{}{}Sprite}|hyperpage}{13}
+\indexentry{get\discretionary {-}{}{}Sprite@{get\discretionary {-}{}{}Sprite}!BlockGround3@{Block\discretionary {-}{}{}Ground3}|hyperpage}{13}
+\indexentry{Block\discretionary {-}{}{}Ground3@{Block\discretionary {-}{}{}Ground3}!get\discretionary {-}{}{}Texture@{get\discretionary {-}{}{}Texture}|hyperpage}{14}
+\indexentry{get\discretionary {-}{}{}Texture@{get\discretionary {-}{}{}Texture}!BlockGround3@{Block\discretionary {-}{}{}Ground3}|hyperpage}{14}
+\indexentry{Cape@{Cape}|hyperpage}{14}
+\indexentry{Cape@{Cape}!Cape@{Cape}|hyperpage}{15}
+\indexentry{Cape@{Cape}!Cape@{Cape}|hyperpage}{15}
+\indexentry{Cape@{Cape}!get\discretionary {-}{}{}Jump\discretionary {-}{}{}Height@{get\discretionary {-}{}{}Jump\discretionary {-}{}{}Height}|hyperpage}{15}
+\indexentry{get\discretionary {-}{}{}Jump\discretionary {-}{}{}Height@{get\discretionary {-}{}{}Jump\discretionary {-}{}{}Height}!Cape@{Cape}|hyperpage}{15}
+\indexentry{Cape@{Cape}!get\discretionary {-}{}{}Jump\discretionary {-}{}{}Speed@{get\discretionary {-}{}{}Jump\discretionary {-}{}{}Speed}|hyperpage}{15}
+\indexentry{get\discretionary {-}{}{}Jump\discretionary {-}{}{}Speed@{get\discretionary {-}{}{}Jump\discretionary {-}{}{}Speed}!Cape@{Cape}|hyperpage}{15}
+\indexentry{Cape@{Cape}!get\discretionary {-}{}{}Speed@{get\discretionary {-}{}{}Speed}|hyperpage}{15}
+\indexentry{get\discretionary {-}{}{}Speed@{get\discretionary {-}{}{}Speed}!Cape@{Cape}|hyperpage}{15}
+\indexentry{Concrete\discretionary {-}{}{}Factory@{Concrete\discretionary {-}{}{}Factory}|hyperpage}{16}
+\indexentry{Concrete\discretionary {-}{}{}Factory@{Concrete\discretionary {-}{}{}Factory}!build@{build}|hyperpage}{16}
+\indexentry{build@{build}!ConcreteFactory@{Concrete\discretionary {-}{}{}Factory}|hyperpage}{16}
+\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}|hyperpage}{17}
+\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}|hyperpage}{18}
+\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{18}
+\indexentry{Game\discretionary {-}{}{}Manager@{Game\discretionary {-}{}{}Manager}!get\discretionary {-}{}{}Instance@{get\discretionary {-}{}{}Instance}|hyperpage}{19}
+\indexentry{get\discretionary {-}{}{}Instance@{get\discretionary {-}{}{}Instance}!GameManager@{Game\discretionary {-}{}{}Manager}|hyperpage}{19}
+\indexentry{I\discretionary {-}{}{}Block@{I\discretionary {-}{}{}Block}|hyperpage}{19}
+\indexentry{I\discretionary {-}{}{}Block@{I\discretionary {-}{}{}Block}!get\discretionary {-}{}{}Sprite@{get\discretionary {-}{}{}Sprite}|hyperpage}{20}
+\indexentry{get\discretionary {-}{}{}Sprite@{get\discretionary {-}{}{}Sprite}!IBlock@{I\discretionary {-}{}{}Block}|hyperpage}{20}
+\indexentry{I\discretionary {-}{}{}Block@{I\discretionary {-}{}{}Block}!get\discretionary {-}{}{}Texture@{get\discretionary {-}{}{}Texture}|hyperpage}{20}
+\indexentry{get\discretionary {-}{}{}Texture@{get\discretionary {-}{}{}Texture}!IBlock@{I\discretionary {-}{}{}Block}|hyperpage}{20}
+\indexentry{I\discretionary {-}{}{}Level@{I\discretionary {-}{}{}Level}|hyperpage}{20}
+\indexentry{I\discretionary {-}{}{}Level@{I\discretionary {-}{}{}Level}!draw\discretionary {-}{}{}Level@{draw\discretionary {-}{}{}Level}|hyperpage}{21}
+\indexentry{draw\discretionary {-}{}{}Level@{draw\discretionary {-}{}{}Level}!ILevel@{I\discretionary {-}{}{}Level}|hyperpage}{21}
+\indexentry{I\discretionary {-}{}{}Level@{I\discretionary {-}{}{}Level}!get\discretionary {-}{}{}Blocks@{get\discretionary {-}{}{}Blocks}|hyperpage}{21}
+\indexentry{get\discretionary {-}{}{}Blocks@{get\discretionary {-}{}{}Blocks}!ILevel@{I\discretionary {-}{}{}Level}|hyperpage}{21}
+\indexentry{I\discretionary {-}{}{}Level@{I\discretionary {-}{}{}Level}!get\discretionary {-}{}{}Cape\discretionary {-}{}{}Sprite@{get\discretionary {-}{}{}Cape\discretionary {-}{}{}Sprite}|hyperpage}{21}
+\indexentry{get\discretionary {-}{}{}Cape\discretionary {-}{}{}Sprite@{get\discretionary {-}{}{}Cape\discretionary {-}{}{}Sprite}!ILevel@{I\discretionary {-}{}{}Level}|hyperpage}{21}
+\indexentry{I\discretionary {-}{}{}Level@{I\discretionary {-}{}{}Level}!get\discretionary {-}{}{}End\discretionary {-}{}{}Sprite@{get\discretionary {-}{}{}End\discretionary {-}{}{}Sprite}|hyperpage}{21}
+\indexentry{get\discretionary {-}{}{}End\discretionary {-}{}{}Sprite@{get\discretionary {-}{}{}End\discretionary {-}{}{}Sprite}!ILevel@{I\discretionary {-}{}{}Level}|hyperpage}{21}
+\indexentry{I\discretionary {-}{}{}Level@{I\discretionary {-}{}{}Level}!get\discretionary {-}{}{}Height@{get\discretionary {-}{}{}Height}|hyperpage}{22}
+\indexentry{get\discretionary {-}{}{}Height@{get\discretionary {-}{}{}Height}!ILevel@{I\discretionary {-}{}{}Level}|hyperpage}{22}
+\indexentry{I\discretionary {-}{}{}Level@{I\discretionary {-}{}{}Level}!get\discretionary {-}{}{}Next@{get\discretionary {-}{}{}Next}|hyperpage}{22}
+\indexentry{get\discretionary {-}{}{}Next@{get\discretionary {-}{}{}Next}!ILevel@{I\discretionary {-}{}{}Level}|hyperpage}{22}
+\indexentry{I\discretionary {-}{}{}Level@{I\discretionary {-}{}{}Level}!get\discretionary {-}{}{}Shoes\discretionary {-}{}{}Sprite@{get\discretionary {-}{}{}Shoes\discretionary {-}{}{}Sprite}|hyperpage}{22}
+\indexentry{get\discretionary {-}{}{}Shoes\discretionary {-}{}{}Sprite@{get\discretionary {-}{}{}Shoes\discretionary {-}{}{}Sprite}!ILevel@{I\discretionary {-}{}{}Level}|hyperpage}{22}
+\indexentry{I\discretionary {-}{}{}Level@{I\discretionary {-}{}{}Level}!get\discretionary {-}{}{}Width@{get\discretionary {-}{}{}Width}|hyperpage}{22}
+\indexentry{get\discretionary {-}{}{}Width@{get\discretionary {-}{}{}Width}!ILevel@{I\discretionary {-}{}{}Level}|hyperpage}{22}
+\indexentry{I\discretionary {-}{}{}Level@{I\discretionary {-}{}{}Level}!load\discretionary {-}{}{}Level@{load\discretionary {-}{}{}Level}|hyperpage}{22}
+\indexentry{load\discretionary {-}{}{}Level@{load\discretionary {-}{}{}Level}!ILevel@{I\discretionary {-}{}{}Level}|hyperpage}{22}
+\indexentry{I\discretionary {-}{}{}Level@{I\discretionary {-}{}{}Level}!remove\discretionary {-}{}{}Element@{remove\discretionary {-}{}{}Element}|hyperpage}{23}
+\indexentry{remove\discretionary {-}{}{}Element@{remove\discretionary {-}{}{}Element}!ILevel@{I\discretionary {-}{}{}Level}|hyperpage}{23}
+\indexentry{Level\discretionary {-}{}{}One@{Level\discretionary {-}{}{}One}|hyperpage}{23}
+\indexentry{Level\discretionary {-}{}{}One@{Level\discretionary {-}{}{}One}!draw\discretionary {-}{}{}Level@{draw\discretionary {-}{}{}Level}|hyperpage}{25}
+\indexentry{draw\discretionary {-}{}{}Level@{draw\discretionary {-}{}{}Level}!LevelOne@{Level\discretionary {-}{}{}One}|hyperpage}{25}
+\indexentry{Level\discretionary {-}{}{}One@{Level\discretionary {-}{}{}One}!get\discretionary {-}{}{}Blocks@{get\discretionary {-}{}{}Blocks}|hyperpage}{26}
+\indexentry{get\discretionary {-}{}{}Blocks@{get\discretionary {-}{}{}Blocks}!LevelOne@{Level\discretionary {-}{}{}One}|hyperpage}{26}
+\indexentry{Level\discretionary {-}{}{}One@{Level\discretionary {-}{}{}One}!get\discretionary {-}{}{}Cape\discretionary {-}{}{}Sprite@{get\discretionary {-}{}{}Cape\discretionary {-}{}{}Sprite}|hyperpage}{26}
+\indexentry{get\discretionary {-}{}{}Cape\discretionary {-}{}{}Sprite@{get\discretionary {-}{}{}Cape\discretionary {-}{}{}Sprite}!LevelOne@{Level\discretionary {-}{}{}One}|hyperpage}{26}
+\indexentry{Level\discretionary {-}{}{}One@{Level\discretionary {-}{}{}One}!get\discretionary {-}{}{}End\discretionary {-}{}{}Sprite@{get\discretionary {-}{}{}End\discretionary {-}{}{}Sprite}|hyperpage}{26}
+\indexentry{get\discretionary {-}{}{}End\discretionary {-}{}{}Sprite@{get\discretionary {-}{}{}End\discretionary {-}{}{}Sprite}!LevelOne@{Level\discretionary {-}{}{}One}|hyperpage}{26}
+\indexentry{Level\discretionary {-}{}{}One@{Level\discretionary {-}{}{}One}!get\discretionary {-}{}{}Height@{get\discretionary {-}{}{}Height}|hyperpage}{26}
+\indexentry{get\discretionary {-}{}{}Height@{get\discretionary {-}{}{}Height}!LevelOne@{Level\discretionary {-}{}{}One}|hyperpage}{26}
+\indexentry{Level\discretionary {-}{}{}One@{Level\discretionary {-}{}{}One}!get\discretionary {-}{}{}Next@{get\discretionary {-}{}{}Next}|hyperpage}{26}
+\indexentry{get\discretionary {-}{}{}Next@{get\discretionary {-}{}{}Next}!LevelOne@{Level\discretionary {-}{}{}One}|hyperpage}{26}
+\indexentry{Level\discretionary {-}{}{}One@{Level\discretionary {-}{}{}One}!get\discretionary {-}{}{}Shoes\discretionary {-}{}{}Sprite@{get\discretionary {-}{}{}Shoes\discretionary {-}{}{}Sprite}|hyperpage}{26}
+\indexentry{get\discretionary {-}{}{}Shoes\discretionary {-}{}{}Sprite@{get\discretionary {-}{}{}Shoes\discretionary {-}{}{}Sprite}!LevelOne@{Level\discretionary {-}{}{}One}|hyperpage}{26}
+\indexentry{Level\discretionary {-}{}{}One@{Level\discretionary {-}{}{}One}!get\discretionary {-}{}{}Width@{get\discretionary {-}{}{}Width}|hyperpage}{27}
+\indexentry{get\discretionary {-}{}{}Width@{get\discretionary {-}{}{}Width}!LevelOne@{Level\discretionary {-}{}{}One}|hyperpage}{27}
+\indexentry{Level\discretionary {-}{}{}One@{Level\discretionary {-}{}{}One}!load\discretionary {-}{}{}Level@{load\discretionary {-}{}{}Level}|hyperpage}{27}
+\indexentry{load\discretionary {-}{}{}Level@{load\discretionary {-}{}{}Level}!LevelOne@{Level\discretionary {-}{}{}One}|hyperpage}{27}
+\indexentry{Level\discretionary {-}{}{}One@{Level\discretionary {-}{}{}One}!remove\discretionary {-}{}{}Element@{remove\discretionary {-}{}{}Element}|hyperpage}{27}
+\indexentry{remove\discretionary {-}{}{}Element@{remove\discretionary {-}{}{}Element}!LevelOne@{Level\discretionary {-}{}{}One}|hyperpage}{27}
+\indexentry{Level\discretionary {-}{}{}Two@{Level\discretionary {-}{}{}Two}|hyperpage}{27}
+\indexentry{Level\discretionary {-}{}{}Two@{Level\discretionary {-}{}{}Two}!draw\discretionary {-}{}{}Level@{draw\discretionary {-}{}{}Level}|hyperpage}{29}
+\indexentry{draw\discretionary {-}{}{}Level@{draw\discretionary {-}{}{}Level}!LevelTwo@{Level\discretionary {-}{}{}Two}|hyperpage}{29}
+\indexentry{Level\discretionary {-}{}{}Two@{Level\discretionary {-}{}{}Two}!get\discretionary {-}{}{}Blocks@{get\discretionary {-}{}{}Blocks}|hyperpage}{29}
+\indexentry{get\discretionary {-}{}{}Blocks@{get\discretionary {-}{}{}Blocks}!LevelTwo@{Level\discretionary {-}{}{}Two}|hyperpage}{29}
+\indexentry{Level\discretionary {-}{}{}Two@{Level\discretionary {-}{}{}Two}!get\discretionary {-}{}{}Cape\discretionary {-}{}{}Sprite@{get\discretionary {-}{}{}Cape\discretionary {-}{}{}Sprite}|hyperpage}{29}
+\indexentry{get\discretionary {-}{}{}Cape\discretionary {-}{}{}Sprite@{get\discretionary {-}{}{}Cape\discretionary {-}{}{}Sprite}!LevelTwo@{Level\discretionary {-}{}{}Two}|hyperpage}{29}
+\indexentry{Level\discretionary {-}{}{}Two@{Level\discretionary {-}{}{}Two}!get\discretionary {-}{}{}End\discretionary {-}{}{}Sprite@{get\discretionary {-}{}{}End\discretionary {-}{}{}Sprite}|hyperpage}{30}
+\indexentry{get\discretionary {-}{}{}End\discretionary {-}{}{}Sprite@{get\discretionary {-}{}{}End\discretionary {-}{}{}Sprite}!LevelTwo@{Level\discretionary {-}{}{}Two}|hyperpage}{30}
+\indexentry{Level\discretionary {-}{}{}Two@{Level\discretionary {-}{}{}Two}!get\discretionary {-}{}{}Height@{get\discretionary {-}{}{}Height}|hyperpage}{30}
+\indexentry{get\discretionary {-}{}{}Height@{get\discretionary {-}{}{}Height}!LevelTwo@{Level\discretionary {-}{}{}Two}|hyperpage}{30}
+\indexentry{Level\discretionary {-}{}{}Two@{Level\discretionary {-}{}{}Two}!get\discretionary {-}{}{}Next@{get\discretionary {-}{}{}Next}|hyperpage}{30}
+\indexentry{get\discretionary {-}{}{}Next@{get\discretionary {-}{}{}Next}!LevelTwo@{Level\discretionary {-}{}{}Two}|hyperpage}{30}
+\indexentry{Level\discretionary {-}{}{}Two@{Level\discretionary {-}{}{}Two}!get\discretionary {-}{}{}Shoes\discretionary {-}{}{}Sprite@{get\discretionary {-}{}{}Shoes\discretionary {-}{}{}Sprite}|hyperpage}{30}
+\indexentry{get\discretionary {-}{}{}Shoes\discretionary {-}{}{}Sprite@{get\discretionary {-}{}{}Shoes\discretionary {-}{}{}Sprite}!LevelTwo@{Level\discretionary {-}{}{}Two}|hyperpage}{30}
+\indexentry{Level\discretionary {-}{}{}Two@{Level\discretionary {-}{}{}Two}!get\discretionary {-}{}{}Width@{get\discretionary {-}{}{}Width}|hyperpage}{30}
+\indexentry{get\discretionary {-}{}{}Width@{get\discretionary {-}{}{}Width}!LevelTwo@{Level\discretionary {-}{}{}Two}|hyperpage}{30}
+\indexentry{Level\discretionary {-}{}{}Two@{Level\discretionary {-}{}{}Two}!load\discretionary {-}{}{}Level@{load\discretionary {-}{}{}Level}|hyperpage}{30}
+\indexentry{load\discretionary {-}{}{}Level@{load\discretionary {-}{}{}Level}!LevelTwo@{Level\discretionary {-}{}{}Two}|hyperpage}{30}
+\indexentry{Level\discretionary {-}{}{}Two@{Level\discretionary {-}{}{}Two}!remove\discretionary {-}{}{}Element@{remove\discretionary {-}{}{}Element}|hyperpage}{32}
+\indexentry{remove\discretionary {-}{}{}Element@{remove\discretionary {-}{}{}Element}!LevelTwo@{Level\discretionary {-}{}{}Two}|hyperpage}{32}
+\indexentry{Menu@{Menu}|hyperpage}{32}
+\indexentry{Menu@{Menu}!get\discretionary {-}{}{}Instance@{get\discretionary {-}{}{}Instance}|hyperpage}{33}
+\indexentry{get\discretionary {-}{}{}Instance@{get\discretionary {-}{}{}Instance}!Menu@{Menu}|hyperpage}{33}
+\indexentry{Player@{Player}|hyperpage}{34}
+\indexentry{Player@{Player}!Player@{Player}|hyperpage}{37}
+\indexentry{Player@{Player}!Player@{Player}|hyperpage}{37}
+\indexentry{Player@{Player}!controls@{controls}|hyperpage}{37}
+\indexentry{controls@{controls}!Player@{Player}|hyperpage}{37}
+\indexentry{Player@{Player}!get\discretionary {-}{}{}Current\discretionary {-}{}{}Frame@{get\discretionary {-}{}{}Current\discretionary {-}{}{}Frame}|hyperpage}{37}
+\indexentry{get\discretionary {-}{}{}Current\discretionary {-}{}{}Frame@{get\discretionary {-}{}{}Current\discretionary {-}{}{}Frame}!Player@{Player}|hyperpage}{37}
+\indexentry{Player@{Player}!get\discretionary {-}{}{}Height@{get\discretionary {-}{}{}Height}|hyperpage}{37}
+\indexentry{get\discretionary {-}{}{}Height@{get\discretionary {-}{}{}Height}!Player@{Player}|hyperpage}{37}
+\indexentry{Player@{Player}!get\discretionary {-}{}{}Jump@{get\discretionary {-}{}{}Jump}|hyperpage}{37}
+\indexentry{get\discretionary {-}{}{}Jump@{get\discretionary {-}{}{}Jump}!Player@{Player}|hyperpage}{37}
+\indexentry{Player@{Player}!get\discretionary {-}{}{}Jump\discretionary {-}{}{}Height@{get\discretionary {-}{}{}Jump\discretionary {-}{}{}Height}|hyperpage}{38}
+\indexentry{get\discretionary {-}{}{}Jump\discretionary {-}{}{}Height@{get\discretionary {-}{}{}Jump\discretionary {-}{}{}Height}!Player@{Player}|hyperpage}{38}
+\indexentry{Player@{Player}!get\discretionary {-}{}{}Jumping@{get\discretionary {-}{}{}Jumping}|hyperpage}{38}
+\indexentry{get\discretionary {-}{}{}Jumping@{get\discretionary {-}{}{}Jumping}!Player@{Player}|hyperpage}{38}
+\indexentry{Player@{Player}!get\discretionary {-}{}{}Jump\discretionary {-}{}{}Sound@{get\discretionary {-}{}{}Jump\discretionary {-}{}{}Sound}|hyperpage}{38}
+\indexentry{get\discretionary {-}{}{}Jump\discretionary {-}{}{}Sound@{get\discretionary {-}{}{}Jump\discretionary {-}{}{}Sound}!Player@{Player}|hyperpage}{38}
+\indexentry{Player@{Player}!get\discretionary {-}{}{}Jump\discretionary {-}{}{}Sound\discretionary {-}{}{}Buffer@{get\discretionary {-}{}{}Jump\discretionary {-}{}{}Sound\discretionary {-}{}{}Buffer}|hyperpage}{38}
+\indexentry{get\discretionary {-}{}{}Jump\discretionary {-}{}{}Sound\discretionary {-}{}{}Buffer@{get\discretionary {-}{}{}Jump\discretionary {-}{}{}Sound\discretionary {-}{}{}Buffer}!Player@{Player}|hyperpage}{38}
+\indexentry{Player@{Player}!get\discretionary {-}{}{}Jump\discretionary {-}{}{}Speed@{get\discretionary {-}{}{}Jump\discretionary {-}{}{}Speed}|hyperpage}{38}
+\indexentry{get\discretionary {-}{}{}Jump\discretionary {-}{}{}Speed@{get\discretionary {-}{}{}Jump\discretionary {-}{}{}Speed}!Player@{Player}|hyperpage}{38}
+\indexentry{Player@{Player}!get\discretionary {-}{}{}On\discretionary {-}{}{}Ground@{get\discretionary {-}{}{}On\discretionary {-}{}{}Ground}|hyperpage}{38}
+\indexentry{get\discretionary {-}{}{}On\discretionary {-}{}{}Ground@{get\discretionary {-}{}{}On\discretionary {-}{}{}Ground}!Player@{Player}|hyperpage}{38}
+\indexentry{Player@{Player}!get\discretionary {-}{}{}Position\discretionary {-}{}{}X@{get\discretionary {-}{}{}Position\discretionary {-}{}{}X}|hyperpage}{39}
+\indexentry{get\discretionary {-}{}{}Position\discretionary {-}{}{}X@{get\discretionary {-}{}{}Position\discretionary {-}{}{}X}!Player@{Player}|hyperpage}{39}
+\indexentry{Player@{Player}!get\discretionary {-}{}{}Position\discretionary {-}{}{}Y@{get\discretionary {-}{}{}Position\discretionary {-}{}{}Y}|hyperpage}{39}
+\indexentry{get\discretionary {-}{}{}Position\discretionary {-}{}{}Y@{get\discretionary {-}{}{}Position\discretionary {-}{}{}Y}!Player@{Player}|hyperpage}{39}
+\indexentry{Player@{Player}!get\discretionary {-}{}{}Rect@{get\discretionary {-}{}{}Rect}|hyperpage}{39}
+\indexentry{get\discretionary {-}{}{}Rect@{get\discretionary {-}{}{}Rect}!Player@{Player}|hyperpage}{39}
+\indexentry{Player@{Player}!get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture1@{get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture1}|hyperpage}{39}
+\indexentry{get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture1@{get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture1}!Player@{Player}|hyperpage}{39}
+\indexentry{Player@{Player}!get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture2@{get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture2}|hyperpage}{39}
+\indexentry{get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture2@{get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture2}!Player@{Player}|hyperpage}{39}
+\indexentry{Player@{Player}!get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture3@{get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture3}|hyperpage}{39}
+\indexentry{get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture3@{get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture3}!Player@{Player}|hyperpage}{39}
+\indexentry{Player@{Player}!get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture4@{get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture4}|hyperpage}{40}
+\indexentry{get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture4@{get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture4}!Player@{Player}|hyperpage}{40}
+\indexentry{Player@{Player}!get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture5@{get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture5}|hyperpage}{40}
+\indexentry{get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture5@{get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture5}!Player@{Player}|hyperpage}{40}
+\indexentry{Player@{Player}!get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture6@{get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture6}|hyperpage}{40}
+\indexentry{get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture6@{get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture6}!Player@{Player}|hyperpage}{40}
+\indexentry{Player@{Player}!get\discretionary {-}{}{}Speed@{get\discretionary {-}{}{}Speed}|hyperpage}{40}
+\indexentry{get\discretionary {-}{}{}Speed@{get\discretionary {-}{}{}Speed}!Player@{Player}|hyperpage}{40}
+\indexentry{Player@{Player}!get\discretionary {-}{}{}Sprite@{get\discretionary {-}{}{}Sprite}|hyperpage}{40}
+\indexentry{get\discretionary {-}{}{}Sprite@{get\discretionary {-}{}{}Sprite}!Player@{Player}|hyperpage}{40}
+\indexentry{Player@{Player}!get\discretionary {-}{}{}Texture@{get\discretionary {-}{}{}Texture}|hyperpage}{40}
+\indexentry{get\discretionary {-}{}{}Texture@{get\discretionary {-}{}{}Texture}!Player@{Player}|hyperpage}{40}
+\indexentry{Player@{Player}!get\discretionary {-}{}{}Width@{get\discretionary {-}{}{}Width}|hyperpage}{41}
+\indexentry{get\discretionary {-}{}{}Width@{get\discretionary {-}{}{}Width}!Player@{Player}|hyperpage}{41}
+\indexentry{Player@{Player}!jump\discretionary {-}{}{}Animation@{jump\discretionary {-}{}{}Animation}|hyperpage}{41}
+\indexentry{jump\discretionary {-}{}{}Animation@{jump\discretionary {-}{}{}Animation}!Player@{Player}|hyperpage}{41}
+\indexentry{Player@{Player}!set\discretionary {-}{}{}Jump\discretionary {-}{}{}Height@{set\discretionary {-}{}{}Jump\discretionary {-}{}{}Height}|hyperpage}{41}
+\indexentry{set\discretionary {-}{}{}Jump\discretionary {-}{}{}Height@{set\discretionary {-}{}{}Jump\discretionary {-}{}{}Height}!Player@{Player}|hyperpage}{41}
+\indexentry{Player@{Player}!set\discretionary {-}{}{}Jumping@{set\discretionary {-}{}{}Jumping}|hyperpage}{41}
+\indexentry{set\discretionary {-}{}{}Jumping@{set\discretionary {-}{}{}Jumping}!Player@{Player}|hyperpage}{41}
+\indexentry{Player@{Player}!set\discretionary {-}{}{}Jump\discretionary {-}{}{}Speed@{set\discretionary {-}{}{}Jump\discretionary {-}{}{}Speed}|hyperpage}{41}
+\indexentry{set\discretionary {-}{}{}Jump\discretionary {-}{}{}Speed@{set\discretionary {-}{}{}Jump\discretionary {-}{}{}Speed}!Player@{Player}|hyperpage}{41}
+\indexentry{Player@{Player}!set\discretionary {-}{}{}On\discretionary {-}{}{}Ground@{set\discretionary {-}{}{}On\discretionary {-}{}{}Ground}|hyperpage}{41}
+\indexentry{set\discretionary {-}{}{}On\discretionary {-}{}{}Ground@{set\discretionary {-}{}{}On\discretionary {-}{}{}Ground}!Player@{Player}|hyperpage}{41}
+\indexentry{Player@{Player}!set\discretionary {-}{}{}Speed@{set\discretionary {-}{}{}Speed}|hyperpage}{42}
+\indexentry{set\discretionary {-}{}{}Speed@{set\discretionary {-}{}{}Speed}!Player@{Player}|hyperpage}{42}
+\indexentry{Shoes@{Shoes}|hyperpage}{42}
+\indexentry{Shoes@{Shoes}!Shoes@{Shoes}|hyperpage}{43}
+\indexentry{Shoes@{Shoes}!Shoes@{Shoes}|hyperpage}{43}
+\indexentry{Shoes@{Shoes}!get\discretionary {-}{}{}Jump\discretionary {-}{}{}Height@{get\discretionary {-}{}{}Jump\discretionary {-}{}{}Height}|hyperpage}{43}
+\indexentry{get\discretionary {-}{}{}Jump\discretionary {-}{}{}Height@{get\discretionary {-}{}{}Jump\discretionary {-}{}{}Height}!Shoes@{Shoes}|hyperpage}{43}
+\indexentry{Shoes@{Shoes}!get\discretionary {-}{}{}Jump\discretionary {-}{}{}Speed@{get\discretionary {-}{}{}Jump\discretionary {-}{}{}Speed}|hyperpage}{43}
+\indexentry{get\discretionary {-}{}{}Jump\discretionary {-}{}{}Speed@{get\discretionary {-}{}{}Jump\discretionary {-}{}{}Speed}!Shoes@{Shoes}|hyperpage}{43}
+\indexentry{Shoes@{Shoes}!get\discretionary {-}{}{}Speed@{get\discretionary {-}{}{}Speed}|hyperpage}{43}
+\indexentry{get\discretionary {-}{}{}Speed@{get\discretionary {-}{}{}Speed}!Shoes@{Shoes}|hyperpage}{43}
+\indexentry{include/\discretionary {-}{}{}Decorator/\discretionary {-}{}{}A\discretionary {-}{}{}Upgrade.\discretionary {-}{}{}h@{include/\discretionary {-}{}{}Decorator/\discretionary {-}{}{}A\discretionary {-}{}{}Upgrade.\discretionary {-}{}{}h}|hyperpage}{45}
+\indexentry{include/\discretionary {-}{}{}Decorator/\discretionary {-}{}{}Cape.\discretionary {-}{}{}h@{include/\discretionary {-}{}{}Decorator/\discretionary {-}{}{}Cape.\discretionary {-}{}{}h}|hyperpage}{45}
+\indexentry{include/\discretionary {-}{}{}Decorator/\discretionary {-}{}{}Player.\discretionary {-}{}{}h@{include/\discretionary {-}{}{}Decorator/\discretionary {-}{}{}Player.\discretionary {-}{}{}h}|hyperpage}{45}
+\indexentry{include/\discretionary {-}{}{}Decorator/\discretionary {-}{}{}Shoes.\discretionary {-}{}{}h@{include/\discretionary {-}{}{}Decorator/\discretionary {-}{}{}Shoes.\discretionary {-}{}{}h}|hyperpage}{45}
+\indexentry{include/\discretionary {-}{}{}Factory/\discretionary {-}{}{}A\discretionary {-}{}{}Factory.\discretionary {-}{}{}h@{include/\discretionary {-}{}{}Factory/\discretionary {-}{}{}A\discretionary {-}{}{}Factory.\discretionary {-}{}{}h}|hyperpage}{45}
+\indexentry{include/\discretionary {-}{}{}Factory/\discretionary {-}{}{}Block\discretionary {-}{}{}Ground1.\discretionary {-}{}{}h@{include/\discretionary {-}{}{}Factory/\discretionary {-}{}{}Block\discretionary {-}{}{}Ground1.\discretionary {-}{}{}h}|hyperpage}{46}
+\indexentry{include/\discretionary {-}{}{}Factory/\discretionary {-}{}{}Block\discretionary {-}{}{}Ground2.\discretionary {-}{}{}h@{include/\discretionary {-}{}{}Factory/\discretionary {-}{}{}Block\discretionary {-}{}{}Ground2.\discretionary {-}{}{}h}|hyperpage}{46}
+\indexentry{include/\discretionary {-}{}{}Factory/\discretionary {-}{}{}Block\discretionary {-}{}{}Ground3.\discretionary {-}{}{}h@{include/\discretionary {-}{}{}Factory/\discretionary {-}{}{}Block\discretionary {-}{}{}Ground3.\discretionary {-}{}{}h}|hyperpage}{46}
+\indexentry{include/\discretionary {-}{}{}Factory/\discretionary {-}{}{}Concrete\discretionary {-}{}{}Factory.\discretionary {-}{}{}h@{include/\discretionary {-}{}{}Factory/\discretionary {-}{}{}Concrete\discretionary {-}{}{}Factory.\discretionary {-}{}{}h}|hyperpage}{46}
+\indexentry{include/\discretionary {-}{}{}Factory/\discretionary {-}{}{}I\discretionary {-}{}{}Block.\discretionary {-}{}{}h@{include/\discretionary {-}{}{}Factory/\discretionary {-}{}{}I\discretionary {-}{}{}Block.\discretionary {-}{}{}h}|hyperpage}{46}
+\indexentry{include/\discretionary {-}{}{}Singleton/\discretionary {-}{}{}Game\discretionary {-}{}{}Manager.\discretionary {-}{}{}h@{include/\discretionary {-}{}{}Singleton/\discretionary {-}{}{}Game\discretionary {-}{}{}Manager.\discretionary {-}{}{}h}|hyperpage}{46}
+\indexentry{include/\discretionary {-}{}{}Singleton/\discretionary {-}{}{}Menu.\discretionary {-}{}{}h@{include/\discretionary {-}{}{}Singleton/\discretionary {-}{}{}Menu.\discretionary {-}{}{}h}|hyperpage}{47}
+\indexentry{include/\discretionary {-}{}{}Strategy/\discretionary {-}{}{}I\discretionary {-}{}{}Level.\discretionary {-}{}{}h@{include/\discretionary {-}{}{}Strategy/\discretionary {-}{}{}I\discretionary {-}{}{}Level.\discretionary {-}{}{}h}|hyperpage}{47}
+\indexentry{include/\discretionary {-}{}{}Strategy/\discretionary {-}{}{}Level\discretionary {-}{}{}One.\discretionary {-}{}{}h@{include/\discretionary {-}{}{}Strategy/\discretionary {-}{}{}Level\discretionary {-}{}{}One.\discretionary {-}{}{}h}|hyperpage}{47}
+\indexentry{include/\discretionary {-}{}{}Strategy/\discretionary {-}{}{}Level\discretionary {-}{}{}Two.\discretionary {-}{}{}h@{include/\discretionary {-}{}{}Strategy/\discretionary {-}{}{}Level\discretionary {-}{}{}Two.\discretionary {-}{}{}h}|hyperpage}{47}

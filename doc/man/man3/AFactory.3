@@ -1,0 +1,94 @@
+.TH "AFactory" 3 "Wed Nov 27 2013" "Version 1.0" "Stickman Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AFactory \- 
+.PP
+Provide a factory to create blocks\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBConcreteFactory\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual \fB~AFactory\fP ()"
+.br
+.RI "\fIDefault destructor\&. \fP"
+.ti -1c
+.RI "\fBIBlock\fP * \fBcreateBlock\fP (char c)"
+.br
+.RI "\fICreate a block using the \fBbuild()\fP method\&. \fP"
+.ti -1c
+.RI "virtual \fBIBlock\fP * \fBbuild\fP (char s)=0"
+.br
+.RI "\fICreate a block according to the given character\&. \fP"
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBIBlock\fP * \fBm_block\fP"
+.br
+.RI "\fIThe block constructed\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Provide a factory to create blocks\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Adrien Bodineau and Alexandre Gomes 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+1\&.0 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBIBlock\fP * AFactory::build (chars)\fC [pure virtual]\fP"
+
+.PP
+Create a block according to the given character\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIs\fP A char that indicate the block to construct 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The block constructed 
+.RE
+.PP
+
+.PP
+Implemented in \fBConcreteFactory\fP\&.
+.SS "\fBIBlock\fP * AFactory::createBlock (charc)"
+
+.PP
+Create a block using the \fBbuild()\fP method\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIc\fP A char that indicate the block to construct 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The block constructed 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Stickman Project from the source code\&.

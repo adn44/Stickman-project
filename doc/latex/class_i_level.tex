@@ -1,0 +1,244 @@
+\hypertarget{class_i_level}{\section{I\-Level Class Reference}
+\label{class_i_level}\index{I\-Level@{I\-Level}}
+}
+
+
+Interface that will be implemented by the levels.  
+
+
+
+
+Inheritance diagram for I\-Level\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_i_level__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_i_level_a736c3cb25ccf5c3f8a79522eef06351d}{virtual \hyperlink{class_i_level_a736c3cb25ccf5c3f8a79522eef06351d}{$\sim$\-I\-Level} ()}\label{class_i_level_a736c3cb25ccf5c3f8a79522eef06351d}
+
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_i_level_a192bb8106e09fb68794711b048ca748d}{get\-Height} (void)=0
+\begin{DoxyCompactList}\small\item\em Get the height of the level. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_i_level_a91daa2f5b760da916b348470cd5ed66e}{get\-Width} (void)=0
+\begin{DoxyCompactList}\small\item\em Get the width of the level. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_level_ae5c21f7cc2cc8757ef50b767d4787138}{load\-Level} (\hyperlink{class_player}{Player} $\ast$player)=0
+\begin{DoxyCompactList}\small\item\em Load the level and the player according the tile map. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_level_a7e37723d1806e1c137c332fd4b28ba51}{draw\-Level} (sf\-::\-Render\-Window $\ast$screen)=0
+\begin{DoxyCompactList}\small\item\em Draw all the elements of the level on the given screen. \end{DoxyCompactList}\item 
+virtual std\-::vector\\*
+$<$ sf\-::\-Sprite $\ast$ $>$ $\ast$ \hyperlink{class_i_level_a9d3f0ff762fbb04038eac9de4531bc45}{get\-Blocks} ()=0
+\begin{DoxyCompactList}\small\item\em Get the blocks of the level. \end{DoxyCompactList}\item 
+virtual sf\-::\-Sprite $\ast$ \hyperlink{class_i_level_a458fa2042948a69f5ec6951e77f9459e}{get\-End\-Sprite} (void)=0
+\begin{DoxyCompactList}\small\item\em Get the sprite of the end. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_i_level}{I\-Level} $\ast$ \hyperlink{class_i_level_a78b187489e43f061cbd990d9ae957178}{get\-Next} (void)=0
+\begin{DoxyCompactList}\small\item\em Get the next level. \end{DoxyCompactList}\item 
+virtual sf\-::\-Sprite $\ast$ \hyperlink{class_i_level_a63d5e1443bff759199d0eb60b0f1eb1f}{get\-Cape\-Sprite} ()=0
+\begin{DoxyCompactList}\small\item\em Get the sprite of the cape. \end{DoxyCompactList}\item 
+virtual sf\-::\-Sprite $\ast$ \hyperlink{class_i_level_ac418e1773d0df3be6ddd40091f04689f}{get\-Shoes\-Sprite} ()=0
+\begin{DoxyCompactList}\small\item\em Get the sprite of the shoes. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_level_a185d4dd983c714a10a2bbdaebae202e6}{remove\-Element} (char target)=0
+\begin{DoxyCompactList}\small\item\em Remove an element from the map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface that will be implemented by the levels. 
+
+\begin{DoxyAuthor}{Author}
+Adrien Bodineau and Alexandre Gomes 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_i_level_a7e37723d1806e1c137c332fd4b28ba51}{\index{I\-Level@{I\-Level}!draw\-Level@{draw\-Level}}
+\index{draw\-Level@{draw\-Level}!ILevel@{I\-Level}}
+\subsubsection[{draw\-Level}]{\setlength{\rightskip}{0pt plus 5cm}void I\-Level\-::draw\-Level (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Render\-Window $\ast$}]{screen}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_i_level_a7e37723d1806e1c137c332fd4b28ba51}
+
+
+Draw all the elements of the level on the given screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & The screen where the elements will be displayed \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_level_one_ac0c5c722d11a026de024ab4a4cbd20ff}{Level\-One}, and \hyperlink{class_level_two_a6fbf138025c013260c7f572b41468a24}{Level\-Two}.
+
+\hypertarget{class_i_level_a9d3f0ff762fbb04038eac9de4531bc45}{\index{I\-Level@{I\-Level}!get\-Blocks@{get\-Blocks}}
+\index{get\-Blocks@{get\-Blocks}!ILevel@{I\-Level}}
+\subsubsection[{get\-Blocks}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ sf\-::\-Sprite $\ast$ $>$ $\ast$ I\-Level\-::get\-Blocks (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_i_level_a9d3f0ff762fbb04038eac9de4531bc45}
+
+
+Get the blocks of the level. 
+
+\begin{DoxyReturn}{Returns}
+A vector with all the elements 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_level_one_a1037e8727782792343b7374eddd535af}{Level\-One}, and \hyperlink{class_level_two_a412f81d5b2b93ea6690635cc5ce02c8f}{Level\-Two}.
+
+\hypertarget{class_i_level_a63d5e1443bff759199d0eb60b0f1eb1f}{\index{I\-Level@{I\-Level}!get\-Cape\-Sprite@{get\-Cape\-Sprite}}
+\index{get\-Cape\-Sprite@{get\-Cape\-Sprite}!ILevel@{I\-Level}}
+\subsubsection[{get\-Cape\-Sprite}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Sprite $\ast$ I\-Level\-::get\-Cape\-Sprite (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_i_level_a63d5e1443bff759199d0eb60b0f1eb1f}
+
+
+Get the sprite of the cape. 
+
+\begin{DoxyReturn}{Returns}
+Sprite of the cape 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_level_one_aa2bb199782d979d50a7143ffb9c3a2a5}{Level\-One}, and \hyperlink{class_level_two_af9e5022cbec0fe1ec6171231374161dd}{Level\-Two}.
+
+\hypertarget{class_i_level_a458fa2042948a69f5ec6951e77f9459e}{\index{I\-Level@{I\-Level}!get\-End\-Sprite@{get\-End\-Sprite}}
+\index{get\-End\-Sprite@{get\-End\-Sprite}!ILevel@{I\-Level}}
+\subsubsection[{get\-End\-Sprite}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Sprite $\ast$ I\-Level\-::get\-End\-Sprite (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_i_level_a458fa2042948a69f5ec6951e77f9459e}
+
+
+Get the sprite of the end. 
+
+\begin{DoxyReturn}{Returns}
+The sprite of the end 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_level_one_a2fb4139507f1b0168e8adc3e137d1e94}{Level\-One}, and \hyperlink{class_level_two_a981cce04240b7d5bf4e5dc5b8a212319}{Level\-Two}.
+
+\hypertarget{class_i_level_a192bb8106e09fb68794711b048ca748d}{\index{I\-Level@{I\-Level}!get\-Height@{get\-Height}}
+\index{get\-Height@{get\-Height}!ILevel@{I\-Level}}
+\subsubsection[{get\-Height}]{\setlength{\rightskip}{0pt plus 5cm}int I\-Level\-::get\-Height (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_i_level_a192bb8106e09fb68794711b048ca748d}
+
+
+Get the height of the level. 
+
+\begin{DoxyReturn}{Returns}
+The height of the level 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_level_one_ad42ac4352d8559121504d6ff19a76cde}{Level\-One}, and \hyperlink{class_level_two_a8c0c117bce3509249967c408b5e077a4}{Level\-Two}.
+
+\hypertarget{class_i_level_a78b187489e43f061cbd990d9ae957178}{\index{I\-Level@{I\-Level}!get\-Next@{get\-Next}}
+\index{get\-Next@{get\-Next}!ILevel@{I\-Level}}
+\subsubsection[{get\-Next}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\-Level} $\ast$ I\-Level\-::get\-Next (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_i_level_a78b187489e43f061cbd990d9ae957178}
+
+
+Get the next level. 
+
+\begin{DoxyReturn}{Returns}
+Next level, N\-U\-L\-L if this is the last level 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_level_one_a02759e21a744625e01f936e529b0e8f1}{Level\-One}, and \hyperlink{class_level_two_a4f0b0678a51169126fdd0e354ff4fa0e}{Level\-Two}.
+
+\hypertarget{class_i_level_ac418e1773d0df3be6ddd40091f04689f}{\index{I\-Level@{I\-Level}!get\-Shoes\-Sprite@{get\-Shoes\-Sprite}}
+\index{get\-Shoes\-Sprite@{get\-Shoes\-Sprite}!ILevel@{I\-Level}}
+\subsubsection[{get\-Shoes\-Sprite}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Sprite $\ast$ I\-Level\-::get\-Shoes\-Sprite (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_i_level_ac418e1773d0df3be6ddd40091f04689f}
+
+
+Get the sprite of the shoes. 
+
+\begin{DoxyReturn}{Returns}
+Sprite of the shoes 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_level_one_ab7b81a5ee8299a900494439e470e0f17}{Level\-One}, and \hyperlink{class_level_two_ae382cc1e788e71eadcef2b5946ee204e}{Level\-Two}.
+
+\hypertarget{class_i_level_a91daa2f5b760da916b348470cd5ed66e}{\index{I\-Level@{I\-Level}!get\-Width@{get\-Width}}
+\index{get\-Width@{get\-Width}!ILevel@{I\-Level}}
+\subsubsection[{get\-Width}]{\setlength{\rightskip}{0pt plus 5cm}int I\-Level\-::get\-Width (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_i_level_a91daa2f5b760da916b348470cd5ed66e}
+
+
+Get the width of the level. 
+
+\begin{DoxyReturn}{Returns}
+The width of the level 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_level_one_acc6a1535bc43ee0cd38e9ae688d71f41}{Level\-One}, and \hyperlink{class_level_two_a8b5c8339077204363fc53e861710ca5c}{Level\-Two}.
+
+\hypertarget{class_i_level_ae5c21f7cc2cc8757ef50b767d4787138}{\index{I\-Level@{I\-Level}!load\-Level@{load\-Level}}
+\index{load\-Level@{load\-Level}!ILevel@{I\-Level}}
+\subsubsection[{load\-Level}]{\setlength{\rightskip}{0pt plus 5cm}void I\-Level\-::load\-Level (
+\begin{DoxyParamCaption}
+\item[{{\bf Player} $\ast$}]{player}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_i_level_ae5c21f7cc2cc8757ef50b767d4787138}
+
+
+Load the level and the player according the tile map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The pointer to the player, so the method can set his position \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_level_one_a072a98e693b35e9d8bafc7ae78966a86}{Level\-One}, and \hyperlink{class_level_two_a71138ffe84dee9ed856a0328f3c72411}{Level\-Two}.
+
+\hypertarget{class_i_level_a185d4dd983c714a10a2bbdaebae202e6}{\index{I\-Level@{I\-Level}!remove\-Element@{remove\-Element}}
+\index{remove\-Element@{remove\-Element}!ILevel@{I\-Level}}
+\subsubsection[{remove\-Element}]{\setlength{\rightskip}{0pt plus 5cm}void I\-Level\-::remove\-Element (
+\begin{DoxyParamCaption}
+\item[{char}]{target}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_i_level_a185d4dd983c714a10a2bbdaebae202e6}
+
+
+Remove an element from the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Character representing the element to remove \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_level_one_a601628107a9810e5c323dc994d7c07ec}{Level\-One}, and \hyperlink{class_level_two_a87ad50b6da9f82ecf602c789d354acae}{Level\-Two}.
+

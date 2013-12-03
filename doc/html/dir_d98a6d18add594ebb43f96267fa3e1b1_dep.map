@@ -1,0 +1,9 @@
+<map id="include/Singleton" name="include/Singleton">
+<area shape="rect" id="node2" href="dir_d98a6d18add594ebb43f96267fa3e1b1.html" title="Singleton" alt="" coords="27,55,101,103"/>
+<area shape="rect" id="node3" href="dir_d92049b9688df355134455b02783240e.html" title="Decorator" alt="" coords="25,247,103,295"/>
+<area shape="rect" id="edge3" href="dir_000003_000001.html" title="3" alt="" coords="61,218,69,236"/>
+<area shape="rect" id="node4" href="dir_1c89e09d0992b6fd0198eb039d9e5e65.html" title="Strategy" alt="" coords="65,151,137,199"/>
+<area shape="rect" id="edge5" href="dir_000003_000004.html" title="3" alt="" coords="89,121,97,139"/>
+<area shape="rect" id="edge7" href="dir_000004_000001.html" title="3" alt="" coords="84,224,92,241"/>
+<area shape="rect" id="graph2" href="dir_d44c64559bbebec7f509842c48db8b23.html" title="include" alt="" coords="16,16,112,113"/>
+</map>

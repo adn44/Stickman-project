@@ -1,0 +1,5 @@
+<map id="IBlock" name="IBlock">
+<area shape="rect" id="node3" href="$class_block_ground1.html" title="A concrete block that implements IBlock. " alt="" coords="5,83,109,112"/>
+<area shape="rect" id="node5" href="$class_block_ground2.html" title="Another concrete block that implements IBlock. " alt="" coords="133,83,237,112"/>
+<area shape="rect" id="node7" href="$class_block_ground3.html" title="Another concrete block that implements IBlock. " alt="" coords="261,83,365,112"/>
+</map>

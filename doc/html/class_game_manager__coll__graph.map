@@ -1,0 +1,4 @@
+<map id="GameManager" name="GameManager">
+<area shape="rect" id="node3" href="$class_i_level.html" title="Interface that will be implemented by the levels. " alt="" coords="5,5,61,35"/>
+<area shape="rect" id="node5" href="$class_player.html" title="Player class. " alt="" coords="85,5,144,35"/>
+</map>

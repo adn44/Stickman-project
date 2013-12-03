@@ -1,0 +1,74 @@
+.TH "IBlock" 3 "Wed Nov 27 2013" "Version 1.0" "Stickman Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+IBlock \- 
+.PP
+Interface that will be implemented by all the different kinds of blocks\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBBlockGround1\fP, \fBBlockGround2\fP, and \fBBlockGround3\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual sf::Texture * \fBgetTexture\fP ()=0"
+.br
+.RI "\fIReturn the texture of the block\&. \fP"
+.ti -1c
+.RI "virtual sf::Sprite * \fBgetSprite\fP ()=0"
+.br
+.RI "\fIReturn the sprite of the block\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Interface that will be implemented by all the different kinds of blocks\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Adrien Bodineau and Alexandre Gomes 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+1\&.0 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "sf::Sprite * IBlock::getSprite (void)\fC [pure virtual]\fP"
+
+.PP
+Return the sprite of the block\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+The sprite of the block 
+.RE
+.PP
+
+.PP
+Implemented in \fBBlockGround1\fP, \fBBlockGround2\fP, and \fBBlockGround3\fP\&.
+.SS "sf::Texture * IBlock::getTexture ()\fC [pure virtual]\fP"
+
+.PP
+Return the texture of the block\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+The texture of the block 
+.RE
+.PP
+
+.PP
+Implemented in \fBBlockGround1\fP, \fBBlockGround2\fP, and \fBBlockGround3\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Stickman Project from the source code\&.

@@ -1,0 +1,4 @@
+<map id="ILevel" name="ILevel">
+<area shape="rect" id="node3" href="$class_level_one.html" title="Implements the first level of the game. " alt="" coords="5,83,83,112"/>
+<area shape="rect" id="node5" href="$class_level_two.html" title="Implements the second level of the game. " alt="" coords="107,83,184,112"/>
+</map>

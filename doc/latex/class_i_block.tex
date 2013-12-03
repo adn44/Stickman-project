@@ -1,0 +1,74 @@
+\hypertarget{class_i_block}{\section{I\-Block Class Reference}
+\label{class_i_block}\index{I\-Block@{I\-Block}}
+}
+
+
+Interface that will be implemented by all the different kinds of blocks.  
+
+
+
+
+Inheritance diagram for I\-Block\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_i_block__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual sf\-::\-Texture $\ast$ \hyperlink{class_i_block_ac789384b5d6c070c4f4c6a9c65906826}{get\-Texture} ()=0
+\begin{DoxyCompactList}\small\item\em Return the texture of the block. \end{DoxyCompactList}\item 
+virtual sf\-::\-Sprite $\ast$ \hyperlink{class_i_block_a76ae337b47bb084b2c143a24fdc47093}{get\-Sprite} ()=0
+\begin{DoxyCompactList}\small\item\em Return the sprite of the block. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface that will be implemented by all the different kinds of blocks. 
+
+\begin{DoxyAuthor}{Author}
+Adrien Bodineau and Alexandre Gomes 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_i_block_a76ae337b47bb084b2c143a24fdc47093}{\index{I\-Block@{I\-Block}!get\-Sprite@{get\-Sprite}}
+\index{get\-Sprite@{get\-Sprite}!IBlock@{I\-Block}}
+\subsubsection[{get\-Sprite}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Sprite $\ast$ I\-Block\-::get\-Sprite (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_i_block_a76ae337b47bb084b2c143a24fdc47093}
+
+
+Return the sprite of the block. 
+
+\begin{DoxyReturn}{Returns}
+The sprite of the block 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_block_ground1_a1764bea828301fadfb0c9a11d43201f7}{Block\-Ground1}, \hyperlink{class_block_ground2_aa50914561a51632ac1ad389808e01a43}{Block\-Ground2}, and \hyperlink{class_block_ground3_a55747e1cbcdae3df63da4bacd9eb7d17}{Block\-Ground3}.
+
+\hypertarget{class_i_block_ac789384b5d6c070c4f4c6a9c65906826}{\index{I\-Block@{I\-Block}!get\-Texture@{get\-Texture}}
+\index{get\-Texture@{get\-Texture}!IBlock@{I\-Block}}
+\subsubsection[{get\-Texture}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Texture $\ast$ I\-Block\-::get\-Texture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_i_block_ac789384b5d6c070c4f4c6a9c65906826}
+
+
+Return the texture of the block. 
+
+\begin{DoxyReturn}{Returns}
+The texture of the block 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_block_ground1_ae33602300cd0a84d94ce74a1130c77b6}{Block\-Ground1}, \hyperlink{class_block_ground2_a97ccf6ca4bbd7d0d45e4fb8550374bf7}{Block\-Ground2}, and \hyperlink{class_block_ground3_a356871f712e64b3f9e7efb4075509c40}{Block\-Ground3}.
+

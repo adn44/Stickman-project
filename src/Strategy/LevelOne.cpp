@@ -1,0 +1,139 @@
+#include "../../include/Strategy/LevelOne.h"
+
+LevelOne::LevelOne ( void )
+{
+	m_tileMap = new std::vector<std::string>;
+	m_tileMap->push_back ( "                                 E  " );
+	m_tileMap->push_back ( "                        QQQQQQQ SSS " );
+	m_tileMap->push_back ( "                     D              " );
+	m_tileMap->push_back ( "     P    QQQQ    SS                " );
+	m_tileMap->push_back ( "   Q     Q      S  O       A        " );
+	m_tileMap->push_back ( "QQDQQQQQQQQQQQQQ   SDDDDQDQQ        " );
+
+	m_blocks = new std::vector<sf::Sprite*>;
+	m_factory = new ConcreteFactory;
+
+	m_endTexture = new sf::Texture;
+	if(!m_endTexture->loadFromFile("img/end.png")) {
+		exit(EXIT_FAILURE);
+	}
+
+	m_endSprite = new sf::Sprite(*m_endTexture);
+
+	m_capeTexture = new sf::Texture;
+	if(!m_capeTexture->loadFromFile("img/cape.png")){
+		exit(EXIT_FAILURE);
+	}
+	m_capeSprite = new sf::Sprite(*m_capeTexture);
+
+	m_drawCape = true;
+	m_drawShoes = true;
+
+	m_next = new LevelTwo;
+
+	m_shoesTexture = new sf::Texture;
+	if(!m_shoesTexture->loadFromFile("img/shoes.png")) {
+		exit(EXIT_FAILURE);
+	}
+
+	m_shoesSprite = new sf::Sprite(*m_shoesTexture);
+}
+
+LevelOne::~LevelOne ( void )
+{
+}
+
+int LevelOne::getHeight ( void )
+{
+	return m_tileMap->size ( );
+}
+
+int LevelOne::getWidth ( void )
+{
+	return m_tileMap->at(0).length ( );
+}
+
+void LevelOne::loadLevel ( Player* player )
+{
+	int n = 0;
+
+	for ( int i=0; i<getHeight ( ); i++ )
+    {
+		for(int j=0; j<getWidth ( ); j++ )
+        {
+			switch ( ( m_tileMap->at ( i ) )[j] )
+            {
+			case 'P':
+				player->getSprite()->setPosition ( j*78, i*80 );
+				break;
+			case 'E':
+				m_endSprite->setPosition(j*78, i*80);
+				break;
+			case 'A':
+				m_capeSprite->setPosition(j*78,i*80);
+				break;
+			case 'O':
+				m_shoesSprite->setPosition(j*78,i*80);
+				break;
+			case ' ':
+				break;
+			default:
+				m_block = m_factory->createBlock((m_tileMap->at(i))[j]);
+				m_blocks->push_back(m_block->getSprite());
+				m_blocks->at(n)->setPosition(j*78, i*80);
+				n++;
+				break;
+            }
+        }
+    }
+}
+
+void LevelOne::drawLevel ( sf::RenderWindow* screen )
+{
+	for ( sf::Sprite* s : *m_blocks )
+    {
+		screen->draw ( *s );
+    }
+
+	screen->draw(*m_endSprite);
+	if(m_drawCape){
+		screen->draw(*m_capeSprite);
+	}
+
+	if(m_drawShoes){
+		screen->draw(*m_shoesSprite);
+	}
+}
+
+
+std::vector<sf::Sprite*>* LevelOne::getBlocks ( void )
+{
+	return m_blocks;
+}
+
+sf::Sprite* LevelOne::getEndSprite ( void ) {
+	return m_endSprite;
+}
+
+sf::Sprite* LevelOne::getShoesSprite () {
+	return m_shoesSprite;
+}
+
+sf::Sprite* LevelOne::getCapeSprite(){
+	return m_capeSprite;
+}
+
+void LevelOne::removeElement(char target){
+	if(target == 'A'){
+		m_drawCape = false;
+		m_capeSprite->setPosition(-500, -500);
+	}
+	else if (target == 'O') {
+		m_drawShoes = false;
+		m_shoesSprite->setPosition(-500, -500);
+	}
+}
+
+ILevel* LevelOne::getNext(void) {
+	return m_next;
+}

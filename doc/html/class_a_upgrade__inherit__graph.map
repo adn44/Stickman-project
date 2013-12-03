@@ -1,0 +1,5 @@
+<map id="AUpgrade" name="AUpgrade">
+<area shape="rect" id="node5" href="$class_cape.html" title="Cape upgrade. " alt="" coords="5,160,59,189"/>
+<area shape="rect" id="node7" href="$class_shoes.html" title="Shoes class. " alt="" coords="83,160,141,189"/>
+<area shape="rect" id="node2" href="$class_player.html" title="Player class. " alt="" coords="43,5,101,35"/>
+</map>

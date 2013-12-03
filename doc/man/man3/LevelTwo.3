@@ -1,0 +1,276 @@
+.TH "LevelTwo" 3 "Wed Nov 27 2013" "Version 1.0" "Stickman Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+LevelTwo \- 
+.PP
+Implements the second level of the game\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBILevel\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBLevelTwo\fP (void)"
+.br
+.RI "\fIDefault constructor\&. \fP"
+.ti -1c
+.RI "\fB~LevelTwo\fP (void)"
+.br
+.RI "\fIDefault destructor\&. \fP"
+.ti -1c
+.RI "int \fBgetHeight\fP (void)"
+.br
+.RI "\fIGet the height of the level\&. \fP"
+.ti -1c
+.RI "int \fBgetWidth\fP (void)"
+.br
+.RI "\fIGet the width of the level\&. \fP"
+.ti -1c
+.RI "virtual void \fBloadLevel\fP (\fBPlayer\fP *player)"
+.br
+.RI "\fILoad the level and the player according the tile map\&. \fP"
+.ti -1c
+.RI "virtual void \fBdrawLevel\fP (sf::RenderWindow *screen)"
+.br
+.RI "\fIDraw all the elements of the level on the given screen\&. \fP"
+.ti -1c
+.RI "virtual std::vector
+.br
+< sf::Sprite * > * \fBgetBlocks\fP (void)"
+.br
+.RI "\fIGet the blocks of the level\&. \fP"
+.ti -1c
+.RI "virtual sf::Sprite * \fBgetEndSprite\fP (void)"
+.br
+.RI "\fIGet a pointer on the sprite of the end\&. \fP"
+.ti -1c
+.RI "virtual sf::Sprite * \fBgetCapeSprite\fP ()"
+.br
+.RI "\fIGet a pointer on the sprite of the cape\&. \fP"
+.ti -1c
+.RI "virtual sf::Sprite * \fBgetShoesSprite\fP ()"
+.br
+.RI "\fIGet a pointer on the sprite of the shoes\&. \fP"
+.ti -1c
+.RI "virtual void \fBremoveElement\fP (char target)"
+.br
+.RI "\fIRemove an element from the map\&. \fP"
+.ti -1c
+.RI "virtual \fBILevel\fP * \fBgetNext\fP (void)"
+.br
+.RI "\fIGet the next level\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< std::string > * \fBm_tileMap\fP"
+.br
+.RI "\fIThe tile map (i\&.e\&. the map of the level) \fP"
+.ti -1c
+.RI "std::vector< sf::Sprite * > * \fBm_blocks\fP"
+.br
+.RI "\fIContains all the elements of the level\&. \fP"
+.ti -1c
+.RI "\fBIBlock\fP * \fBm_block\fP"
+.br
+.RI "\fIConstructed block\&. \fP"
+.ti -1c
+.RI "sf::Texture * \fBm_endTexture\fP"
+.br
+.RI "\fITexture of the end sprite\&. \fP"
+.ti -1c
+.RI "sf::Sprite * \fBm_endSprite\fP"
+.br
+.RI "\fISprite of the end sprite\&. \fP"
+.ti -1c
+.RI "\fBAFactory\fP * \fBm_factory\fP"
+.br
+.RI "\fIThe factory that will create the blocks\&. \fP"
+.ti -1c
+.RI "sf::Texture * \fBm_capeTexture\fP"
+.br
+.RI "\fI\fBCape\fP texture\&. \fP"
+.ti -1c
+.RI "sf::Sprite * \fBm_capeSprite\fP"
+.br
+.RI "\fI\fBCape\fP sprite\&. \fP"
+.ti -1c
+.RI "sf::Texture * \fBm_shoesTexture\fP"
+.br
+.RI "\fI\fBShoes\fP texture\&. \fP"
+.ti -1c
+.RI "sf::Sprite * \fBm_shoesSprite\fP"
+.br
+.RI "\fI\fBShoes\fP sprite\&. \fP"
+.ti -1c
+.RI "\fBILevel\fP * \fBm_next\fP"
+.br
+.RI "\fINext level\&. \fP"
+.ti -1c
+.RI "bool \fBm_drawCape\fP"
+.br
+.RI "\fIBoolean to know when the cape has to be draw or not\&. \fP"
+.ti -1c
+.RI "bool \fBm_drawShoes\fP"
+.br
+.RI "\fIBoolean to know when the shoes has to be draw or not\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Implements the second level of the game\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Adrien Bodineau and Alexandre Gomes 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+1\&.0 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void LevelTwo::drawLevel (sf::RenderWindow *screen)\fC [virtual]\fP"
+
+.PP
+Draw all the elements of the level on the given screen\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIscreen\fP The screen where the elements will be displayed 
+.RE
+.PP
+
+.PP
+Implements \fBILevel\fP\&.
+.SS "std::vector< sf::Sprite * > * LevelTwo::getBlocks (void)\fC [virtual]\fP"
+
+.PP
+Get the blocks of the level\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A vector with all the elements 
+.RE
+.PP
+
+.PP
+Implements \fBILevel\fP\&.
+.SS "sf::Sprite * LevelTwo::getCapeSprite (void)\fC [virtual]\fP"
+
+.PP
+Get a pointer on the sprite of the cape\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+The pointer on the sprite of the cape 
+.RE
+.PP
+
+.PP
+Implements \fBILevel\fP\&.
+.SS "sf::Sprite * LevelTwo::getEndSprite (void)\fC [virtual]\fP"
+
+.PP
+Get a pointer on the sprite of the end\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+The pointer on the sprite of the end 
+.RE
+.PP
+
+.PP
+Implements \fBILevel\fP\&.
+.SS "int LevelTwo::getHeight (void)\fC [virtual]\fP"
+
+.PP
+Get the height of the level\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+The height of the level 
+.RE
+.PP
+
+.PP
+Implements \fBILevel\fP\&.
+.SS "\fBILevel\fP * LevelTwo::getNext (void)\fC [virtual]\fP"
+
+.PP
+Get the next level\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Next level, NULL if this is the last level 
+.RE
+.PP
+
+.PP
+Implements \fBILevel\fP\&.
+.SS "sf::Sprite * LevelTwo::getShoesSprite (void)\fC [virtual]\fP"
+
+.PP
+Get a pointer on the sprite of the shoes\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+The pointer on the sprite of the shoes 
+.RE
+.PP
+
+.PP
+Implements \fBILevel\fP\&.
+.SS "int LevelTwo::getWidth (void)\fC [virtual]\fP"
+
+.PP
+Get the width of the level\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+The width of the level 
+.RE
+.PP
+
+.PP
+Implements \fBILevel\fP\&.
+.SS "void LevelTwo::loadLevel (\fBPlayer\fP *player)\fC [virtual]\fP"
+
+.PP
+Load the level and the player according the tile map\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIplayer\fP The pointer to the player, so the method can set his position 
+.RE
+.PP
+
+.PP
+Implements \fBILevel\fP\&.
+.SS "void LevelTwo::removeElement (chartarget)\fC [virtual]\fP"
+
+.PP
+Remove an element from the map\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItarget\fP Character representing the element to remove 
+.RE
+.PP
+
+.PP
+Implements \fBILevel\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Stickman Project from the source code\&.

@@ -1,0 +1,638 @@
+.TH "Player" 3 "Wed Nov 27 2013" "Version 1.0" "Stickman Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Player \- 
+.PP
+\fBPlayer\fP class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBAUpgrade\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPlayer\fP (int x=0, int y=0)"
+.br
+.RI "\fIDefault constructor\&. \fP"
+.ti -1c
+.RI "virtual \fB~Player\fP (void)"
+.br
+.RI "\fIDefault destructor\&. \fP"
+.ti -1c
+.RI "virtual void \fBsetOnGround\fP (bool value)"
+.br
+.RI "\fISet onGround\&. \fP"
+.ti -1c
+.RI "virtual void \fBgoRight\fP (void)"
+.br
+.RI "\fIFunction to make the player go to the right\&. \fP"
+.ti -1c
+.RI "virtual void \fBgoLeft\fP (void)"
+.br
+.RI "\fIFunction to make the player go to the left\&. \fP"
+.ti -1c
+.RI "virtual void \fBfall\fP (void)"
+.br
+.RI "\fIFunction to make the player fall\&. \fP"
+.ti -1c
+.RI "virtual void \fBcontrols\fP (char collisionR, char collisionL, char collisionT, char collisionG)"
+.br
+.RI "\fIIndicate what the player have to do according to the collisions and the press buttons\&. \fP"
+.ti -1c
+.RI "virtual void \fBjump\fP (void)"
+.br
+.RI "\fISet up the jump\&. \fP"
+.ti -1c
+.RI "virtual void \fBjumpAnimation\fP (char collisionR, char collisionL, char collisionT, char collisionG)"
+.br
+.RI "\fIMake the player jump\&. \fP"
+.ti -1c
+.RI "virtual void \fBsetJumping\fP (bool value)"
+.br
+.RI "\fISet the jumping value\&. \fP"
+.ti -1c
+.RI "virtual void \fBsetSpeed\fP (int speed)"
+.br
+.RI "\fISet the speed value\&. \fP"
+.ti -1c
+.RI "virtual void \fBsetJumpSpeed\fP (int jumpSpeed)"
+.br
+.RI "\fISet the jumping speed value\&. \fP"
+.ti -1c
+.RI "virtual void \fBsetJumpHeight\fP (int jumpHeight)"
+.br
+.RI "\fISet the jumping height value\&. \fP"
+.ti -1c
+.RI "virtual sf::IntRect * \fBgetRect\fP (void)"
+.br
+.RI "\fIGet the rect of the player\&. \fP"
+.ti -1c
+.RI "virtual bool \fBgetJumping\fP (void)"
+.br
+.RI "\fIGet the jumping value\&. \fP"
+.ti -1c
+.RI "virtual int \fBgetSpeed\fP ()"
+.br
+.RI "\fIGet the speed value\&. \fP"
+.ti -1c
+.RI "virtual int \fBgetJumpSpeed\fP ()"
+.br
+.RI "\fIGet the jumping speed value\&. \fP"
+.ti -1c
+.RI "virtual int \fBgetJumpHeight\fP ()"
+.br
+.RI "\fIGet the jumping height value\&. \fP"
+.ti -1c
+.RI "virtual sf::Sprite * \fBgetSprite\fP (void)"
+.br
+.RI "\fIGet the sprite of the player\&. \fP"
+.ti -1c
+.RI "virtual bool \fBgetOnGround\fP (void)"
+.br
+.RI "\fIGet the boolean onGround\&. \fP"
+.ti -1c
+.RI "virtual int \fBgetPositionX\fP (int inc=0)"
+.br
+.RI "\fIGet the position x\&. \fP"
+.ti -1c
+.RI "virtual int \fBgetPositionY\fP (int inc=0)"
+.br
+.RI "\fIGet the position y\&. \fP"
+.ti -1c
+.RI "virtual int \fBgetWidth\fP (int inc=0)"
+.br
+.RI "\fIGet the player's width\&. \fP"
+.ti -1c
+.RI "virtual int \fBgetHeight\fP (int inc=0)"
+.br
+.RI "\fIGet the player's height\&. \fP"
+.ti -1c
+.RI "virtual sf::Texture * \fBgetTexture\fP ()"
+.br
+.RI "\fIGet the player's texture\&. \fP"
+.ti -1c
+.RI "virtual sf::Texture * \fBgetRunTexture1\fP ()"
+.br
+.RI "\fIGet the player's run texture 1\&. \fP"
+.ti -1c
+.RI "virtual sf::Texture * \fBgetRunTexture2\fP ()"
+.br
+.RI "\fIGet the player's run texture 2\&. \fP"
+.ti -1c
+.RI "virtual sf::Texture * \fBgetRunTexture3\fP ()"
+.br
+.RI "\fIGet the player's run texture 3\&. \fP"
+.ti -1c
+.RI "virtual sf::Texture * \fBgetRunTexture4\fP ()"
+.br
+.RI "\fIGet the player's run texture 4\&. \fP"
+.ti -1c
+.RI "virtual sf::Texture * \fBgetRunTexture5\fP ()"
+.br
+.RI "\fIGet the player's run texture 5\&. \fP"
+.ti -1c
+.RI "virtual sf::Texture * \fBgetRunTexture6\fP ()"
+.br
+.RI "\fIGet the player's run texture 6\&. \fP"
+.ti -1c
+.RI "virtual sf::Sound * \fBgetJumpSound\fP ()"
+.br
+.RI "\fIGet the jump sound\&. \fP"
+.ti -1c
+.RI "virtual sf::SoundBuffer * \fBgetJumpSoundBuffer\fP ()"
+.br
+.RI "\fIGet the jump sound buffer\&. \fP"
+.ti -1c
+.RI "virtual int \fBgetJump\fP ()"
+.br
+.RI "\fIGet the value of jump\&. \fP"
+.ti -1c
+.RI "virtual double \fBgetCurrentFrame\fP ()"
+.br
+.RI "\fIGet the player's current frame\&. \fP"
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "sf::Texture * \fBm_texture\fP"
+.br
+.RI "\fI\fBPlayer\fP's texture\&. \fP"
+.ti -1c
+.RI "sf::Texture * \fBm_runTexture1\fP"
+.br
+.RI "\fI\fBPlayer\fP's run texture 1\&. \fP"
+.ti -1c
+.RI "sf::Texture * \fBm_runTexture2\fP"
+.br
+.RI "\fI\fBPlayer\fP's run texture 2\&. \fP"
+.ti -1c
+.RI "sf::Texture * \fBm_runTexture3\fP"
+.br
+.RI "\fI\fBPlayer\fP's run texture 3\&. \fP"
+.ti -1c
+.RI "sf::Texture * \fBm_runTexture4\fP"
+.br
+.RI "\fI\fBPlayer\fP's run texture 4\&. \fP"
+.ti -1c
+.RI "sf::Texture * \fBm_runTexture5\fP"
+.br
+.RI "\fI\fBPlayer\fP's run texture 5\&. \fP"
+.ti -1c
+.RI "sf::Texture * \fBm_runTexture6\fP"
+.br
+.RI "\fI\fBPlayer\fP's run texture 6\&. \fP"
+.ti -1c
+.RI "sf::Texture * \fBm_animTab\fP [6]"
+.br
+.RI "\fIArray of the run textures\&. \fP"
+.ti -1c
+.RI "sf::Texture * \fBm_jumpTexture\fP"
+.br
+.RI "\fI\fBPlayer\fP's jump texture\&. \fP"
+.ti -1c
+.RI "sf::Texture * \fBm_fallTexture\fP"
+.br
+.RI "\fI\fBPlayer\fP's fall texture\&. \fP"
+.ti -1c
+.RI "sf::Sprite * \fBm_sprite\fP"
+.br
+.RI "\fI\fBPlayer\fP's sprite\&. \fP"
+.ti -1c
+.RI "sf::Sound * \fBm_jumpSound\fP"
+.br
+.RI "\fIJump sound\&. \fP"
+.ti -1c
+.RI "sf::SoundBuffer * \fBm_jumpSoundBuffer\fP"
+.br
+.RI "\fIJump sound buffer\&. \fP"
+.ti -1c
+.RI "sf::IntRect * \fBm_rect\fP"
+.br
+.RI "\fI\fBPlayer\fP's rect\&. \fP"
+.ti -1c
+.RI "int \fBm_dx\fP"
+.br
+.RI "\fIPosition x\&. \fP"
+.ti -1c
+.RI "int \fBm_dy\fP"
+.br
+.RI "\fIPosition y\&. \fP"
+.ti -1c
+.RI "bool \fBm_onGround\fP"
+.br
+.RI "\fIBoolean to know if the player is on the ground\&. \fP"
+.ti -1c
+.RI "bool \fBm_jumping\fP"
+.br
+.RI "\fIBoolean to know if the player is jumping\&. \fP"
+.ti -1c
+.RI "int \fBm_jump\fP"
+.br
+.RI "\fIValue of the jump\&. \fP"
+.ti -1c
+.RI "double \fBm_currentFrame\fP"
+.br
+.RI "\fIValue of the current frame\&. \fP"
+.ti -1c
+.RI "int \fBm_speed\fP"
+.br
+.RI "\fI\fBPlayer\fP's speed\&. \fP"
+.ti -1c
+.RI "int \fBm_jumpSpeed\fP"
+.br
+.RI "\fIJump speed\&. \fP"
+.ti -1c
+.RI "int \fBm_jumpHeight\fP"
+.br
+.RI "\fIJump height\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBPlayer\fP class\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Adrien Bodineau and Alexandre Gomes 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+1\&.0 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Player::Player (intx = \fC0\fP, inty = \fC0\fP)"
+
+.PP
+Default constructor\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP Position x 
+.br
+\fIy\fP Position y 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Player::controls (charcollisionR, charcollisionL, charcollisionT, charcollisionG)\fC [virtual]\fP"
+
+.PP
+Indicate what the player have to do according to the collisions and the press buttons\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcollisionR\fP Character to indicate the right collision 
+.br
+\fIcollisionL\fP Character to indicate the left collision 
+.br
+\fIcollisionT\fP Character to indicate the top collision 
+.br
+\fIcollisionG\fP Character to indicate the ground collision 
+.RE
+.PP
+
+.SS "double Player::getCurrentFrame ()\fC [virtual]\fP"
+
+.PP
+Get the player's current frame\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBPlayer\fP's current frame 
+.RE
+.PP
+
+.SS "int Player::getHeight (intinc = \fC0\fP)\fC [virtual]\fP"
+
+.PP
+Get the player's height\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBPlayer\fP's height 
+.RE
+.PP
+
+.SS "int Player::getJump ()\fC [virtual]\fP"
+
+.PP
+Get the value of jump\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Jump value 
+.RE
+.PP
+
+.SS "int Player::getJumpHeight ()\fC [virtual]\fP"
+
+.PP
+Get the jumping height value\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Jumping height value 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBCape\fP, and \fBShoes\fP\&.
+.SS "bool Player::getJumping (void)\fC [virtual]\fP"
+
+.PP
+Get the jumping value\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Jumping value 
+.RE
+.PP
+
+.SS "sf::Sound * Player::getJumpSound ()\fC [virtual]\fP"
+
+.PP
+Get the jump sound\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Jump sound 
+.RE
+.PP
+
+.SS "sf::SoundBuffer * Player::getJumpSoundBuffer ()\fC [virtual]\fP"
+
+.PP
+Get the jump sound buffer\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Jump sound buffer 
+.RE
+.PP
+
+.SS "int Player::getJumpSpeed ()\fC [virtual]\fP"
+
+.PP
+Get the jumping speed value\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Jump speed value 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBCape\fP, and \fBShoes\fP\&.
+.SS "bool Player::getOnGround (void)\fC [virtual]\fP"
+
+.PP
+Get the boolean onGround\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Value of onGround 
+.RE
+.PP
+
+.SS "int Player::getPositionX (intinc = \fC0\fP)\fC [virtual]\fP"
+
+.PP
+Get the position x\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIinc\fP Get the position x+inc 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Position x 
+.RE
+.PP
+
+.SS "int Player::getPositionY (intinc = \fC0\fP)\fC [virtual]\fP"
+
+.PP
+Get the position y\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIinc\fP Get the position y+inc 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Position y 
+.RE
+.PP
+
+.SS "sf::IntRect * Player::getRect (void)\fC [virtual]\fP"
+
+.PP
+Get the rect of the player\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBPlayer\fP's rect 
+.RE
+.PP
+
+.SS "sf::Texture * Player::getRunTexture1 ()\fC [virtual]\fP"
+
+.PP
+Get the player's run texture 1\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBPlayer\fP's run texture 1 
+.RE
+.PP
+
+.SS "sf::Texture * Player::getRunTexture2 ()\fC [virtual]\fP"
+
+.PP
+Get the player's run texture 2\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBPlayer\fP's run texture 2 
+.RE
+.PP
+
+.SS "sf::Texture * Player::getRunTexture3 ()\fC [virtual]\fP"
+
+.PP
+Get the player's run texture 3\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBPlayer\fP's run texture 3 
+.RE
+.PP
+
+.SS "sf::Texture * Player::getRunTexture4 ()\fC [virtual]\fP"
+
+.PP
+Get the player's run texture 4\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBPlayer\fP's run texture 4 
+.RE
+.PP
+
+.SS "sf::Texture * Player::getRunTexture5 ()\fC [virtual]\fP"
+
+.PP
+Get the player's run texture 5\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBPlayer\fP's run texture 5 
+.RE
+.PP
+
+.SS "sf::Texture * Player::getRunTexture6 ()\fC [virtual]\fP"
+
+.PP
+Get the player's run texture 6\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBPlayer\fP's run texture 6 
+.RE
+.PP
+
+.SS "int Player::getSpeed ()\fC [virtual]\fP"
+
+.PP
+Get the speed value\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Speed value 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBCape\fP, and \fBShoes\fP\&.
+.SS "sf::Sprite * Player::getSprite (void)\fC [virtual]\fP"
+
+.PP
+Get the sprite of the player\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Sprite of the player 
+.RE
+.PP
+
+.SS "sf::Texture * Player::getTexture ()\fC [virtual]\fP"
+
+.PP
+Get the player's texture\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBPlayer\fP's texture 
+.RE
+.PP
+
+.SS "int Player::getWidth (intinc = \fC0\fP)\fC [virtual]\fP"
+
+.PP
+Get the player's width\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBPlayer\fP's width 
+.RE
+.PP
+
+.SS "void Player::jumpAnimation (charcollisionR, charcollisionL, charcollisionT, charcollisionG)\fC [virtual]\fP"
+
+.PP
+Make the player jump\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcollisionR\fP 
+.br
+\fIcollisionL\fP 
+.br
+\fIcollisionT\fP 
+.br
+\fIcollisionG\fP 
+.RE
+.PP
+
+.SS "void Player::setJumpHeight (intjumpHeight)\fC [virtual]\fP"
+
+.PP
+Set the jumping height value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIjumpHeight\fP New value of jumping height 
+.RE
+.PP
+
+.SS "void Player::setJumping (boolvalue)\fC [virtual]\fP"
+
+.PP
+Set the jumping value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP New value of jumping 
+.RE
+.PP
+
+.SS "void Player::setJumpSpeed (intjumpSpeed)\fC [virtual]\fP"
+
+.PP
+Set the jumping speed value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIjumpSpeed\fP New value of jump speed 
+.RE
+.PP
+
+.SS "void Player::setOnGround (boolvalue)\fC [virtual]\fP"
+
+.PP
+Set onGround\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP New value of onGround 
+.RE
+.PP
+
+.SS "void Player::setSpeed (intspeed)\fC [virtual]\fP"
+
+.PP
+Set the speed value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIspeed\fP New value of speed 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Stickman Project from the source code\&.

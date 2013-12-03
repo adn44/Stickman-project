@@ -1,0 +1,663 @@
+\hypertarget{class_player}{\section{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+}
+
+
+\hyperlink{class_player}{Player} class.  
+
+
+
+
+Inheritance diagram for Player\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{class_player__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_player_a8e899b26bfec32ea70b2fbd983fa1ecc}{Player} (int x=0, int y=0)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_player_a949762ad57300f070d83ec877ec6e907}{virtual \hyperlink{class_player_a949762ad57300f070d83ec877ec6e907}{$\sim$\-Player} (void)}\label{class_player_a949762ad57300f070d83ec877ec6e907}
+
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_player_aae6b7a837033bdd2338a200963f4309a}{set\-On\-Ground} (bool value)
+\begin{DoxyCompactList}\small\item\em Set on\-Ground. \end{DoxyCompactList}\item 
+\hypertarget{class_player_ade1f198046c99aa0a9a7b84b25e43621}{virtual void \hyperlink{class_player_ade1f198046c99aa0a9a7b84b25e43621}{go\-Right} (void)}\label{class_player_ade1f198046c99aa0a9a7b84b25e43621}
+
+\begin{DoxyCompactList}\small\item\em Function to make the player go to the right. \end{DoxyCompactList}\item 
+\hypertarget{class_player_ad5ec9b977afe277362f917883d18c2d2}{virtual void \hyperlink{class_player_ad5ec9b977afe277362f917883d18c2d2}{go\-Left} (void)}\label{class_player_ad5ec9b977afe277362f917883d18c2d2}
+
+\begin{DoxyCompactList}\small\item\em Function to make the player go to the left. \end{DoxyCompactList}\item 
+\hypertarget{class_player_a21d91a2eb70e1e4f9d8a60c11dcdd523}{virtual void \hyperlink{class_player_a21d91a2eb70e1e4f9d8a60c11dcdd523}{fall} (void)}\label{class_player_a21d91a2eb70e1e4f9d8a60c11dcdd523}
+
+\begin{DoxyCompactList}\small\item\em Function to make the player fall. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_player_a2dea085dd04cc2d2c0a73950b8f6383b}{controls} (char collision\-R, char collision\-L, char collision\-T, char collision\-G)
+\begin{DoxyCompactList}\small\item\em Indicate what the player have to do according to the collisions and the press buttons. \end{DoxyCompactList}\item 
+\hypertarget{class_player_a0ccf6995405ca7f8efd159117eb332c6}{virtual void \hyperlink{class_player_a0ccf6995405ca7f8efd159117eb332c6}{jump} (void)}\label{class_player_a0ccf6995405ca7f8efd159117eb332c6}
+
+\begin{DoxyCompactList}\small\item\em Set up the jump. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_player_af0cbf262b74bd173c708e32a1df22c4b}{jump\-Animation} (char collision\-R, char collision\-L, char collision\-T, char collision\-G)
+\begin{DoxyCompactList}\small\item\em Make the player jump. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_player_ae71f2d49d8ae2482210981745e699318}{set\-Jumping} (bool value)
+\begin{DoxyCompactList}\small\item\em Set the jumping value. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_player_afe708570bc166a91649478dd22108e7a}{set\-Speed} (int speed)
+\begin{DoxyCompactList}\small\item\em Set the speed value. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_player_ada5c4c79a954c38fb5d329666d78a379}{set\-Jump\-Speed} (int jump\-Speed)
+\begin{DoxyCompactList}\small\item\em Set the jumping speed value. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_player_ad5a29d64aae25aaa440283866b74509b}{set\-Jump\-Height} (int jump\-Height)
+\begin{DoxyCompactList}\small\item\em Set the jumping height value. \end{DoxyCompactList}\item 
+virtual sf\-::\-Int\-Rect $\ast$ \hyperlink{class_player_a1967129b1085527e58d605bc657f80ff}{get\-Rect} (void)
+\begin{DoxyCompactList}\small\item\em Get the rect of the player. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_player_a803903a8eae317b46d3ecd22babb231f}{get\-Jumping} (void)
+\begin{DoxyCompactList}\small\item\em Get the jumping value. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_player_a5755be9818f6f911d9494e4948d8c483}{get\-Speed} ()
+\begin{DoxyCompactList}\small\item\em Get the speed value. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_player_a95676c9d2da2c6e778aa8558c5e5fa80}{get\-Jump\-Speed} ()
+\begin{DoxyCompactList}\small\item\em Get the jumping speed value. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_player_a4df8845cc35f7ef2d8aefbeffb141aed}{get\-Jump\-Height} ()
+\begin{DoxyCompactList}\small\item\em Get the jumping height value. \end{DoxyCompactList}\item 
+virtual sf\-::\-Sprite $\ast$ \hyperlink{class_player_adbce087693a5623afac017735d67a39d}{get\-Sprite} (void)
+\begin{DoxyCompactList}\small\item\em Get the sprite of the player. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_player_a79eac778dc97f959fd3f82e7807b54af}{get\-On\-Ground} (void)
+\begin{DoxyCompactList}\small\item\em Get the boolean on\-Ground. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_player_af80fb70e7b808f24192b49ca0f5656f0}{get\-Position\-X} (int inc=0)
+\begin{DoxyCompactList}\small\item\em Get the position x. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_player_a04dfb18ee251361671bad38cf0d42a4a}{get\-Position\-Y} (int inc=0)
+\begin{DoxyCompactList}\small\item\em Get the position y. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_player_a758ed6885202cac4e51e9022c1371afa}{get\-Width} (int inc=0)
+\begin{DoxyCompactList}\small\item\em Get the player's width. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_player_af215d8b616713cbbb1ab6207d26fffde}{get\-Height} (int inc=0)
+\begin{DoxyCompactList}\small\item\em Get the player's height. \end{DoxyCompactList}\item 
+virtual sf\-::\-Texture $\ast$ \hyperlink{class_player_aa0452c12db96c7d4dd9fd3c93ad2bbb1}{get\-Texture} ()
+\begin{DoxyCompactList}\small\item\em Get the player's texture. \end{DoxyCompactList}\item 
+virtual sf\-::\-Texture $\ast$ \hyperlink{class_player_a5bdf81d3fb9358acae70ac51e818fa84}{get\-Run\-Texture1} ()
+\begin{DoxyCompactList}\small\item\em Get the player's run texture 1. \end{DoxyCompactList}\item 
+virtual sf\-::\-Texture $\ast$ \hyperlink{class_player_afd441d4a8f47d23eeb91b362d0da3533}{get\-Run\-Texture2} ()
+\begin{DoxyCompactList}\small\item\em Get the player's run texture 2. \end{DoxyCompactList}\item 
+virtual sf\-::\-Texture $\ast$ \hyperlink{class_player_aea67670a94415f077ac15f4dd85ea6e6}{get\-Run\-Texture3} ()
+\begin{DoxyCompactList}\small\item\em Get the player's run texture 3. \end{DoxyCompactList}\item 
+virtual sf\-::\-Texture $\ast$ \hyperlink{class_player_a8d9efc602e8feb4dbb64535ed4e110bd}{get\-Run\-Texture4} ()
+\begin{DoxyCompactList}\small\item\em Get the player's run texture 4. \end{DoxyCompactList}\item 
+virtual sf\-::\-Texture $\ast$ \hyperlink{class_player_a9933563897756d9066b0a700978d91ec}{get\-Run\-Texture5} ()
+\begin{DoxyCompactList}\small\item\em Get the player's run texture 5. \end{DoxyCompactList}\item 
+virtual sf\-::\-Texture $\ast$ \hyperlink{class_player_a4869df8bb0be21e6c6f84fb708d01fa5}{get\-Run\-Texture6} ()
+\begin{DoxyCompactList}\small\item\em Get the player's run texture 6. \end{DoxyCompactList}\item 
+virtual sf\-::\-Sound $\ast$ \hyperlink{class_player_a0056edff24f3cc0110425386bd6fcdb2}{get\-Jump\-Sound} ()
+\begin{DoxyCompactList}\small\item\em Get the jump sound. \end{DoxyCompactList}\item 
+virtual sf\-::\-Sound\-Buffer $\ast$ \hyperlink{class_player_ae34ef062d527edbcaf6070544bea312e}{get\-Jump\-Sound\-Buffer} ()
+\begin{DoxyCompactList}\small\item\em Get the jump sound buffer. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_player_a5ce5ed6ed57130731accbd8980a65695}{get\-Jump} ()
+\begin{DoxyCompactList}\small\item\em Get the value of jump. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_player_a3fa494de13eaaad0280d6d2017ae85a9}{get\-Current\-Frame} ()
+\begin{DoxyCompactList}\small\item\em Get the player's current frame. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_player_aba34d2ce20f5ab84c38c287a7e16e497}{sf\-::\-Texture $\ast$ \hyperlink{class_player_aba34d2ce20f5ab84c38c287a7e16e497}{m\-\_\-texture}}\label{class_player_aba34d2ce20f5ab84c38c287a7e16e497}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player}{Player}'s texture. \end{DoxyCompactList}\item 
+\hypertarget{class_player_ab1123072990bf0605849f6e4a66550da}{sf\-::\-Texture $\ast$ \hyperlink{class_player_ab1123072990bf0605849f6e4a66550da}{m\-\_\-run\-Texture1}}\label{class_player_ab1123072990bf0605849f6e4a66550da}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player}{Player}'s run texture 1. \end{DoxyCompactList}\item 
+\hypertarget{class_player_af470f29584a4b4a994cdbcbd8572b1f6}{sf\-::\-Texture $\ast$ \hyperlink{class_player_af470f29584a4b4a994cdbcbd8572b1f6}{m\-\_\-run\-Texture2}}\label{class_player_af470f29584a4b4a994cdbcbd8572b1f6}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player}{Player}'s run texture 2. \end{DoxyCompactList}\item 
+\hypertarget{class_player_abd4d5c0efb97dd1342969bfb5e935c84}{sf\-::\-Texture $\ast$ \hyperlink{class_player_abd4d5c0efb97dd1342969bfb5e935c84}{m\-\_\-run\-Texture3}}\label{class_player_abd4d5c0efb97dd1342969bfb5e935c84}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player}{Player}'s run texture 3. \end{DoxyCompactList}\item 
+\hypertarget{class_player_a556553a62c2db12bb1b57721e59a58d7}{sf\-::\-Texture $\ast$ \hyperlink{class_player_a556553a62c2db12bb1b57721e59a58d7}{m\-\_\-run\-Texture4}}\label{class_player_a556553a62c2db12bb1b57721e59a58d7}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player}{Player}'s run texture 4. \end{DoxyCompactList}\item 
+\hypertarget{class_player_a2f8d3aa38eff7616e9945928c24327fb}{sf\-::\-Texture $\ast$ \hyperlink{class_player_a2f8d3aa38eff7616e9945928c24327fb}{m\-\_\-run\-Texture5}}\label{class_player_a2f8d3aa38eff7616e9945928c24327fb}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player}{Player}'s run texture 5. \end{DoxyCompactList}\item 
+\hypertarget{class_player_aa6c3d3e02f5fd134673048aa45f48885}{sf\-::\-Texture $\ast$ \hyperlink{class_player_aa6c3d3e02f5fd134673048aa45f48885}{m\-\_\-run\-Texture6}}\label{class_player_aa6c3d3e02f5fd134673048aa45f48885}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player}{Player}'s run texture 6. \end{DoxyCompactList}\item 
+\hypertarget{class_player_adadc7846bd20ea1e375340e99173a28f}{sf\-::\-Texture $\ast$ \hyperlink{class_player_adadc7846bd20ea1e375340e99173a28f}{m\-\_\-anim\-Tab} \mbox{[}6\mbox{]}}\label{class_player_adadc7846bd20ea1e375340e99173a28f}
+
+\begin{DoxyCompactList}\small\item\em Array of the run textures. \end{DoxyCompactList}\item 
+\hypertarget{class_player_a83c449829335b613129c47e9f3293b9c}{sf\-::\-Texture $\ast$ \hyperlink{class_player_a83c449829335b613129c47e9f3293b9c}{m\-\_\-jump\-Texture}}\label{class_player_a83c449829335b613129c47e9f3293b9c}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player}{Player}'s jump texture. \end{DoxyCompactList}\item 
+\hypertarget{class_player_a2fe5d004be97d41e6c15979b449ab65c}{sf\-::\-Texture $\ast$ \hyperlink{class_player_a2fe5d004be97d41e6c15979b449ab65c}{m\-\_\-fall\-Texture}}\label{class_player_a2fe5d004be97d41e6c15979b449ab65c}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player}{Player}'s fall texture. \end{DoxyCompactList}\item 
+\hypertarget{class_player_a06b952ac7dc29ec9ca7374c41ececb36}{sf\-::\-Sprite $\ast$ \hyperlink{class_player_a06b952ac7dc29ec9ca7374c41ececb36}{m\-\_\-sprite}}\label{class_player_a06b952ac7dc29ec9ca7374c41ececb36}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player}{Player}'s sprite. \end{DoxyCompactList}\item 
+\hypertarget{class_player_a1586ec20fe0ab3172bbe4b7fed22b028}{sf\-::\-Sound $\ast$ \hyperlink{class_player_a1586ec20fe0ab3172bbe4b7fed22b028}{m\-\_\-jump\-Sound}}\label{class_player_a1586ec20fe0ab3172bbe4b7fed22b028}
+
+\begin{DoxyCompactList}\small\item\em Jump sound. \end{DoxyCompactList}\item 
+\hypertarget{class_player_ada9922e4960f83ff5e7135aeccd07848}{sf\-::\-Sound\-Buffer $\ast$ \hyperlink{class_player_ada9922e4960f83ff5e7135aeccd07848}{m\-\_\-jump\-Sound\-Buffer}}\label{class_player_ada9922e4960f83ff5e7135aeccd07848}
+
+\begin{DoxyCompactList}\small\item\em Jump sound buffer. \end{DoxyCompactList}\item 
+\hypertarget{class_player_a0ed905d7ce35dc1bb142861d97955e2e}{sf\-::\-Int\-Rect $\ast$ \hyperlink{class_player_a0ed905d7ce35dc1bb142861d97955e2e}{m\-\_\-rect}}\label{class_player_a0ed905d7ce35dc1bb142861d97955e2e}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player}{Player}'s rect. \end{DoxyCompactList}\item 
+\hypertarget{class_player_a038a574bcbe535460f024c28b5348191}{int \hyperlink{class_player_a038a574bcbe535460f024c28b5348191}{m\-\_\-dx}}\label{class_player_a038a574bcbe535460f024c28b5348191}
+
+\begin{DoxyCompactList}\small\item\em Position x. \end{DoxyCompactList}\item 
+\hypertarget{class_player_a699a186e9a37c898f938c21e6a086821}{int \hyperlink{class_player_a699a186e9a37c898f938c21e6a086821}{m\-\_\-dy}}\label{class_player_a699a186e9a37c898f938c21e6a086821}
+
+\begin{DoxyCompactList}\small\item\em Position y. \end{DoxyCompactList}\item 
+\hypertarget{class_player_a4f3be31c677f7c86cd838381b418d440}{bool \hyperlink{class_player_a4f3be31c677f7c86cd838381b418d440}{m\-\_\-on\-Ground}}\label{class_player_a4f3be31c677f7c86cd838381b418d440}
+
+\begin{DoxyCompactList}\small\item\em Boolean to know if the player is on the ground. \end{DoxyCompactList}\item 
+\hypertarget{class_player_a38b5de5aa041c1766c572c046feb0f08}{bool \hyperlink{class_player_a38b5de5aa041c1766c572c046feb0f08}{m\-\_\-jumping}}\label{class_player_a38b5de5aa041c1766c572c046feb0f08}
+
+\begin{DoxyCompactList}\small\item\em Boolean to know if the player is jumping. \end{DoxyCompactList}\item 
+\hypertarget{class_player_a87196b22a09b01735cfc6e0eb3a4ad62}{int \hyperlink{class_player_a87196b22a09b01735cfc6e0eb3a4ad62}{m\-\_\-jump}}\label{class_player_a87196b22a09b01735cfc6e0eb3a4ad62}
+
+\begin{DoxyCompactList}\small\item\em Value of the jump. \end{DoxyCompactList}\item 
+\hypertarget{class_player_aa1f75eb3abbb09f12c21f071a2b13b95}{double \hyperlink{class_player_aa1f75eb3abbb09f12c21f071a2b13b95}{m\-\_\-current\-Frame}}\label{class_player_aa1f75eb3abbb09f12c21f071a2b13b95}
+
+\begin{DoxyCompactList}\small\item\em Value of the current frame. \end{DoxyCompactList}\item 
+\hypertarget{class_player_a3b350d804ed50bf5acdc5069a98e7a8a}{int \hyperlink{class_player_a3b350d804ed50bf5acdc5069a98e7a8a}{m\-\_\-speed}}\label{class_player_a3b350d804ed50bf5acdc5069a98e7a8a}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player}{Player}'s speed. \end{DoxyCompactList}\item 
+\hypertarget{class_player_ac89446b6b822013a15388a5536bc2a36}{int \hyperlink{class_player_ac89446b6b822013a15388a5536bc2a36}{m\-\_\-jump\-Speed}}\label{class_player_ac89446b6b822013a15388a5536bc2a36}
+
+\begin{DoxyCompactList}\small\item\em Jump speed. \end{DoxyCompactList}\item 
+\hypertarget{class_player_a0d84b6cf8840e0c226943d4962c99eda}{int \hyperlink{class_player_a0d84b6cf8840e0c226943d4962c99eda}{m\-\_\-jump\-Height}}\label{class_player_a0d84b6cf8840e0c226943d4962c99eda}
+
+\begin{DoxyCompactList}\small\item\em Jump height. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_player}{Player} class. 
+
+\begin{DoxyAuthor}{Author}
+Adrien Bodineau and Alexandre Gomes 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_player_a8e899b26bfec32ea70b2fbd983fa1ecc}{\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\subsubsection[{Player}]{\setlength{\rightskip}{0pt plus 5cm}Player\-::\-Player (
+\begin{DoxyParamCaption}
+\item[{int}]{x = {\ttfamily 0}, }
+\item[{int}]{y = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_player_a8e899b26bfec32ea70b2fbd983fa1ecc}
+
+
+Default constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Position x \\
+\hline
+{\em y} & Position y \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_player_a2dea085dd04cc2d2c0a73950b8f6383b}{\index{Player@{Player}!controls@{controls}}
+\index{controls@{controls}!Player@{Player}}
+\subsubsection[{controls}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::controls (
+\begin{DoxyParamCaption}
+\item[{char}]{collision\-R, }
+\item[{char}]{collision\-L, }
+\item[{char}]{collision\-T, }
+\item[{char}]{collision\-G}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_a2dea085dd04cc2d2c0a73950b8f6383b}
+
+
+Indicate what the player have to do according to the collisions and the press buttons. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision\-R} & Character to indicate the right collision \\
+\hline
+{\em collision\-L} & Character to indicate the left collision \\
+\hline
+{\em collision\-T} & Character to indicate the top collision \\
+\hline
+{\em collision\-G} & Character to indicate the ground collision \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_player_a3fa494de13eaaad0280d6d2017ae85a9}{\index{Player@{Player}!get\-Current\-Frame@{get\-Current\-Frame}}
+\index{get\-Current\-Frame@{get\-Current\-Frame}!Player@{Player}}
+\subsubsection[{get\-Current\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}double Player\-::get\-Current\-Frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_a3fa494de13eaaad0280d6d2017ae85a9}
+
+
+Get the player's current frame. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_player}{Player}'s current frame 
+\end{DoxyReturn}
+\hypertarget{class_player_af215d8b616713cbbb1ab6207d26fffde}{\index{Player@{Player}!get\-Height@{get\-Height}}
+\index{get\-Height@{get\-Height}!Player@{Player}}
+\subsubsection[{get\-Height}]{\setlength{\rightskip}{0pt plus 5cm}int Player\-::get\-Height (
+\begin{DoxyParamCaption}
+\item[{int}]{inc = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_af215d8b616713cbbb1ab6207d26fffde}
+
+
+Get the player's height. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_player}{Player}'s height 
+\end{DoxyReturn}
+\hypertarget{class_player_a5ce5ed6ed57130731accbd8980a65695}{\index{Player@{Player}!get\-Jump@{get\-Jump}}
+\index{get\-Jump@{get\-Jump}!Player@{Player}}
+\subsubsection[{get\-Jump}]{\setlength{\rightskip}{0pt plus 5cm}int Player\-::get\-Jump (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_a5ce5ed6ed57130731accbd8980a65695}
+
+
+Get the value of jump. 
+
+\begin{DoxyReturn}{Returns}
+Jump value 
+\end{DoxyReturn}
+\hypertarget{class_player_a4df8845cc35f7ef2d8aefbeffb141aed}{\index{Player@{Player}!get\-Jump\-Height@{get\-Jump\-Height}}
+\index{get\-Jump\-Height@{get\-Jump\-Height}!Player@{Player}}
+\subsubsection[{get\-Jump\-Height}]{\setlength{\rightskip}{0pt plus 5cm}int Player\-::get\-Jump\-Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_a4df8845cc35f7ef2d8aefbeffb141aed}
+
+
+Get the jumping height value. 
+
+\begin{DoxyReturn}{Returns}
+Jumping height value 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_cape_ac2a629b66fc5b2678ebf294523b53799}{Cape}, and \hyperlink{class_shoes_a25361fa44b1f513548fe717b6befd53d}{Shoes}.
+
+\hypertarget{class_player_a803903a8eae317b46d3ecd22babb231f}{\index{Player@{Player}!get\-Jumping@{get\-Jumping}}
+\index{get\-Jumping@{get\-Jumping}!Player@{Player}}
+\subsubsection[{get\-Jumping}]{\setlength{\rightskip}{0pt plus 5cm}bool Player\-::get\-Jumping (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_a803903a8eae317b46d3ecd22babb231f}
+
+
+Get the jumping value. 
+
+\begin{DoxyReturn}{Returns}
+Jumping value 
+\end{DoxyReturn}
+\hypertarget{class_player_a0056edff24f3cc0110425386bd6fcdb2}{\index{Player@{Player}!get\-Jump\-Sound@{get\-Jump\-Sound}}
+\index{get\-Jump\-Sound@{get\-Jump\-Sound}!Player@{Player}}
+\subsubsection[{get\-Jump\-Sound}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Sound $\ast$ Player\-::get\-Jump\-Sound (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_a0056edff24f3cc0110425386bd6fcdb2}
+
+
+Get the jump sound. 
+
+\begin{DoxyReturn}{Returns}
+Jump sound 
+\end{DoxyReturn}
+\hypertarget{class_player_ae34ef062d527edbcaf6070544bea312e}{\index{Player@{Player}!get\-Jump\-Sound\-Buffer@{get\-Jump\-Sound\-Buffer}}
+\index{get\-Jump\-Sound\-Buffer@{get\-Jump\-Sound\-Buffer}!Player@{Player}}
+\subsubsection[{get\-Jump\-Sound\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Sound\-Buffer $\ast$ Player\-::get\-Jump\-Sound\-Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_ae34ef062d527edbcaf6070544bea312e}
+
+
+Get the jump sound buffer. 
+
+\begin{DoxyReturn}{Returns}
+Jump sound buffer 
+\end{DoxyReturn}
+\hypertarget{class_player_a95676c9d2da2c6e778aa8558c5e5fa80}{\index{Player@{Player}!get\-Jump\-Speed@{get\-Jump\-Speed}}
+\index{get\-Jump\-Speed@{get\-Jump\-Speed}!Player@{Player}}
+\subsubsection[{get\-Jump\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}int Player\-::get\-Jump\-Speed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_a95676c9d2da2c6e778aa8558c5e5fa80}
+
+
+Get the jumping speed value. 
+
+\begin{DoxyReturn}{Returns}
+Jump speed value 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_cape_a2b563a9b4bd336530dfe01585123a087}{Cape}, and \hyperlink{class_shoes_a61b25a380629e60aa9996dc05a8db0df}{Shoes}.
+
+\hypertarget{class_player_a79eac778dc97f959fd3f82e7807b54af}{\index{Player@{Player}!get\-On\-Ground@{get\-On\-Ground}}
+\index{get\-On\-Ground@{get\-On\-Ground}!Player@{Player}}
+\subsubsection[{get\-On\-Ground}]{\setlength{\rightskip}{0pt plus 5cm}bool Player\-::get\-On\-Ground (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_a79eac778dc97f959fd3f82e7807b54af}
+
+
+Get the boolean on\-Ground. 
+
+\begin{DoxyReturn}{Returns}
+Value of on\-Ground 
+\end{DoxyReturn}
+\hypertarget{class_player_af80fb70e7b808f24192b49ca0f5656f0}{\index{Player@{Player}!get\-Position\-X@{get\-Position\-X}}
+\index{get\-Position\-X@{get\-Position\-X}!Player@{Player}}
+\subsubsection[{get\-Position\-X}]{\setlength{\rightskip}{0pt plus 5cm}int Player\-::get\-Position\-X (
+\begin{DoxyParamCaption}
+\item[{int}]{inc = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_af80fb70e7b808f24192b49ca0f5656f0}
+
+
+Get the position x. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inc} & Get the position x+inc \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position x 
+\end{DoxyReturn}
+\hypertarget{class_player_a04dfb18ee251361671bad38cf0d42a4a}{\index{Player@{Player}!get\-Position\-Y@{get\-Position\-Y}}
+\index{get\-Position\-Y@{get\-Position\-Y}!Player@{Player}}
+\subsubsection[{get\-Position\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int Player\-::get\-Position\-Y (
+\begin{DoxyParamCaption}
+\item[{int}]{inc = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_a04dfb18ee251361671bad38cf0d42a4a}
+
+
+Get the position y. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inc} & Get the position y+inc \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position y 
+\end{DoxyReturn}
+\hypertarget{class_player_a1967129b1085527e58d605bc657f80ff}{\index{Player@{Player}!get\-Rect@{get\-Rect}}
+\index{get\-Rect@{get\-Rect}!Player@{Player}}
+\subsubsection[{get\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Int\-Rect $\ast$ Player\-::get\-Rect (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_a1967129b1085527e58d605bc657f80ff}
+
+
+Get the rect of the player. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_player}{Player}'s rect 
+\end{DoxyReturn}
+\hypertarget{class_player_a5bdf81d3fb9358acae70ac51e818fa84}{\index{Player@{Player}!get\-Run\-Texture1@{get\-Run\-Texture1}}
+\index{get\-Run\-Texture1@{get\-Run\-Texture1}!Player@{Player}}
+\subsubsection[{get\-Run\-Texture1}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Texture $\ast$ Player\-::get\-Run\-Texture1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_a5bdf81d3fb9358acae70ac51e818fa84}
+
+
+Get the player's run texture 1. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_player}{Player}'s run texture 1 
+\end{DoxyReturn}
+\hypertarget{class_player_afd441d4a8f47d23eeb91b362d0da3533}{\index{Player@{Player}!get\-Run\-Texture2@{get\-Run\-Texture2}}
+\index{get\-Run\-Texture2@{get\-Run\-Texture2}!Player@{Player}}
+\subsubsection[{get\-Run\-Texture2}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Texture $\ast$ Player\-::get\-Run\-Texture2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_afd441d4a8f47d23eeb91b362d0da3533}
+
+
+Get the player's run texture 2. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_player}{Player}'s run texture 2 
+\end{DoxyReturn}
+\hypertarget{class_player_aea67670a94415f077ac15f4dd85ea6e6}{\index{Player@{Player}!get\-Run\-Texture3@{get\-Run\-Texture3}}
+\index{get\-Run\-Texture3@{get\-Run\-Texture3}!Player@{Player}}
+\subsubsection[{get\-Run\-Texture3}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Texture $\ast$ Player\-::get\-Run\-Texture3 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_aea67670a94415f077ac15f4dd85ea6e6}
+
+
+Get the player's run texture 3. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_player}{Player}'s run texture 3 
+\end{DoxyReturn}
+\hypertarget{class_player_a8d9efc602e8feb4dbb64535ed4e110bd}{\index{Player@{Player}!get\-Run\-Texture4@{get\-Run\-Texture4}}
+\index{get\-Run\-Texture4@{get\-Run\-Texture4}!Player@{Player}}
+\subsubsection[{get\-Run\-Texture4}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Texture $\ast$ Player\-::get\-Run\-Texture4 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_a8d9efc602e8feb4dbb64535ed4e110bd}
+
+
+Get the player's run texture 4. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_player}{Player}'s run texture 4 
+\end{DoxyReturn}
+\hypertarget{class_player_a9933563897756d9066b0a700978d91ec}{\index{Player@{Player}!get\-Run\-Texture5@{get\-Run\-Texture5}}
+\index{get\-Run\-Texture5@{get\-Run\-Texture5}!Player@{Player}}
+\subsubsection[{get\-Run\-Texture5}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Texture $\ast$ Player\-::get\-Run\-Texture5 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_a9933563897756d9066b0a700978d91ec}
+
+
+Get the player's run texture 5. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_player}{Player}'s run texture 5 
+\end{DoxyReturn}
+\hypertarget{class_player_a4869df8bb0be21e6c6f84fb708d01fa5}{\index{Player@{Player}!get\-Run\-Texture6@{get\-Run\-Texture6}}
+\index{get\-Run\-Texture6@{get\-Run\-Texture6}!Player@{Player}}
+\subsubsection[{get\-Run\-Texture6}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Texture $\ast$ Player\-::get\-Run\-Texture6 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_a4869df8bb0be21e6c6f84fb708d01fa5}
+
+
+Get the player's run texture 6. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_player}{Player}'s run texture 6 
+\end{DoxyReturn}
+\hypertarget{class_player_a5755be9818f6f911d9494e4948d8c483}{\index{Player@{Player}!get\-Speed@{get\-Speed}}
+\index{get\-Speed@{get\-Speed}!Player@{Player}}
+\subsubsection[{get\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}int Player\-::get\-Speed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_a5755be9818f6f911d9494e4948d8c483}
+
+
+Get the speed value. 
+
+\begin{DoxyReturn}{Returns}
+Speed value 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_cape_addd1a0fc11b71a36950cf8d9516b6869}{Cape}, and \hyperlink{class_shoes_abfa031d2089d4e9397585c7a36d0490d}{Shoes}.
+
+\hypertarget{class_player_adbce087693a5623afac017735d67a39d}{\index{Player@{Player}!get\-Sprite@{get\-Sprite}}
+\index{get\-Sprite@{get\-Sprite}!Player@{Player}}
+\subsubsection[{get\-Sprite}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Sprite $\ast$ Player\-::get\-Sprite (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_adbce087693a5623afac017735d67a39d}
+
+
+Get the sprite of the player. 
+
+\begin{DoxyReturn}{Returns}
+Sprite of the player 
+\end{DoxyReturn}
+\hypertarget{class_player_aa0452c12db96c7d4dd9fd3c93ad2bbb1}{\index{Player@{Player}!get\-Texture@{get\-Texture}}
+\index{get\-Texture@{get\-Texture}!Player@{Player}}
+\subsubsection[{get\-Texture}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Texture $\ast$ Player\-::get\-Texture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_aa0452c12db96c7d4dd9fd3c93ad2bbb1}
+
+
+Get the player's texture. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_player}{Player}'s texture 
+\end{DoxyReturn}
+\hypertarget{class_player_a758ed6885202cac4e51e9022c1371afa}{\index{Player@{Player}!get\-Width@{get\-Width}}
+\index{get\-Width@{get\-Width}!Player@{Player}}
+\subsubsection[{get\-Width}]{\setlength{\rightskip}{0pt plus 5cm}int Player\-::get\-Width (
+\begin{DoxyParamCaption}
+\item[{int}]{inc = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_a758ed6885202cac4e51e9022c1371afa}
+
+
+Get the player's width. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_player}{Player}'s width 
+\end{DoxyReturn}
+\hypertarget{class_player_af0cbf262b74bd173c708e32a1df22c4b}{\index{Player@{Player}!jump\-Animation@{jump\-Animation}}
+\index{jump\-Animation@{jump\-Animation}!Player@{Player}}
+\subsubsection[{jump\-Animation}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::jump\-Animation (
+\begin{DoxyParamCaption}
+\item[{char}]{collision\-R, }
+\item[{char}]{collision\-L, }
+\item[{char}]{collision\-T, }
+\item[{char}]{collision\-G}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_af0cbf262b74bd173c708e32a1df22c4b}
+
+
+Make the player jump. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision\-R} & \\
+\hline
+{\em collision\-L} & \\
+\hline
+{\em collision\-T} & \\
+\hline
+{\em collision\-G} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_player_ad5a29d64aae25aaa440283866b74509b}{\index{Player@{Player}!set\-Jump\-Height@{set\-Jump\-Height}}
+\index{set\-Jump\-Height@{set\-Jump\-Height}!Player@{Player}}
+\subsubsection[{set\-Jump\-Height}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::set\-Jump\-Height (
+\begin{DoxyParamCaption}
+\item[{int}]{jump\-Height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_ad5a29d64aae25aaa440283866b74509b}
+
+
+Set the jumping height value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jump\-Height} & New value of jumping height \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_player_ae71f2d49d8ae2482210981745e699318}{\index{Player@{Player}!set\-Jumping@{set\-Jumping}}
+\index{set\-Jumping@{set\-Jumping}!Player@{Player}}
+\subsubsection[{set\-Jumping}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::set\-Jumping (
+\begin{DoxyParamCaption}
+\item[{bool}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_ae71f2d49d8ae2482210981745e699318}
+
+
+Set the jumping value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & New value of jumping \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_player_ada5c4c79a954c38fb5d329666d78a379}{\index{Player@{Player}!set\-Jump\-Speed@{set\-Jump\-Speed}}
+\index{set\-Jump\-Speed@{set\-Jump\-Speed}!Player@{Player}}
+\subsubsection[{set\-Jump\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::set\-Jump\-Speed (
+\begin{DoxyParamCaption}
+\item[{int}]{jump\-Speed}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_ada5c4c79a954c38fb5d329666d78a379}
+
+
+Set the jumping speed value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jump\-Speed} & New value of jump speed \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_player_aae6b7a837033bdd2338a200963f4309a}{\index{Player@{Player}!set\-On\-Ground@{set\-On\-Ground}}
+\index{set\-On\-Ground@{set\-On\-Ground}!Player@{Player}}
+\subsubsection[{set\-On\-Ground}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::set\-On\-Ground (
+\begin{DoxyParamCaption}
+\item[{bool}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_aae6b7a837033bdd2338a200963f4309a}
+
+
+Set on\-Ground. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & New value of on\-Ground \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_player_afe708570bc166a91649478dd22108e7a}{\index{Player@{Player}!set\-Speed@{set\-Speed}}
+\index{set\-Speed@{set\-Speed}!Player@{Player}}
+\subsubsection[{set\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::set\-Speed (
+\begin{DoxyParamCaption}
+\item[{int}]{speed}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_player_afe708570bc166a91649478dd22108e7a}
+
+
+Set the speed value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em speed} & New value of speed \\
+\hline
+\end{DoxyParams}

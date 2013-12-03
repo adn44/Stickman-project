@@ -1,0 +1,315 @@
+\begin{theindex}
+
+  \item {A\discretionary {-}{}{}Factory}, \hyperpage{7}
+    \subitem {build}, \hyperpage{8}
+    \subitem {create\discretionary {-}{}{}Block}, \hyperpage{8}
+  \item {A\discretionary {-}{}{}Upgrade}, \hyperpage{8}
+    \subitem {A\discretionary {-}{}{}Upgrade}, \hyperpage{9}
+    \subitem {A\discretionary {-}{}{}Upgrade}, \hyperpage{9}
+
+  \indexspace
+
+  \item {Block\discretionary {-}{}{}Ground1}, \hyperpage{10}
+    \subitem {get\discretionary {-}{}{}Sprite}, \hyperpage{11}
+    \subitem {get\discretionary {-}{}{}Texture}, \hyperpage{11}
+  \item {Block\discretionary {-}{}{}Ground2}, \hyperpage{11}
+    \subitem {get\discretionary {-}{}{}Sprite}, \hyperpage{12}
+    \subitem {get\discretionary {-}{}{}Texture}, \hyperpage{12}
+  \item {Block\discretionary {-}{}{}Ground3}, \hyperpage{12}
+    \subitem {get\discretionary {-}{}{}Sprite}, \hyperpage{13}
+    \subitem {get\discretionary {-}{}{}Texture}, \hyperpage{14}
+  \item {build}
+    \subitem {A\discretionary {-}{}{}Factory}, \hyperpage{8}
+    \subitem {Concrete\discretionary {-}{}{}Factory}, \hyperpage{16}
+
+  \indexspace
+
+  \item {Cape}, \hyperpage{14}
+    \subitem {Cape}, \hyperpage{15}
+    \subitem {get\discretionary {-}{}{}Jump\discretionary {-}{}{}Height}, 
+		\hyperpage{15}
+    \subitem {get\discretionary {-}{}{}Jump\discretionary {-}{}{}Speed}, 
+		\hyperpage{15}
+    \subitem {get\discretionary {-}{}{}Speed}, \hyperpage{15}
+  \item {Concrete\discretionary {-}{}{}Factory}, \hyperpage{16}
+    \subitem {build}, \hyperpage{16}
+  \item {controls}
+    \subitem {Player}, \hyperpage{37}
+  \item {create\discretionary {-}{}{}Block}
+    \subitem {A\discretionary {-}{}{}Factory}, \hyperpage{8}
+
+  \indexspace
+
+  \item {draw\discretionary {-}{}{}Level}
+    \subitem {I\discretionary {-}{}{}Level}, \hyperpage{21}
+    \subitem {Level\discretionary {-}{}{}One}, \hyperpage{25}
+    \subitem {Level\discretionary {-}{}{}Two}, \hyperpage{29}
+
+  \indexspace
+
+  \item {Game\discretionary {-}{}{}Manager}, \hyperpage{17}
+    \subitem {Game\discretionary {-}{}{}Manager}, \hyperpage{18}
+    \subitem {Game\discretionary {-}{}{}Manager}, \hyperpage{18}
+    \subitem {get\discretionary {-}{}{}Instance}, \hyperpage{19}
+  \item {get\discretionary {-}{}{}Blocks}
+    \subitem {I\discretionary {-}{}{}Level}, \hyperpage{21}
+    \subitem {Level\discretionary {-}{}{}One}, \hyperpage{26}
+    \subitem {Level\discretionary {-}{}{}Two}, \hyperpage{29}
+  \item {get\discretionary {-}{}{}Cape\discretionary {-}{}{}Sprite}
+    \subitem {I\discretionary {-}{}{}Level}, \hyperpage{21}
+    \subitem {Level\discretionary {-}{}{}One}, \hyperpage{26}
+    \subitem {Level\discretionary {-}{}{}Two}, \hyperpage{29}
+  \item {get\discretionary {-}{}{}Current\discretionary {-}{}{}Frame}
+    \subitem {Player}, \hyperpage{37}
+  \item {get\discretionary {-}{}{}End\discretionary {-}{}{}Sprite}
+    \subitem {I\discretionary {-}{}{}Level}, \hyperpage{21}
+    \subitem {Level\discretionary {-}{}{}One}, \hyperpage{26}
+    \subitem {Level\discretionary {-}{}{}Two}, \hyperpage{30}
+  \item {get\discretionary {-}{}{}Height}
+    \subitem {I\discretionary {-}{}{}Level}, \hyperpage{22}
+    \subitem {Level\discretionary {-}{}{}One}, \hyperpage{26}
+    \subitem {Level\discretionary {-}{}{}Two}, \hyperpage{30}
+    \subitem {Player}, \hyperpage{37}
+  \item {get\discretionary {-}{}{}Instance}
+    \subitem {Game\discretionary {-}{}{}Manager}, \hyperpage{19}
+    \subitem {Menu}, \hyperpage{33}
+  \item {get\discretionary {-}{}{}Jump}
+    \subitem {Player}, \hyperpage{37}
+  \item {get\discretionary {-}{}{}Jump\discretionary {-}{}{}Height}
+    \subitem {Cape}, \hyperpage{15}
+    \subitem {Player}, \hyperpage{38}
+    \subitem {Shoes}, \hyperpage{43}
+  \item {get\discretionary {-}{}{}Jump\discretionary {-}{}{}Sound}
+    \subitem {Player}, \hyperpage{38}
+  \item {get\discretionary {-}{}{}Jump\discretionary {-}{}{}Sound\discretionary {-}{}{}Buffer}
+    \subitem {Player}, \hyperpage{38}
+  \item {get\discretionary {-}{}{}Jump\discretionary {-}{}{}Speed}
+    \subitem {Cape}, \hyperpage{15}
+    \subitem {Player}, \hyperpage{38}
+    \subitem {Shoes}, \hyperpage{43}
+  \item {get\discretionary {-}{}{}Jumping}
+    \subitem {Player}, \hyperpage{38}
+  \item {get\discretionary {-}{}{}Next}
+    \subitem {I\discretionary {-}{}{}Level}, \hyperpage{22}
+    \subitem {Level\discretionary {-}{}{}One}, \hyperpage{26}
+    \subitem {Level\discretionary {-}{}{}Two}, \hyperpage{30}
+  \item {get\discretionary {-}{}{}On\discretionary {-}{}{}Ground}
+    \subitem {Player}, \hyperpage{38}
+  \item {get\discretionary {-}{}{}Position\discretionary {-}{}{}X}
+    \subitem {Player}, \hyperpage{39}
+  \item {get\discretionary {-}{}{}Position\discretionary {-}{}{}Y}
+    \subitem {Player}, \hyperpage{39}
+  \item {get\discretionary {-}{}{}Rect}
+    \subitem {Player}, \hyperpage{39}
+  \item {get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture1}
+    \subitem {Player}, \hyperpage{39}
+  \item {get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture2}
+    \subitem {Player}, \hyperpage{39}
+  \item {get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture3}
+    \subitem {Player}, \hyperpage{39}
+  \item {get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture4}
+    \subitem {Player}, \hyperpage{40}
+  \item {get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture5}
+    \subitem {Player}, \hyperpage{40}
+  \item {get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture6}
+    \subitem {Player}, \hyperpage{40}
+  \item {get\discretionary {-}{}{}Shoes\discretionary {-}{}{}Sprite}
+    \subitem {I\discretionary {-}{}{}Level}, \hyperpage{22}
+    \subitem {Level\discretionary {-}{}{}One}, \hyperpage{26}
+    \subitem {Level\discretionary {-}{}{}Two}, \hyperpage{30}
+  \item {get\discretionary {-}{}{}Speed}
+    \subitem {Cape}, \hyperpage{15}
+    \subitem {Player}, \hyperpage{40}
+    \subitem {Shoes}, \hyperpage{43}
+  \item {get\discretionary {-}{}{}Sprite}
+    \subitem {Block\discretionary {-}{}{}Ground1}, \hyperpage{11}
+    \subitem {Block\discretionary {-}{}{}Ground2}, \hyperpage{12}
+    \subitem {Block\discretionary {-}{}{}Ground3}, \hyperpage{13}
+    \subitem {I\discretionary {-}{}{}Block}, \hyperpage{20}
+    \subitem {Player}, \hyperpage{40}
+  \item {get\discretionary {-}{}{}Texture}
+    \subitem {Block\discretionary {-}{}{}Ground1}, \hyperpage{11}
+    \subitem {Block\discretionary {-}{}{}Ground2}, \hyperpage{12}
+    \subitem {Block\discretionary {-}{}{}Ground3}, \hyperpage{14}
+    \subitem {I\discretionary {-}{}{}Block}, \hyperpage{20}
+    \subitem {Player}, \hyperpage{40}
+  \item {get\discretionary {-}{}{}Width}
+    \subitem {I\discretionary {-}{}{}Level}, \hyperpage{22}
+    \subitem {Level\discretionary {-}{}{}One}, \hyperpage{27}
+    \subitem {Level\discretionary {-}{}{}Two}, \hyperpage{30}
+    \subitem {Player}, \hyperpage{41}
+
+  \indexspace
+
+  \item {I\discretionary {-}{}{}Block}, \hyperpage{19}
+    \subitem {get\discretionary {-}{}{}Sprite}, \hyperpage{20}
+    \subitem {get\discretionary {-}{}{}Texture}, \hyperpage{20}
+  \item {I\discretionary {-}{}{}Level}, \hyperpage{20}
+    \subitem {draw\discretionary {-}{}{}Level}, \hyperpage{21}
+    \subitem {get\discretionary {-}{}{}Blocks}, \hyperpage{21}
+    \subitem {get\discretionary {-}{}{}Cape\discretionary {-}{}{}Sprite}, 
+		\hyperpage{21}
+    \subitem {get\discretionary {-}{}{}End\discretionary {-}{}{}Sprite}, 
+		\hyperpage{21}
+    \subitem {get\discretionary {-}{}{}Height}, \hyperpage{22}
+    \subitem {get\discretionary {-}{}{}Next}, \hyperpage{22}
+    \subitem {get\discretionary {-}{}{}Shoes\discretionary {-}{}{}Sprite}, 
+		\hyperpage{22}
+    \subitem {get\discretionary {-}{}{}Width}, \hyperpage{22}
+    \subitem {load\discretionary {-}{}{}Level}, \hyperpage{22}
+    \subitem {remove\discretionary {-}{}{}Element}, \hyperpage{23}
+  \item {include/\discretionary {-}{}{}Decorator/\discretionary {-}{}{}A\discretionary {-}{}{}Upgrade.\discretionary {-}{}{}h}, 
+		\hyperpage{45}
+  \item {include/\discretionary {-}{}{}Decorator/\discretionary {-}{}{}Cape.\discretionary {-}{}{}h}, 
+		\hyperpage{45}
+  \item {include/\discretionary {-}{}{}Decorator/\discretionary {-}{}{}Player.\discretionary {-}{}{}h}, 
+		\hyperpage{45}
+  \item {include/\discretionary {-}{}{}Decorator/\discretionary {-}{}{}Shoes.\discretionary {-}{}{}h}, 
+		\hyperpage{45}
+  \item {include/\discretionary {-}{}{}Factory/\discretionary {-}{}{}A\discretionary {-}{}{}Factory.\discretionary {-}{}{}h}, 
+		\hyperpage{45}
+  \item {include/\discretionary {-}{}{}Factory/\discretionary {-}{}{}Block\discretionary {-}{}{}Ground1.\discretionary {-}{}{}h}, 
+		\hyperpage{46}
+  \item {include/\discretionary {-}{}{}Factory/\discretionary {-}{}{}Block\discretionary {-}{}{}Ground2.\discretionary {-}{}{}h}, 
+		\hyperpage{46}
+  \item {include/\discretionary {-}{}{}Factory/\discretionary {-}{}{}Block\discretionary {-}{}{}Ground3.\discretionary {-}{}{}h}, 
+		\hyperpage{46}
+  \item {include/\discretionary {-}{}{}Factory/\discretionary {-}{}{}Concrete\discretionary {-}{}{}Factory.\discretionary {-}{}{}h}, 
+		\hyperpage{46}
+  \item {include/\discretionary {-}{}{}Factory/\discretionary {-}{}{}I\discretionary {-}{}{}Block.\discretionary {-}{}{}h}, 
+		\hyperpage{46}
+  \item {include/\discretionary {-}{}{}Singleton/\discretionary {-}{}{}Game\discretionary {-}{}{}Manager.\discretionary {-}{}{}h}, 
+		\hyperpage{46}
+  \item {include/\discretionary {-}{}{}Singleton/\discretionary {-}{}{}Menu.\discretionary {-}{}{}h}, 
+		\hyperpage{47}
+  \item {include/\discretionary {-}{}{}Strategy/\discretionary {-}{}{}I\discretionary {-}{}{}Level.\discretionary {-}{}{}h}, 
+		\hyperpage{47}
+  \item {include/\discretionary {-}{}{}Strategy/\discretionary {-}{}{}Level\discretionary {-}{}{}One.\discretionary {-}{}{}h}, 
+		\hyperpage{47}
+  \item {include/\discretionary {-}{}{}Strategy/\discretionary {-}{}{}Level\discretionary {-}{}{}Two.\discretionary {-}{}{}h}, 
+		\hyperpage{47}
+
+  \indexspace
+
+  \item {jump\discretionary {-}{}{}Animation}
+    \subitem {Player}, \hyperpage{41}
+
+  \indexspace
+
+  \item {Level\discretionary {-}{}{}One}, \hyperpage{23}
+    \subitem {draw\discretionary {-}{}{}Level}, \hyperpage{25}
+    \subitem {get\discretionary {-}{}{}Blocks}, \hyperpage{26}
+    \subitem {get\discretionary {-}{}{}Cape\discretionary {-}{}{}Sprite}, 
+		\hyperpage{26}
+    \subitem {get\discretionary {-}{}{}End\discretionary {-}{}{}Sprite}, 
+		\hyperpage{26}
+    \subitem {get\discretionary {-}{}{}Height}, \hyperpage{26}
+    \subitem {get\discretionary {-}{}{}Next}, \hyperpage{26}
+    \subitem {get\discretionary {-}{}{}Shoes\discretionary {-}{}{}Sprite}, 
+		\hyperpage{26}
+    \subitem {get\discretionary {-}{}{}Width}, \hyperpage{27}
+    \subitem {load\discretionary {-}{}{}Level}, \hyperpage{27}
+    \subitem {remove\discretionary {-}{}{}Element}, \hyperpage{27}
+  \item {Level\discretionary {-}{}{}Two}, \hyperpage{27}
+    \subitem {draw\discretionary {-}{}{}Level}, \hyperpage{29}
+    \subitem {get\discretionary {-}{}{}Blocks}, \hyperpage{29}
+    \subitem {get\discretionary {-}{}{}Cape\discretionary {-}{}{}Sprite}, 
+		\hyperpage{29}
+    \subitem {get\discretionary {-}{}{}End\discretionary {-}{}{}Sprite}, 
+		\hyperpage{30}
+    \subitem {get\discretionary {-}{}{}Height}, \hyperpage{30}
+    \subitem {get\discretionary {-}{}{}Next}, \hyperpage{30}
+    \subitem {get\discretionary {-}{}{}Shoes\discretionary {-}{}{}Sprite}, 
+		\hyperpage{30}
+    \subitem {get\discretionary {-}{}{}Width}, \hyperpage{30}
+    \subitem {load\discretionary {-}{}{}Level}, \hyperpage{30}
+    \subitem {remove\discretionary {-}{}{}Element}, \hyperpage{32}
+  \item {load\discretionary {-}{}{}Level}
+    \subitem {I\discretionary {-}{}{}Level}, \hyperpage{22}
+    \subitem {Level\discretionary {-}{}{}One}, \hyperpage{27}
+    \subitem {Level\discretionary {-}{}{}Two}, \hyperpage{30}
+
+  \indexspace
+
+  \item {Menu}, \hyperpage{32}
+    \subitem {get\discretionary {-}{}{}Instance}, \hyperpage{33}
+
+  \indexspace
+
+  \item {Player}, \hyperpage{34}
+    \subitem {controls}, \hyperpage{37}
+    \subitem {get\discretionary {-}{}{}Current\discretionary {-}{}{}Frame}, 
+		\hyperpage{37}
+    \subitem {get\discretionary {-}{}{}Height}, \hyperpage{37}
+    \subitem {get\discretionary {-}{}{}Jump}, \hyperpage{37}
+    \subitem {get\discretionary {-}{}{}Jump\discretionary {-}{}{}Height}, 
+		\hyperpage{38}
+    \subitem {get\discretionary {-}{}{}Jump\discretionary {-}{}{}Sound}, 
+		\hyperpage{38}
+    \subitem {get\discretionary {-}{}{}Jump\discretionary {-}{}{}Sound\discretionary {-}{}{}Buffer}, 
+		\hyperpage{38}
+    \subitem {get\discretionary {-}{}{}Jump\discretionary {-}{}{}Speed}, 
+		\hyperpage{38}
+    \subitem {get\discretionary {-}{}{}Jumping}, \hyperpage{38}
+    \subitem {get\discretionary {-}{}{}On\discretionary {-}{}{}Ground}, 
+		\hyperpage{38}
+    \subitem {get\discretionary {-}{}{}Position\discretionary {-}{}{}X}, 
+		\hyperpage{39}
+    \subitem {get\discretionary {-}{}{}Position\discretionary {-}{}{}Y}, 
+		\hyperpage{39}
+    \subitem {get\discretionary {-}{}{}Rect}, \hyperpage{39}
+    \subitem {get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture1}, 
+		\hyperpage{39}
+    \subitem {get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture2}, 
+		\hyperpage{39}
+    \subitem {get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture3}, 
+		\hyperpage{39}
+    \subitem {get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture4}, 
+		\hyperpage{40}
+    \subitem {get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture5}, 
+		\hyperpage{40}
+    \subitem {get\discretionary {-}{}{}Run\discretionary {-}{}{}Texture6}, 
+		\hyperpage{40}
+    \subitem {get\discretionary {-}{}{}Speed}, \hyperpage{40}
+    \subitem {get\discretionary {-}{}{}Sprite}, \hyperpage{40}
+    \subitem {get\discretionary {-}{}{}Texture}, \hyperpage{40}
+    \subitem {get\discretionary {-}{}{}Width}, \hyperpage{41}
+    \subitem {jump\discretionary {-}{}{}Animation}, \hyperpage{41}
+    \subitem {Player}, \hyperpage{37}
+    \subitem {set\discretionary {-}{}{}Jump\discretionary {-}{}{}Height}, 
+		\hyperpage{41}
+    \subitem {set\discretionary {-}{}{}Jump\discretionary {-}{}{}Speed}, 
+		\hyperpage{41}
+    \subitem {set\discretionary {-}{}{}Jumping}, \hyperpage{41}
+    \subitem {set\discretionary {-}{}{}On\discretionary {-}{}{}Ground}, 
+		\hyperpage{41}
+    \subitem {set\discretionary {-}{}{}Speed}, \hyperpage{42}
+
+  \indexspace
+
+  \item {remove\discretionary {-}{}{}Element}
+    \subitem {I\discretionary {-}{}{}Level}, \hyperpage{23}
+    \subitem {Level\discretionary {-}{}{}One}, \hyperpage{27}
+    \subitem {Level\discretionary {-}{}{}Two}, \hyperpage{32}
+
+  \indexspace
+
+  \item {set\discretionary {-}{}{}Jump\discretionary {-}{}{}Height}
+    \subitem {Player}, \hyperpage{41}
+  \item {set\discretionary {-}{}{}Jump\discretionary {-}{}{}Speed}
+    \subitem {Player}, \hyperpage{41}
+  \item {set\discretionary {-}{}{}Jumping}
+    \subitem {Player}, \hyperpage{41}
+  \item {set\discretionary {-}{}{}On\discretionary {-}{}{}Ground}
+    \subitem {Player}, \hyperpage{41}
+  \item {set\discretionary {-}{}{}Speed}
+    \subitem {Player}, \hyperpage{42}
+  \item {Shoes}, \hyperpage{42}
+    \subitem {get\discretionary {-}{}{}Jump\discretionary {-}{}{}Height}, 
+		\hyperpage{43}
+    \subitem {get\discretionary {-}{}{}Jump\discretionary {-}{}{}Speed}, 
+		\hyperpage{43}
+    \subitem {get\discretionary {-}{}{}Speed}, \hyperpage{43}
+    \subitem {Shoes}, \hyperpage{43}
+
+\end{theindex}

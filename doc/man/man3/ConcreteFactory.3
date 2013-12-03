@@ -1,0 +1,71 @@
+.TH "ConcreteFactory" 3 "Wed Nov 27 2013" "Version 1.0" "Stickman Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ConcreteFactory \- 
+.PP
+A concrete factory to create blocks\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBAFactory\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBConcreteFactory\fP ()"
+.br
+.RI "\fIDefault constructor\&. \fP"
+.ti -1c
+.RI "\fB~ConcreteFactory\fP ()"
+.br
+.RI "\fIDefault destructor\&. \fP"
+.ti -1c
+.RI "virtual \fBIBlock\fP * \fBbuild\fP (char s)"
+.br
+.RI "\fICreate a block according to the given character\&. \fP"
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+A concrete factory to create blocks\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Adrien Bodineau and Alexandre Gomes 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+1\&.0 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBIBlock\fP * ConcreteFactory::build (chars)\fC [virtual]\fP"
+
+.PP
+Create a block according to the given character\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIs\fP A char that indicate the block to construct 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The block constructed 
+.RE
+.PP
+
+.PP
+Implements \fBAFactory\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Stickman Project from the source code\&.
