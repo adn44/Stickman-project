@@ -7,7 +7,7 @@ LevelTwo::LevelTwo ( void )
   m_tileMap->push_back ( "Q       D    D       DDD                                                       Q" );
   m_tileMap->push_back ( "Q       D             D                                                       EQ" );
   m_tileMap->push_back ( "QA                                                    QQQQQQQQQQQQQQQQQQQQQQQQQQ" );
-  m_tileMap->push_back ( "QQQ Q                           SQQQQQQQQQQQQQQQQQQQQQ        Q                 " );
+  m_tileMap->push_back ( "QQQ                             SQQQQQQQQQQQQQQQQQQQQQ        Q                 " );
   m_tileMap->push_back ( "Q      Q           QSSSS SSD  Q                               Q                 " );
   m_tileMap->push_back ( "Q P     QQ                          DDD                       Q                 " );
   m_tileMap->push_back ( "Q    Q     D              O        S   S                      Q                 " );
