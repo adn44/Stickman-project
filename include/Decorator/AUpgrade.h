@@ -13,27 +13,27 @@
 
 class AUpgrade : public Player
 {
- public:
-  /** \brief Default constructor
-   * \fn AUpgrade()
-   */
-  AUpgrade();
+   public:
+      /** \brief Default constructor
+       * \fn AUpgrade()
+       */
+      AUpgrade();
 
-  /** \brief Another constructor
-   * \fn AUpgrade(Player* character, int x, int y)
-   * \param character Decorated character
-   * \param x Position x
-   * \param y Position y
-   */
-  AUpgrade(Player* character, int x, int y);
+      /** \brief Another constructor
+       * \fn AUpgrade(Player* character, int x, int y)
+       * \param character Decorated character
+       * \param x Position x
+       * \param y Position y
+       */
+      AUpgrade(Player* character, int x, int y);
 
-  /** \brief Default destructor
-   * \fn virtual ~AUpgrade()
-   */
-  virtual ~AUpgrade();
- protected:
-  Player* m_character; ///< Decorated character
- private:
+      /** \brief Default destructor
+       * \fn virtual ~AUpgrade()
+       */
+      virtual ~AUpgrade();
+   protected:
+      Player* m_character; ///< Decorated character
+   private:
 };
 
 #endif // AUPGRADE_H

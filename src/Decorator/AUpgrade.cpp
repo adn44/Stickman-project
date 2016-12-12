@@ -8,4 +8,5 @@ AUpgrade::AUpgrade(Player* character, int x, int y) : Player(x, y){
 AUpgrade::~AUpgrade()
 {
     //dtor
+    m_character = nullptr;
 }
