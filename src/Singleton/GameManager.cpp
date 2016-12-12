@@ -72,8 +72,8 @@ void GameManager::action ( void )
             {
 	      m_music->stop();
 	      m_screen->close ( );
-	      Menu* menu = Menu::getInstance();
-	      menu->action();
+	      Menu& menu = Menu::getInstance();
+	      menu.action();
             }
         }
       update ( );
@@ -246,8 +246,8 @@ void GameManager::update ( void )
     m_lostSound->setVolume(80);
     m_lostSound->play();
     m_screen->close();
-    Menu* m = Menu::getInstance();
-    m->action();
+    Menu& m = Menu::getInstance();
+    m.action();
   }
   else if(m_win) {
     if(m_level->getNext()) {
@@ -265,8 +265,8 @@ void GameManager::update ( void )
       m_winSound->play();
 
       m_screen->close();
-      Menu* m = Menu::getInstance();
-      m->action();
+      Menu& m = Menu::getInstance();
+      m.action();
     }
   }
   //std::cout << *m_colG << *m_colL << *m_colR << *m_colT << std::endl;

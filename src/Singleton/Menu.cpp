@@ -1,18 +1,16 @@
 #include "../../include/Singleton/Menu.h"
 
-Menu* Menu::m_menu = nullptr;
-
 Menu::Menu ( void ) : m_saxguy(false)
 {
-    m_screen = new sf::RenderWindow ( sf::VideoMode ( 640, 480 ), "Menu" );
+    m_screen.reset(new sf::RenderWindow ( sf::VideoMode ( 640, 480 ), "Menu" ));
 
-    m_bgTexture = new sf::Texture;
-    m_playTexture = new sf::Texture;
-    m_optionTexture = new sf::Texture;
-    m_activePlayTexture = new sf::Texture;
-    m_activeOptionTexture = new sf::Texture;
-    m_saxTexture = new sf::Texture;
-    m_saxDanceTexture = new sf::Texture;
+    m_bgTexture.reset(new sf::Texture);
+    m_playTexture.reset(new sf::Texture);
+    m_optionTexture.reset(new sf::Texture);
+    m_activePlayTexture.reset(new sf::Texture);
+    m_activeOptionTexture.reset(new sf::Texture);
+    m_saxTexture.reset(new sf::Texture);
+    m_saxDanceTexture.reset(new sf::Texture);
 
     if ( !m_bgTexture->loadFromFile ( "img/menu_background.png" )
             || !m_playTexture->loadFromFile ( "img/lancer_partie.png" )
@@ -25,15 +23,15 @@ Menu::Menu ( void ) : m_saxguy(false)
         exit ( EXIT_FAILURE );
     }
 
-    m_bgSprite = new sf::Sprite ( *m_bgTexture );
+    m_bgSprite.reset(new sf::Sprite ( *m_bgTexture ));
 
-    m_playSprite = new sf::Sprite ( *m_playTexture );
+    m_playSprite.reset(new sf::Sprite ( *m_playTexture ));
     m_playSprite->move ( 30, 180 );
 
-    m_optionSprite = new sf::Sprite ( *m_optionTexture );
+    m_optionSprite.reset(new sf::Sprite ( *m_optionTexture ));
     m_optionSprite->move ( 37, m_playSprite->getPosition().y + m_playSprite->getLocalBounds().height + 30 );
 
-    m_music = new sf::Music;
+    m_music.reset(new sf::Music);
     if(!m_music->openFromFile("music/menu.ogg")) {
         exit(EXIT_FAILURE);
     }
@@ -41,10 +39,10 @@ Menu::Menu ( void ) : m_saxguy(false)
     m_music->setVolume(50);
     m_music->play();
 
-    m_soundBuffer = new sf::SoundBuffer;
+    m_soundBuffer.reset(new sf::SoundBuffer);
     m_soundBuffer->loadFromFile("sound/button.ogg");
 
-    m_sound = new sf::Sound;
+    m_sound.reset(new sf::Sound);
     m_sound->setBuffer(*m_soundBuffer);
     m_sound->setVolume(15);
 
