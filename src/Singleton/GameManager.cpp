@@ -4,7 +4,7 @@ GameManager::GameManager ( int width, int height, std::string const& title )
 {
    // set up the screen
    m_screen.reset(new sf::RenderWindow ( sf::VideoMode ( width, height ), title ));
-   //m_screen->setVerticalSyncEnabled(true);
+   m_screen->setVerticalSyncEnabled(true);
    //m_screen->setFramerateLimit(60);
 
    // create the player
@@ -58,6 +58,8 @@ GameManager::~GameManager ( void )
 
 void GameManager::action ( void )
 {
+   if(!m_screen->isOpen())
+        m_screen->create(sf::VideoMode ( 640, 480 ), "Stickman-project");
    m_level->loadLevel ( m_player );
    m_win = false;
    m_lost = false;
