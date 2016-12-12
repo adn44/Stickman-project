@@ -11,6 +11,7 @@
 
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include <memory>
 #include "../Decorator/Player.h"
 #include "../Strategy/ILevel.h"
 #include "../Strategy/LevelOne.h"
@@ -21,84 +22,87 @@
 
 class GameManager
 {
- public:
-  /** \brief The default destructor
-   * \fn virtual ~GameManager ( void )
-   */
-  virtual ~GameManager(void);
+   public:
+      GameManager(GameManager const&) = delete;
+      GameManager(GameManager&&) = delete;
+      GameManager& operator=(GameManager const&) = delete;
+      GameManager& operator=(GameManager&&) = delete;
 
-  /** \brief Give the instance of the class, and create it if it's required
-   * \fn static GameManager* getInstance(void)
-   * \return A pointer on the instance of the class
-   */
-  static GameManager* getInstance(void) {
-    if(!m_gameManager)
-      m_gameManager = new GameManager(640,480, "Stickman-project");
-    return m_gameManager;
-  }
+      /** \brief The default destructor
+       * \fn virtual ~GameManager ( void )
+       */
+      virtual ~GameManager(void);
 
-  /** \brief Set up the parameters and run the game loop
-   * \fn void action ( void )
-   */
-  void action ( void );
+      /** \brief Give the instance of the class, and create it if it's required
+       * \fn static GameManager* getInstance(void)
+       * \return A pointer on the instance of the class
+       */
+      static GameManager& getInstance(void) {
+         static GameManager gameManager(640,480, "Stickman-project");
+         return gameManager;
+      }
 
-  /** \brief Update the data of the game
-   * \fn void update ( void )
-   */
-  void update ( void );
+      /** \brief Set up the parameters and run the game loop
+       * \fn void action ( void )
+       */
+      void action ( void );
 
-  /** \brief Draw the elements of the game on the screen
-   * \fn void draw ( void )
-   */
-  void draw ( void );
+      /** \brief Update the data of the game
+       * \fn void update ( void )
+       */
+      void update ( void );
 
-  /** \brief Check if the player is colliding with an object on his right
-   * \fn void collisionR ( void )
-   */
-  void collisionR ( void );
+      /** \brief Draw the elements of the game on the screen
+       * \fn void draw ( void )
+       */
+      void draw ( void );
 
-  /** \brief Check if the player is colliding with an object on his left
-   * \fn void collisionL ( void )
-   */
-  void collisionL ( void );
+      /** \brief Check if the player is colliding with an object on his right
+       * \fn void collisionR ( void )
+       */
+      void collisionR ( void );
 
-  /** \brief Check if the player is colliding with an object on his top
-   * \fn void collisionT ( void )
-   */
-  void collisionT ( void );
+      /** \brief Check if the player is colliding with an object on his left
+       * \fn void collisionL ( void )
+       */
+      void collisionL ( void );
 
-  /** \brief Check if the player is on the ground
-   * \fn void collisionG ( void )
-   */
-  void collisionG ( void );
- protected:
- private:
-  static GameManager* m_gameManager; ///< Static pointer on the unique instance of the class
-  Player* m_player; ///< Pointer on the player
-  sf::RenderWindow* m_screen; ///< Pointer on the screen
-  sf::View* m_view; ///< Pointer on the view (2D camera)
-  ILevel* m_level; ///< Pointer on the level
-  char* m_colG; ///< Pointer to check the ground collision
-  char* m_colL; ///< Pointer to check the left collision
-  char* m_colT; ///< Pointer to check the top collision
-  char* m_colR; ///< Pointer to check the right collision
-  bool m_win; ///< Boolean to check if the player has won, true if he has, false otherwise
-  bool m_lost; ///< Boolean to check if the player has lost, true if he has, false otherwise
-  sf::Music* m_music; ///< Pointer to the music of the current level
-  sf::Sound* m_upgradeSound; ///< Pointer to the upgrade sound
-  sf::SoundBuffer* m_upgradeSoundBuffer; ///< Pointer to the buffer of the upgrade sound
-  sf::Sound* m_lostSound; ///< Pointer to the lost sound
-  sf::SoundBuffer* m_lostSoundBuffer; ///< Pointer to the buffer of the lost sound
-  sf::Sound* m_winSound; ///< Pointer to the win sound
-  sf::SoundBuffer* m_winSoundBuffer; ///< Pointer to the buffer of the win sound
+      /** \brief Check if the player is colliding with an object on his top
+       * \fn void collisionT ( void )
+       */
+      void collisionT ( void );
 
-  /** \brief Private constructor of the class
-   * \fn GameManager ( int width, int height, std::string const& title )
-   * \param width An integer representing the width of the screen
-   * \param height An integer representing the height of the screen
-   * \param title A string representing the title of the screen
-   */
-  GameManager ( int width, int height, std::string const& title );
+      /** \brief Check if the player is on the ground
+       * \fn void collisionG ( void )
+       */
+      void collisionG ( void );
+   protected:
+   private:
+      Player* m_player{nullptr}; ///< Pointer on the player
+      std::unique_ptr<sf::RenderWindow> m_screen{nullptr}; ///< Pointer on the screen
+      std::unique_ptr<sf::View> m_view{nullptr}; ///< Pointer on the view (2D camera)
+      std::unique_ptr<ILevel> m_level{nullptr}; ///< Pointer on the level
+      std::unique_ptr<char> m_colG{nullptr}; ///< Pointer to check the ground collision
+      std::unique_ptr<char> m_colL{nullptr}; ///< Pointer to check the left collision
+      std::unique_ptr<char> m_colT{nullptr}; ///< Pointer to check the top collision
+      std::unique_ptr<char> m_colR{nullptr}; ///< Pointer to check the right collision
+      std::unique_ptr<sf::Music> m_music{nullptr}; ///< Pointer to the music of the current level
+      std::unique_ptr<sf::Sound> m_upgradeSound{nullptr}; ///< Pointer to the upgrade sound
+      std::unique_ptr<sf::SoundBuffer> m_upgradeSoundBuffer{nullptr}; ///< Pointer to the buffer of the upgrade sound
+      std::unique_ptr<sf::Sound> m_lostSound{nullptr}; ///< Pointer to the lost sound
+      std::unique_ptr<sf::SoundBuffer> m_lostSoundBuffer{nullptr}; ///< Pointer to the buffer of the lost sound
+      std::unique_ptr<sf::Sound> m_winSound{nullptr}; ///< Pointer to the win sound
+      std::unique_ptr<sf::SoundBuffer> m_winSoundBuffer{nullptr}; ///< Pointer to the buffer of the win sound
+      bool m_win{false}; ///< Boolean to check if the player has won, true if he has, false otherwise
+      bool m_lost{false}; ///< Boolean to check if the player has lost, true if he has, false otherwise
+
+      /** \brief Private constructor of the class
+       * \fn GameManager ( int width, int height, std::string const& title )
+       * \param width An integer representing the width of the screen
+       * \param height An integer representing the height of the screen
+       * \param title A string representing the title of the screen
+       */
+      GameManager ( int width, int height, std::string const& title );
 };
 
 #endif // GAMEMANAGER_H

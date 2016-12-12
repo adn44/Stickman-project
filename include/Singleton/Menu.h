@@ -31,8 +31,8 @@ class Menu
        * \return Menu instance
        */
       static Menu& getInstance(void) {
-         static Menu m_menu; ///< Instance
-         return m_menu;
+         static Menu menu; ///< Instance
+         return menu;
       }
 
       /** \brief Method that implements the behavior of the menu

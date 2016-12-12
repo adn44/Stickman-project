@@ -1,4 +1,5 @@
 #include "../../include/Singleton/Menu.h"
+#include <iostream>
 
 Menu::Menu ( void ) : m_saxguy(false)
 {
@@ -52,6 +53,7 @@ Menu::Menu ( void ) : m_saxguy(false)
 
 Menu::~Menu ( void )
 {
+   std::cout << "DESTRUCT MENU" << std::endl;
 }
 
 void Menu::action() {
@@ -118,8 +120,8 @@ void Menu::action() {
             {
                 m_music->stop();
                 m_screen->close();
-                GameManager* gameManager = GameManager::getInstance();
-                gameManager->action();
+                GameManager& gameManager = GameManager::getInstance();
+                gameManager.action();
             }
         }
 
